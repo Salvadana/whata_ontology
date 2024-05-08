@@ -1,0 +1,404 @@
+<mxfile host="app.diagrams.net" modified="2024-05-07T11:45:45.183Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.2.3" etag="ppMjlcEVUN_l88f4d0B1" type="device">
+  <diagram id="Jwiod8rQZpzIl2pZ6A2V" name="Pagina-1">
+    <mxGraphModel dx="3035" dy="3533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ULQofd9ogazBDOCy_c4V-1" value="whata:Situation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="270" y="284" width="101.97" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-2" value="&quot;value&quot;^^xsd:string" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="973.82" y="482.5" width="176.18" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-20" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-1" target="ULQofd9ogazBDOCy_c4V-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="262" as="sourcePoint" />
+            <mxPoint x="450" y="261.55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-21" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:satisfies&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-20">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="-4" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-24" value="&lt;http://www.example.com&gt;" style="graphMlID=n2;shape=swimlane;startSize=20;rounded=1;arcSize=5;strokeColor=#666699;strokeWidth=1.0;dashed=1;dashPattern=1 3;align=right;fillColor=#99ccff;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="-190" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-26" value="&lt;span style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 16px ; white-space: nowrap&quot;&gt;Annotation:&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 16px ; white-space: nowrap&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 16px ; white-space: nowrap&quot;&gt;&amp;nbsp; rdfs:label &quot;label&quot;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#A9C4EB;fillColor=#ccffff;gradientColor=none;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="665" y="-220.8" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-29" value="Prefixes" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="289.99999999999994" y="-211.6099999999999" width="356.42" height="81.61" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-30" value="&lt;b&gt;:&lt;br&gt;owl:&lt;br&gt;rdfs:&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="ULQofd9ogazBDOCy_c4V-29">
+          <mxGeometry x="6.416452437349733" y="31.09953721049043" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-31" value="http://example.com/&lt;br&gt;http://www.w3.org/2002/07/owl#&lt;br&gt;http://www.w3.org/2000/01/rdf-schema#" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="ULQofd9ogazBDOCy_c4V-29">
+          <mxGeometry x="66.41645243734973" y="31.09953721049043" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-34" value="whata:Description" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="500" y="280" width="110" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-35" value="whataAgent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="130" y="510" width="81.96822102864604" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-37" value="whata:Claim" style="whiteSpace=wrap;html=1;fillColor=#ffff00;strokeColor=#000000;rounded=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="207.72" y="380" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-39" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-35" target="ULQofd9ogazBDOCy_c4V-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="263" y="385.63183758898737" as="sourcePoint" />
+            <mxPoint x="410" y="386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-40" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:expresses&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-39">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-43" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.585;exitY=1.032;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-37" target="ULQofd9ogazBDOCy_c4V-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="520.0818375889874" as="sourcePoint" />
+            <mxPoint x="460" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-44" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:manifestsThrough&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-43">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-45" value="whata:LinguisticExpression" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="420" y="470" width="161.97" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-46" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.364;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-45" target="ULQofd9ogazBDOCy_c4V-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455.63" y="540.0018375889873" as="sourcePoint" />
+            <mxPoint x="456" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-47" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:hasRethoricalFeature&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-46">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-48" value="whata:Whataboutism" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="475" y="630" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-49" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-45" target="ULQofd9ogazBDOCy_c4V-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="510" as="sourcePoint" />
+            <mxPoint x="662.97" y="509.66" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-50" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:contains&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-49">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-52" value="whata:identificativePattern" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="703.9" y="478" width="176.1" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-53" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-45" target="ULQofd9ogazBDOCy_c4V-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="420.08183758898736" as="sourcePoint" />
+            <mxPoint x="601" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-54" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:contains&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-53">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-57" value="" style="graphMlID=e2;rounded=0;endArrow=block;strokeColor=#008000;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.115;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-52" target="ULQofd9ogazBDOCy_c4V-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="503.38" as="sourcePoint" />
+            <mxPoint x="1040" y="504" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-58" value="&lt;span style=&quot;color: rgb(0 , 128 , 0) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:hasText&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-57">
+          <mxGeometry x="-0.0896" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-59" value="whata:BlamingSituation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="150" y="990" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-60" value="whata:ResponsibilityShiftSituation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="581.97" y="980" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-61" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-59" target="ULQofd9ogazBDOCy_c4V-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="850.0818375889874" as="sourcePoint" />
+            <mxPoint x="671" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-62" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:isAnalogousTo&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-61">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-64" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0.44;entryY=0.963;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" target="ULQofd9ogazBDOCy_c4V-66" source="ULQofd9ogazBDOCy_c4V-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="782" as="sourcePoint" />
+            <mxPoint x="328" y="737.55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-65" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:satisfies&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-64">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="-4" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-66" value="whata:Description" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="380" y="800" width="130" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-67" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.301;exitY=0.022;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="ULQofd9ogazBDOCy_c4V-66" source="ULQofd9ogazBDOCy_c4V-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="698" y="860" as="sourcePoint" />
+            <mxPoint x="696.0660172526041" y="752.3719999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-68" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:satisfies&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-67">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="-4" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-70" value="whata:morallyRepugnantSituation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="371.97" y="1220" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-71" value="" style="endArrow=classic;html=1;textDirection=ltr;rounded=0;exitX=0.045;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.43;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-60" target="ULQofd9ogazBDOCy_c4V-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="970" as="sourcePoint" />
+            <mxPoint x="500" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-72" value="rdfs:subClassOf" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-71">
+          <mxGeometry x="-0.2211" relative="1" as="geometry">
+            <mxPoint x="19.95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-73" value="" style="endArrow=classic;html=1;textDirection=ltr;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.211;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-59" target="ULQofd9ogazBDOCy_c4V-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="950" as="sourcePoint" />
+            <mxPoint x="548" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-74" value="rdfs:subClassOf" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-73">
+          <mxGeometry x="-0.2211" relative="1" as="geometry">
+            <mxPoint x="19.95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-75" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.064;entryY=0.48;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-34" target="ULQofd9ogazBDOCy_c4V-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="669" y="303.3118375889874" as="sourcePoint" />
+            <mxPoint x="780" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-76" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;isConnectedTo&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-75">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-77" value="Problem" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="750.97" y="285" width="81.96822102864604" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-80" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.064;entryY=0.48;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ULQofd9ogazBDOCy_c4V-82" source="ULQofd9ogazBDOCy_c4V-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="508.95" y="822" as="sourcePoint" />
+            <mxPoint x="858.11" y="825" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-81" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;isConnectedTo&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-80">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-82" value="whata:Problem" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="700" y="810" width="112.1" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-83" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.428;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-70" target="ULQofd9ogazBDOCy_c4V-85">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="324" y="1480.0818375889874" as="sourcePoint" />
+            <mxPoint x="475" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-84" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;involves&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-83">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-85" value="whata:Condemn" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="440" y="1390" width="121.97" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-86" value="whata:OughtInfringement" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="190" y="1490" width="181.97" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-87" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-86" target="ULQofd9ogazBDOCy_c4V-85">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="243.4799999999999" y="1466.7600000000002" as="sourcePoint" />
+            <mxPoint x="398.48" y="1473" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-88" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:entails&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-87">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-89" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-86" target="ULQofd9ogazBDOCy_c4V-82">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="581.9700000000001" y="1611.4400000000005" as="sourcePoint" />
+            <mxPoint x="1151.4" y="950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="1360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-90" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;whata:generates&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-89">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-92" value="CognitivePerspectivisation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="680" y="1840" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-93" value="whata:Situation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="1601" y="324" width="101.97" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-94" value="&quot;value&quot;^^xsd:string" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="2304.82" y="522.5" width="176.18" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-95" value="" style="endArrow=classic;html=1;textDirection=ltr;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-134" target="ULQofd9ogazBDOCy_c4V-133">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="312.71999999999997" y="130" as="sourcePoint" />
+            <mxPoint x="460.67" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-96" value="rdfs:subClassOf" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-95">
+          <mxGeometry x="-0.2211" relative="1" as="geometry">
+            <mxPoint x="19.95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-97" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-93" target="ULQofd9ogazBDOCy_c4V-99">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1591" y="302" as="sourcePoint" />
+            <mxPoint x="1781" y="301.55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-98" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:satisfies&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-97">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="-4" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-99" value="whata:Description" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="1831" y="320" width="110" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-100" value="whataAgent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="1461" y="550" width="81.96822102864604" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-101" value="whata:Claim" style="whiteSpace=wrap;html=1;fillColor=#ffff00;strokeColor=#000000;rounded=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1654" y="460" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-102" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-100" target="ULQofd9ogazBDOCy_c4V-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1594" y="425.63183758898737" as="sourcePoint" />
+            <mxPoint x="1741" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-103" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:expresses&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-102">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-107" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.597;exitY=0.962;exitDx=0;exitDy=0;entryX=0.364;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-99" target="ULQofd9ogazBDOCy_c4V-109">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1831.9850000000001" y="580" as="sourcePoint" />
+            <mxPoint x="1787" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-108" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:hasRethoricalFeature&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-107">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-109" value="whata:Whataboutism" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="1806" y="670" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-110" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-99" target="ULQofd9ogazBDOCy_c4V-112">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1912.9699999999998" y="545" as="sourcePoint" />
+            <mxPoint x="1993.97" y="549.6600000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-111" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:contains&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-110">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-112" value="whata:identificativePattern" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="2034.9" y="518" width="176.1" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-113" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1.004;exitY=0.581;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-101" target="ULQofd9ogazBDOCy_c4V-99">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1842.6659322033902" y="510" as="sourcePoint" />
+            <mxPoint x="1932" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-114" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:contains&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-113">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-115" value="" style="graphMlID=e2;rounded=0;endArrow=block;strokeColor=#008000;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.115;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-112" target="ULQofd9ogazBDOCy_c4V-94">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2171" y="543.38" as="sourcePoint" />
+            <mxPoint x="2371" y="544" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-116" value="&lt;span style=&quot;color: rgb(0 , 128 , 0) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;whata:hasText&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-115">
+          <mxGeometry x="-0.0896" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-117" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.064;entryY=0.48;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-99" target="ULQofd9ogazBDOCy_c4V-119">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2000" y="343.3118375889874" as="sourcePoint" />
+            <mxPoint x="2111" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-118" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;isConnectedTo&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-117">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-119" value="Problem" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="2081.9700000000003" y="325" width="81.96822102864604" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-120" value="whata:Whataboutism" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="202.72000000000003" y="1840" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-121" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1.002;exitY=0.578;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.021;entryY=0.557;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ULQofd9ogazBDOCy_c4V-120" target="ULQofd9ogazBDOCy_c4V-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="999" y="1830.0818375889874" as="sourcePoint" />
+            <mxPoint x="1150" y="1830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-122" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;happensThrough&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ULQofd9ogazBDOCy_c4V-121">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-133" value="whata:situation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="564.4558894856771" y="108" width="81.96822102864604" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-134" value="whata:morallyRepugnatSituation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="120" y="98" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-138" value="whata:relevanceFallacy" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="260" y="2100" width="211.97" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="ULQofd9ogazBDOCy_c4V-139" value="whata:cognitiveBias" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
+          <mxGeometry x="270" y="2260" width="180" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
