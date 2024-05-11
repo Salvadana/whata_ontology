@@ -1,0 +1,5 @@
+Command prompt: 
+java -jar widoco-1.4.24-jar-with-dependencies_JDK-17.jar -ontFile _whataboutism.owl -outFolder documentation -lang en -getOntologyMetadata -webVowl -uniteSections
+
+eliminare l'attuale cartella documentation e eseguire di nuovo il comando quando avrò il file definitivo (dopo aver sostituito il file)
+visualizzazione : ?? provare a eseguire widoco usando l'uri dell'ontologia caricata su github al posto del path al file locale.
