@@ -46,7 +46,7 @@
     "id" : "44",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "27",
     "type" : "owl:Thing"
   }, {
     "id" : "40",
@@ -55,7 +55,7 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
     "id" : "59",
@@ -64,7 +64,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "67",
+    "id" : "66",
     "type" : "owl:unionOf"
   }, {
     "id" : "9",
@@ -139,12 +139,12 @@
       "date" : [ {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2024-05-08T09:35:20Z",
+        "value" : "2024-05-08T09:33:19Z",
         "type" : "label"
       }, {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2024-05-08T09:33:19Z",
+        "value" : "2024-05-08T09:35:20Z",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -216,12 +216,12 @@
       "date" : [ {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2024-05-08T09:33:07Z",
+        "value" : "2024-05-08T09:35:06Z",
         "type" : "label"
       }, {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2024-05-08T09:35:06Z",
+        "value" : "2024-05-08T09:33:07Z",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -311,7 +311,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "26",
+    "id" : "27",
     "label" : {
       "undefined" : "Thing"
     }
@@ -343,7 +343,7 @@
     "label" : {
       "IRI-based" : "TuQuoqueFallacy"
     },
-    "id" : "64",
+    "id" : "65",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ConfirmationBias",
@@ -369,9 +369,9 @@
     "superClasses" : [ "35" ]
   }, {
     "instances" : 0,
-    "union" : [ "28", "54" ],
+    "union" : [ "29", "54" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "67"
+    "id" : "66"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -415,7 +415,7 @@
     "label" : {
       "IRI-based" : "PerspectivisationTheorySituation"
     },
-    "subClasses" : [ "21", "9", "28", "54", "29", "42" ],
+    "subClasses" : [ "21", "9", "29", "54", "30", "42" ],
     "attributes" : [ "external" ],
     "id" : "10",
     "superClasses" : [ "6" ]
@@ -454,12 +454,17 @@
       "semanticRole" : [ {
         "identifier" : "semanticRole",
         "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
+        "type" : "iri"
+      }, {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
         "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
         "type" : "iri"
       }, {
         "identifier" : "semanticRole",
         "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
         "type" : "iri"
       }, {
         "identifier" : "semanticRole",
@@ -469,17 +474,12 @@
       }, {
         "identifier" : "semanticRole",
         "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
+        "type" : "iri"
+      }, {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
         "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
-        "type" : "iri"
-      }, {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
-        "type" : "iri"
-      }, {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
         "type" : "iri"
       } ]
     },
@@ -521,7 +521,7 @@
     "label" : {
       "IRI-based" : "RelevanceFallacy"
     },
-    "subClasses" : [ "64", "17", "74" ],
+    "subClasses" : [ "65", "17", "74" ],
     "id" : "18",
     "superClasses" : [ "3" ]
   }, {
@@ -575,7 +575,7 @@
     "id" : "25",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
+    "id" : "26",
     "type" : "owl:objectProperty"
   }, {
     "id" : "31",
@@ -623,7 +623,7 @@
     "id" : "53",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "27",
+    "id" : "28",
     "type" : "owl:objectProperty"
   }, {
     "id" : "55",
@@ -650,17 +650,17 @@
     "id" : "63",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "28",
+    "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "65",
+    "id" : "64",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "66",
-    "type" : "owl:someValuesFrom"
+    "id" : "67",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "68",
-    "type" : "owl:objectProperty"
+    "type" : "rdf:Property"
   }, {
     "id" : "69",
     "type" : "rdf:Property"
@@ -671,14 +671,14 @@
     "id" : "71",
     "type" : "rdf:Property"
   }, {
-    "id" : "72",
-    "type" : "rdf:Property"
-  }, {
     "id" : "21",
     "type" : "owl:objectProperty"
   }, {
     "id" : "50",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "73",
     "type" : "owl:someValuesFrom"
@@ -704,7 +704,7 @@
     "id" : "81",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "29",
+    "id" : "30",
     "type" : "owl:objectProperty"
   }, {
     "id" : "82",
@@ -792,17 +792,6 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor",
-    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "isSettingFor"
-    },
-    "domain" : "26",
-    "subproperty" : [ "21", "27", "28", "29" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "25"
-  }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
     "range" : "15",
@@ -811,7 +800,18 @@
     },
     "domain" : "15",
     "attributes" : [ "external", "object" ],
-    "id" : "30"
+    "id" : "25"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isSettingFor"
+    },
+    "domain" : "27",
+    "subproperty" : [ "21", "28", "29", "30" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "26"
   }, {
     "range" : "1",
     "domain" : "32",
@@ -891,11 +891,11 @@
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies",
     "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
-    "range" : "26",
+    "range" : "27",
     "label" : {
       "IRI-based" : "satisfies"
     },
-    "domain" : "26",
+    "domain" : "27",
     "attributes" : [ "external", "object" ],
     "id" : "46"
   }, {
@@ -951,10 +951,10 @@
     "label" : {
       "IRI-based" : "Conceptualiser"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "26" ],
     "domain" : "54",
     "attributes" : [ "external", "object" ],
-    "id" : "27"
+    "id" : "28"
   }, {
     "range" : "5",
     "domain" : "7",
@@ -967,7 +967,7 @@
     "id" : "56"
   }, {
     "domain" : "39",
-    "range" : "29",
+    "range" : "12",
     "id" : "57",
     "label" : {
       "IRI-based" : "14",
@@ -975,7 +975,7 @@
     }
   }, {
     "domain" : "39",
-    "range" : "28",
+    "range" : "7",
     "id" : "58",
     "label" : {
       "IRI-based" : "13",
@@ -983,7 +983,7 @@
     }
   }, {
     "domain" : "39",
-    "range" : "9",
+    "range" : "30",
     "id" : "60",
     "label" : {
       "IRI-based" : "10",
@@ -991,7 +991,7 @@
     }
   }, {
     "domain" : "39",
-    "range" : "12",
+    "range" : "21",
     "id" : "61",
     "label" : {
       "IRI-based" : "12",
@@ -1030,15 +1030,15 @@
     "label" : {
       "IRI-based" : "Background"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "26" ],
     "domain" : "54",
     "comment" : {
       "undefined" : "The background knowledge for an eventuality targeted by perspectivisation, e.g., fiscal knowledge behind current taxation policies in 'taxes are investiments'. In the example, only the background is expressed."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "28"
+    "id" : "29"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
     "range" : "15",
     "annotations" : {
@@ -1050,26 +1050,15 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "Cut"
+      "IRI-based" : "Attitude"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "26" ],
     "domain" : "54",
     "comment" : {
-      "undefined" : "The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in 'taxes are investiments'."
+      "undefined" : "The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as 'investment' in 'taxes are investiments'."
     },
-    "attributes" : [ "external", "object", "someValues" ],
-    "id" : "65"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "Conceptualiser"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "54",
-    "attributes" : [ "external", "object", "someValues" ],
-    "id" : "66"
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "64"
   }, {
     "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#actsAgainst",
     "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
@@ -1079,35 +1068,35 @@
     },
     "domain" : "32",
     "attributes" : [ "object" ],
-    "id" : "68"
+    "id" : "67"
   }, {
     "domain" : "39",
     "range" : "42",
-    "id" : "69",
+    "id" : "68",
     "label" : {
       "IRI-based" : "6",
       "undefined" : "is a"
     }
   }, {
     "domain" : "39",
-    "range" : "11",
-    "id" : "70",
+    "range" : "9",
+    "id" : "69",
     "label" : {
       "IRI-based" : "7",
       "undefined" : "is a"
     }
   }, {
     "domain" : "39",
-    "range" : "7",
-    "id" : "71",
+    "range" : "29",
+    "id" : "70",
     "label" : {
       "IRI-based" : "8",
       "undefined" : "is a"
     }
   }, {
     "domain" : "39",
-    "range" : "21",
-    "id" : "72",
+    "range" : "11",
+    "id" : "71",
     "label" : {
       "IRI-based" : "9",
       "undefined" : "is a"
@@ -1127,7 +1116,7 @@
     "label" : {
       "IRI-based" : "Attitude"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "26" ],
     "domain" : "54",
     "comment" : {
       "undefined" : "The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as 'investment' in 'taxes are investiments'."
@@ -1137,15 +1126,26 @@
   }, {
     "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isLinguisticIdentifyingPatternOf",
     "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "26",
+    "range" : "27",
     "label" : {
       "IRI-based" : "isLinguisticIdentifyingPatternOf"
     },
-    "domain" : "26",
+    "domain" : "27",
     "attributes" : [ "object" ],
     "id" : "50"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "Conceptualiser"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "54",
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
     "range" : "15",
     "annotations" : {
@@ -1157,14 +1157,14 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "Attitude"
+      "IRI-based" : "Cut"
     },
-    "superproperty" : [ "25" ],
+    "superproperty" : [ "26" ],
     "domain" : "54",
     "comment" : {
-      "undefined" : "The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as 'investment' in 'taxes are investiments'."
+      "undefined" : "The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in 'taxes are investiments'."
     },
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "73"
   }, {
     "range" : "3",
@@ -1202,16 +1202,16 @@
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "29",
+    "range" : "30",
     "label" : {
       "IRI-based" : "contrasts"
     },
-    "domain" : "29",
+    "domain" : "30",
     "attributes" : [ "symmetric", "external", "object" ],
     "id" : "79"
   }, {
     "range" : "18",
-    "domain" : "64",
+    "domain" : "65",
     "attributes" : [ "anonymous", "object" ],
     "id" : "80"
   }, {
@@ -1234,13 +1234,13 @@
     "label" : {
       "IRI-based" : "Cut"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "67",
+    "superproperty" : [ "26" ],
+    "domain" : "66",
     "comment" : {
       "undefined" : "The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in 'taxes are investiments'."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "29"
+    "id" : "30"
   }, {
     "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isContrastedIn",
     "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
@@ -1268,7 +1268,7 @@
     "id" : "85"
   }, {
     "range" : "10",
-    "domain" : "28",
+    "domain" : "29",
     "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
@@ -1278,7 +1278,7 @@
     "id" : "87"
   }, {
     "range" : "10",
-    "domain" : "29",
+    "domain" : "30",
     "attributes" : [ "anonymous", "object" ],
     "id" : "88"
   } ]
