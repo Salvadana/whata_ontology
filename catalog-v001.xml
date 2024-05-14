@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://w3id.org/framester/schema/1.8" uri="_whataboutism.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1715700106613" name="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25" uri="jar/documentation/ontology.owl"/>
+    </group>
+</catalog>
