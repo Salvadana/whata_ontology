@@ -13,8 +13,6 @@ Declaration(Class(:Bias))
 Declaration(Class(:BlamedEventuality))
 Declaration(Class(:BlamingFrameDescription))
 Declaration(Class(:BlamingFrameSituation))
-Declaration(Class(:BlendingBlamingClaim))
-Declaration(Class(:CoBlamedEventuality))
 Declaration(Class(:FocusShiftingLens))
 Declaration(Class(:LinguisticExpression))
 Declaration(Class(:Ought))
@@ -22,6 +20,7 @@ Declaration(Class(:RelevanceFallacy))
 Declaration(Class(:ResponsibilityOwner))
 Declaration(Class(:Whataboutism))
 Declaration(ObjectProperty(:actsAgainst))
+Declaration(ObjectProperty(:createsBlanded))
 Declaration(ObjectProperty(:hasLinguisticExpression))
 Declaration(ObjectProperty(:isParticipantIn))
 Declaration(ObjectProperty(:relatedTo))
@@ -51,6 +50,10 @@ ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/description.ow
 ObjectPropertyDomain(:actsAgainst :ResponsibilityOwner)
 ObjectPropertyRange(:actsAgainst :Ought)
 
+# Object Property: :createsBlanded (:createsBlanded)
+
+ObjectPropertyDomain(:createsBlanded :Whataboutism)
+
 # Object Property: :hasLinguisticExpression (:hasLinguisticExpression)
 
 ObjectPropertyDomain(:hasLinguisticExpression :Whataboutism)
@@ -58,7 +61,6 @@ ObjectPropertyRange(:hasLinguisticExpression :LinguisticExpression)
 
 # Object Property: :isParticipantIn (:isParticipantIn)
 
-ObjectPropertyDomain(:isParticipantIn :BlendingBlamingClaim)
 ObjectPropertyDomain(:isParticipantIn :Ought)
 ObjectPropertyDomain(:isParticipantIn :ResponsibilityOwner)
 ObjectPropertyRange(:isParticipantIn :BlamingFrameSituation)
@@ -76,7 +78,7 @@ ObjectPropertyRange(:shiftsFocusFrom :BlamedEventuality)
 # Object Property: :shiftsFocusOn (:shiftsFocusOn)
 
 ObjectPropertyDomain(:shiftsFocusOn :Whataboutism)
-ObjectPropertyRange(:shiftsFocusOn :CoBlamedEventuality)
+ObjectPropertyRange(:shiftsFocusOn :BlamedEventuality)
 
 
 ############################
@@ -94,10 +96,6 @@ DataPropertyRange(:hasIdentifyingPattern xsd:string)
 #   Classes
 ############################
 
-# Class: <http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description> (<http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description>)
-
-SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description> :LinguisticExpression)
-
 # Class: :Bias (:Bias)
 
 SubClassOf(:Bias :FocusShiftingLens)
@@ -106,6 +104,7 @@ SubClassOf(:Bias :FocusShiftingLens)
 
 SubClassOf(:BlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
 SubClassOf(:BlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
+SubClassOf(:BlamedEventuality :BlamingFrameSituation)
 
 # Class: :BlamingFrameDescription (:BlamingFrameDescription)
 
@@ -114,15 +113,6 @@ SubClassOf(:BlamingFrameDescription <https://w3id.org/framester/schema/Conceptua
 # Class: :BlamingFrameSituation (:BlamingFrameSituation)
 
 SubClassOf(:BlamingFrameSituation <https://w3id.org/framester/schema/FrameOccurrence>)
-
-# Class: :BlendingBlamingClaim (:BlendingBlamingClaim)
-
-SubClassOf(:BlendingBlamingClaim <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending>)
-
-# Class: :CoBlamedEventuality (:CoBlamedEventuality)
-
-SubClassOf(:CoBlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended>)
-SubClassOf(:CoBlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
 
 # Class: :FocusShiftingLens (:FocusShiftingLens)
 
@@ -149,13 +139,9 @@ ClassAssertion(:BlamedEventuality :BlamedEventuality)
 
 ClassAssertion(:ResponsibilityOwner :BlamedResponsibilityOwner)
 
-# Individual: :BlandingBlamingClaim (:BlandingBlamingClaim)
-
-ClassAssertion(:BlendingBlamingClaim :BlandingBlamingClaim)
-
 # Individual: :CoBlamedEventuality (:CoBlamedEventuality)
 
-ClassAssertion(:CoBlamedEventuality :CoBlamedEventuality)
+ClassAssertion(:BlamedEventuality :CoBlamedEventuality)
 
 # Individual: :CoBlamedResponsibilityOwner (:CoBlamedResponsibilityOwner)
 
