@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-14T19:01:33.175Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="-ERd5_XkWZkYnO0LU9hF" version="24.4.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-14T19:04:26.773Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Z5JBwVRIwaCSYbMRl2ct" version="24.4.0" type="device">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="1954" dy="2282" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1463" dy="1757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
         <mxCell id="LqP2NPi9a7aLQYuPG1_W-2" value="whata:BlamedEventuality" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" parent="1" vertex="1">
           <mxGeometry x="320" y="240" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="LqP2NPi9a7aLQYuPG1_W-4" value="whata:Co-Blamed Eventuality" style="whiteSpace=wrap;html=1;fillColor=#ffff00;strokeColor=#000000;rounded=1;strokeWidth=1;" parent="1" vertex="1">
+        <mxCell id="LqP2NPi9a7aLQYuPG1_W-4" value="whata:CoBlamed Eventuality" style="whiteSpace=wrap;html=1;fillColor=#ffff00;strokeColor=#000000;rounded=1;strokeWidth=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="394" width="150" height="51" as="geometry" />
         </mxCell>
         <mxCell id="LqP2NPi9a7aLQYuPG1_W-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LqP2NPi9a7aLQYuPG1_W-6" target="LqP2NPi9a7aLQYuPG1_W-1" edge="1">

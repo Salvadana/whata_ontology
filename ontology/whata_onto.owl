@@ -28,6 +28,13 @@ Declaration(ObjectProperty(:relatedTo))
 Declaration(ObjectProperty(:shiftsFocusFrom))
 Declaration(ObjectProperty(:shiftsFocusOn))
 Declaration(DataProperty(:hasIdentifyingPattern))
+Declaration(NamedIndividual(:BlamedEventuality))
+Declaration(NamedIndividual(:BlamedResponsibilityOwner))
+Declaration(NamedIndividual(:BlandingBlamingClaim))
+Declaration(NamedIndividual(:CoBlamedEventuality))
+Declaration(NamedIndividual(:CoBlamedResponsibilityOwner))
+Declaration(NamedIndividual(:Ought))
+Declaration(NamedIndividual(:Whatabotism))
 ############################
 #   Object Properties
 ############################
@@ -128,6 +135,39 @@ SubClassOf(:RelevanceFallacy :FocusShiftingLens)
 # Class: :Whataboutism (:Whataboutism)
 
 SubClassOf(:Whataboutism :FocusShiftingLens)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :BlamedEventuality (:BlamedEventuality)
+
+ClassAssertion(:BlamedEventuality :BlamedEventuality)
+
+# Individual: :BlamedResponsibilityOwner (:BlamedResponsibilityOwner)
+
+ClassAssertion(:ResponsibilityOwner :BlamedResponsibilityOwner)
+
+# Individual: :BlandingBlamingClaim (:BlandingBlamingClaim)
+
+ClassAssertion(:BlendingBlamingClaim :BlandingBlamingClaim)
+
+# Individual: :CoBlamedEventuality (:CoBlamedEventuality)
+
+ClassAssertion(:CoBlamedEventuality :CoBlamedEventuality)
+
+# Individual: :CoBlamedResponsibilityOwner (:CoBlamedResponsibilityOwner)
+
+ClassAssertion(:ResponsibilityOwner :CoBlamedResponsibilityOwner)
+
+# Individual: :Ought (:Ought)
+
+ClassAssertion(:Ought :Ought)
+
+# Individual: :Whatabotism (:Whatabotism)
+
+ClassAssertion(:Whataboutism :Whatabotism)
 
 
 )
