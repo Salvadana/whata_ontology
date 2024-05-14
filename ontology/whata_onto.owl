@@ -1,0 +1,133 @@
+Prefix(:=<http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-30#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-30>
+Import(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl>)
+
+Declaration(Class(:Bias))
+Declaration(Class(:BlamedEventuality))
+Declaration(Class(:BlamingFrameDescription))
+Declaration(Class(:BlamingFrameSituation))
+Declaration(Class(:BlendingBlamingClaim))
+Declaration(Class(:CoBlamedEventuality))
+Declaration(Class(:FocusShiftingLens))
+Declaration(Class(:LinguisticExpression))
+Declaration(Class(:Ought))
+Declaration(Class(:RelevanceFallacy))
+Declaration(Class(:ResponsibilityOwner))
+Declaration(Class(:Whataboutism))
+Declaration(ObjectProperty(:actsAgainst))
+Declaration(ObjectProperty(:hasLinguisticExpression))
+Declaration(ObjectProperty(:isParticipantIn))
+Declaration(ObjectProperty(:relatedTo))
+Declaration(ObjectProperty(:shiftsFocusFrom))
+Declaration(ObjectProperty(:shiftsFocusOn))
+Declaration(DataProperty(:hasIdentifyingPattern))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> (<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> :BlamingFrameSituation)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> <http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> :BlamingFrameDescription)
+
+# Object Property: :actsAgainst (:actsAgainst)
+
+ObjectPropertyDomain(:actsAgainst :ResponsibilityOwner)
+ObjectPropertyRange(:actsAgainst :Ought)
+
+# Object Property: :hasLinguisticExpression (:hasLinguisticExpression)
+
+ObjectPropertyDomain(:hasLinguisticExpression :Whataboutism)
+ObjectPropertyRange(:hasLinguisticExpression :LinguisticExpression)
+
+# Object Property: :isParticipantIn (:isParticipantIn)
+
+ObjectPropertyDomain(:isParticipantIn :BlendingBlamingClaim)
+ObjectPropertyDomain(:isParticipantIn :Ought)
+ObjectPropertyDomain(:isParticipantIn :ResponsibilityOwner)
+ObjectPropertyRange(:isParticipantIn :BlamingFrameSituation)
+
+# Object Property: :relatedTo (:relatedTo)
+
+ObjectPropertyDomain(:relatedTo :FocusShiftingLens)
+ObjectPropertyRange(:relatedTo :FocusShiftingLens)
+
+# Object Property: :shiftsFocusFrom (:shiftsFocusFrom)
+
+ObjectPropertyDomain(:shiftsFocusFrom :Whataboutism)
+ObjectPropertyRange(:shiftsFocusFrom :BlamedEventuality)
+
+# Object Property: :shiftsFocusOn (:shiftsFocusOn)
+
+ObjectPropertyDomain(:shiftsFocusOn :Whataboutism)
+ObjectPropertyRange(:shiftsFocusOn :CoBlamedEventuality)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasIdentifyingPattern (:hasIdentifyingPattern)
+
+DataPropertyDomain(:hasIdentifyingPattern :LinguisticExpression)
+DataPropertyRange(:hasIdentifyingPattern xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description> (<http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description> :LinguisticExpression)
+
+# Class: :Bias (:Bias)
+
+SubClassOf(:Bias :FocusShiftingLens)
+
+# Class: :BlamedEventuality (:BlamedEventuality)
+
+SubClassOf(:BlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
+SubClassOf(:BlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
+
+# Class: :BlamingFrameDescription (:BlamingFrameDescription)
+
+SubClassOf(:BlamingFrameDescription <https://w3id.org/framester/schema/ConceptualFrame>)
+
+# Class: :BlamingFrameSituation (:BlamingFrameSituation)
+
+SubClassOf(:BlamingFrameSituation <https://w3id.org/framester/schema/FrameOccurrence>)
+
+# Class: :BlendingBlamingClaim (:BlendingBlamingClaim)
+
+SubClassOf(:BlendingBlamingClaim <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending>)
+
+# Class: :CoBlamedEventuality (:CoBlamedEventuality)
+
+SubClassOf(:CoBlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended>)
+SubClassOf(:CoBlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
+
+# Class: :FocusShiftingLens (:FocusShiftingLens)
+
+SubClassOf(:FocusShiftingLens <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens>)
+
+# Class: :RelevanceFallacy (:RelevanceFallacy)
+
+SubClassOf(:RelevanceFallacy :FocusShiftingLens)
+
+# Class: :Whataboutism (:Whataboutism)
+
+SubClassOf(:Whataboutism :FocusShiftingLens)
+
+
+)
