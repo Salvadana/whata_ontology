@@ -1,4 +1,4 @@
-Prefix(:=<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whata_onto.owl>)
+Prefix(:=<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whata_onto.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whata_onto.owl>
+Ontology(<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whata_onto.owl#>
 Import(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl>)
 
 Declaration(Class(:Bias))
@@ -45,37 +45,37 @@ ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/cp/owl/description.o
 ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> <http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description>)
 ObjectPropertyRange(<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> :BlamingFrameDescription)
 
-# Object Property: :actsAgainst (:actsAgainst)
+# Object Property: :whata_onto.owlactsAgainst (:whata_onto.owlactsAgainst)
 
 ObjectPropertyDomain(:actsAgainst :ResponsibilityOwner)
 ObjectPropertyRange(:actsAgainst :Ought)
 
-# Object Property: :createsBlanded (:createsBlanded)
+# Object Property: :whata_onto.owlcreatesBlanded (:whata_onto.owlcreatesBlanded)
 
 ObjectPropertyDomain(:createsBlanded :Whataboutism)
 
-# Object Property: :hasLinguisticExpression (:hasLinguisticExpression)
+# Object Property: :whata_onto.owlhasLinguisticExpression (:whata_onto.owlhasLinguisticExpression)
 
 ObjectPropertyDomain(:hasLinguisticExpression :Whataboutism)
 ObjectPropertyRange(:hasLinguisticExpression :LinguisticExpression)
 
-# Object Property: :isParticipantIn (:isParticipantIn)
+# Object Property: :whata_onto.owlisParticipantIn (:whata_onto.owlisParticipantIn)
 
 ObjectPropertyDomain(:isParticipantIn :Ought)
 ObjectPropertyDomain(:isParticipantIn :ResponsibilityOwner)
 ObjectPropertyRange(:isParticipantIn :BlamingFrameSituation)
 
-# Object Property: :relatedTo (:relatedTo)
+# Object Property: :whata_onto.owlrelatedTo (:whata_onto.owlrelatedTo)
 
 ObjectPropertyDomain(:relatedTo :FocusShiftingLens)
 ObjectPropertyRange(:relatedTo :FocusShiftingLens)
 
-# Object Property: :shiftsFocusFrom (:shiftsFocusFrom)
+# Object Property: :whata_onto.owlshiftsFocusFrom (:whata_onto.owlshiftsFocusFrom)
 
 ObjectPropertyDomain(:shiftsFocusFrom :Whataboutism)
 ObjectPropertyRange(:shiftsFocusFrom :BlamedEventuality)
 
-# Object Property: :shiftsFocusOn (:shiftsFocusOn)
+# Object Property: :whata_onto.owlshiftsFocusOn (:whata_onto.owlshiftsFocusOn)
 
 ObjectPropertyDomain(:shiftsFocusOn :Whataboutism)
 ObjectPropertyRange(:shiftsFocusOn :BlamedEventuality)
@@ -85,7 +85,7 @@ ObjectPropertyRange(:shiftsFocusOn :BlamedEventuality)
 #   Data Properties
 ############################
 
-# Data Property: :hasIdentifyingPattern (:hasIdentifyingPattern)
+# Data Property: :whata_onto.owlhasIdentifyingPattern (:whata_onto.owlhasIdentifyingPattern)
 
 DataPropertyDomain(:hasIdentifyingPattern :LinguisticExpression)
 DataPropertyRange(:hasIdentifyingPattern xsd:string)
@@ -96,33 +96,33 @@ DataPropertyRange(:hasIdentifyingPattern xsd:string)
 #   Classes
 ############################
 
-# Class: :Bias (:Bias)
+# Class: :whata_onto.owlBias (:whata_onto.owlBias)
 
 SubClassOf(:Bias :FocusShiftingLens)
 
-# Class: :BlamedEventuality (:BlamedEventuality)
+# Class: :whata_onto.owlBlamedEventuality (:whata_onto.owlBlamedEventuality)
 
 SubClassOf(:BlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
 SubClassOf(:BlamedEventuality <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
 SubClassOf(:BlamedEventuality :BlamingFrameSituation)
 
-# Class: :BlamingFrameDescription (:BlamingFrameDescription)
+# Class: :whata_onto.owlBlamingFrameDescription (:whata_onto.owlBlamingFrameDescription)
 
 SubClassOf(:BlamingFrameDescription <https://w3id.org/framester/schema/ConceptualFrame>)
 
-# Class: :BlamingFrameSituation (:BlamingFrameSituation)
+# Class: :whata_onto.owlBlamingFrameSituation (:whata_onto.owlBlamingFrameSituation)
 
 SubClassOf(:BlamingFrameSituation <https://w3id.org/framester/schema/FrameOccurrence>)
 
-# Class: :FocusShiftingLens (:FocusShiftingLens)
+# Class: :whata_onto.owlFocusShiftingLens (:whata_onto.owlFocusShiftingLens)
 
 SubClassOf(:FocusShiftingLens <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens>)
 
-# Class: :RelevanceFallacy (:RelevanceFallacy)
+# Class: :whata_onto.owlRelevanceFallacy (:whata_onto.owlRelevanceFallacy)
 
 SubClassOf(:RelevanceFallacy :FocusShiftingLens)
 
-# Class: :Whataboutism (:Whataboutism)
+# Class: :whata_onto.owlWhataboutism (:whata_onto.owlWhataboutism)
 
 SubClassOf(:Whataboutism :FocusShiftingLens)
 
@@ -131,27 +131,27 @@ SubClassOf(:Whataboutism :FocusShiftingLens)
 #   Named Individuals
 ############################
 
-# Individual: :BlamedEventuality (:BlamedEventuality)
+# Individual: :whata_onto.owlBlamedEventuality (:whata_onto.owlBlamedEventuality)
 
 ClassAssertion(:BlamedEventuality :BlamedEventuality)
 
-# Individual: :BlamedResponsibilityOwner (:BlamedResponsibilityOwner)
+# Individual: :whata_onto.owlBlamedResponsibilityOwner (:whata_onto.owlBlamedResponsibilityOwner)
 
 ClassAssertion(:ResponsibilityOwner :BlamedResponsibilityOwner)
 
-# Individual: :CoBlamedEventuality (:CoBlamedEventuality)
+# Individual: :whata_onto.owlCoBlamedEventuality (:whata_onto.owlCoBlamedEventuality)
 
 ClassAssertion(:BlamedEventuality :CoBlamedEventuality)
 
-# Individual: :CoBlamedResponsibilityOwner (:CoBlamedResponsibilityOwner)
+# Individual: :whata_onto.owlCoBlamedResponsibilityOwner (:whata_onto.owlCoBlamedResponsibilityOwner)
 
 ClassAssertion(:ResponsibilityOwner :CoBlamedResponsibilityOwner)
 
-# Individual: :Ought (:Ought)
+# Individual: :whata_onto.owlOught (:whata_onto.owlOught)
 
 ClassAssertion(:Ought :Ought)
 
-# Individual: :Whatabotism (:Whatabotism)
+# Individual: :whata_onto.owlWhatabotism (:whata_onto.owlWhatabotism)
 
 ClassAssertion(:Whataboutism :Whatabotism)
 
