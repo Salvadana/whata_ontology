@@ -1,4 +1,4 @@
-Prefix(:=<http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-30#>)
+Prefix(:=<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whata_onto.owl>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-30>
+Ontology(<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whata_onto.owl>
 Import(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl>)
 
 Declaration(Class(:Bias))

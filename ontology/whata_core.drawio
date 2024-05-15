@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-14T19:49:49.783Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="lOLGr77bHY7ikbJrAR3N" version="24.4.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-14T19:55:27.232Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="z1r4WhZFNzY0AqnPHxtM" version="24.4.0" type="device">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2427" dy="2789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -159,7 +159,7 @@
           <mxGeometry x="99.99645243734973" y="21.09953721049043" width="700" height="70" as="geometry" />
         </mxCell>
         <mxCell id="LqP2NPi9a7aLQYuPG1_W-58" value="whata:LinguisticExpression" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" parent="1" vertex="1">
-          <mxGeometry x="760" y="400" width="160.98" height="70" as="geometry" />
+          <mxGeometry x="689" y="384.5" width="160.98" height="70" as="geometry" />
         </mxCell>
         <mxCell id="LqP2NPi9a7aLQYuPG1_W-59" value="xsd:string" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0" parent="1" vertex="1">
           <mxGeometry x="700" y="540" width="126.0949682107173" height="43" as="geometry" />
@@ -216,7 +216,7 @@
           <mxGeometry x="201.97" y="-104" width="175.5" height="54" as="geometry" />
         </mxCell>
         <mxCell id="netNDr4inBoCcSag8qre-9" value="FocusShiftingLens" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
-          <mxGeometry x="960" y="400" width="120" height="54" as="geometry" />
+          <mxGeometry x="900" y="392.5" width="120" height="54" as="geometry" />
         </mxCell>
         <mxCell id="netNDr4inBoCcSag8qre-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.924;entryY=1;entryDx=0;entryDy=0;exitX=-0.025;exitY=0.374;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="netNDr4inBoCcSag8qre-9" target="LqP2NPi9a7aLQYuPG1_W-23">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -231,9 +231,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="netNDr4inBoCcSag8qre-13" value="Eventuality" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" vertex="1" parent="1">
-          <mxGeometry x="653.02" y="740" width="81.96822102864604" height="44" as="geometry" />
+          <mxGeometry x="640" y="650" width="81.96822102864604" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="netNDr4inBoCcSag8qre-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="LqP2NPi9a7aLQYuPG1_W-48">
+        <mxCell id="netNDr4inBoCcSag8qre-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="LqP2NPi9a7aLQYuPG1_W-48" target="netNDr4inBoCcSag8qre-13">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="690" y="490" as="sourcePoint" />
             <mxPoint x="740" y="770" as="targetPoint" />
