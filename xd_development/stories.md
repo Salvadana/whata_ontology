@@ -20,11 +20,11 @@ Presutti, V., Daga, E., Gangemi, A., & Blomqvist, E. (2009). eXtreme Design with
 Emma is a researcher in the cognitive science field and she wants to understand the connections of the whataboutism phenomenon with the cognitive perspectivisation. She wants to explore the phenomenon as an act of perspective shifting. Her aim is to compare the elements and means involved in a perspectivisation act with the elements present in a whataboutist discourse.
 
 #### cqs: 
-is whataboutism used in perspesctivisation?
+- is whataboutism used in perspesctivisation?
 
-which situation is involved in the whataboutist  perspectivisation act?
+- which situation is involved in the whataboutist  perspectivisation act?
 
-which element of perspectivisation is connected with the stemming of whataboutism?how does this element work? (How does whataboutism work?)
+- which element of perspectivisation is connected with the stemming of whataboutism?how does this element work? (How does whataboutism work?)
 
 ### User Story 2: 
 ### Title: Detecting Whataboutism 
@@ -36,8 +36,8 @@ Within a political debate I want to analyze a blaming situation is generated: pe
 
 ### Competency Questions:
 
-Is the blamed speaker engaging in whataboutism?
-How does the linguistic expression indicate the use of whataboutism?
+- Is the blamed speaker engaging in whataboutism?
+- How does the linguistic expression indicate the use of whataboutism?
 
 
 ### User Story 3: Blaming Claim Situation
@@ -52,8 +52,8 @@ Bonny, curious about the dynamics of this interaction, decides to investigate th
 #### Priority: High
 
 #### Competency Questions (CQs):
-How can the eventualities involved in the whataboutist discourse be described?
-What entities are involved in the blaming situation?
+- How can the eventualities involved in the whataboutist discourse be described?
+- What entities are involved in the blaming situation?
 
 ### User Story 4: Blending
 
@@ -62,13 +62,16 @@ What entities are involved in the blaming situation?
 #### Description:
 
 After analyzing the Blaming situation, Bonny realizes that it serves as the key element enabling the blending of the two scenarios: his own and Billy's. Intrigued by this mechanism, Bonny seeks to comprehend how the blending process functions. He discovers that the Blamed eventuality is an instance of the Blame situation, thus satisfying the description of a blaming frame. Similarly, the co-Blamed eventuality is blended with the first one based on the fact that it also meets the criteria required by a blaming frame situation.
+vs
+In her latest project, Dr. Lee is examining as a case study Billy and Bonny' situation.
+Dr. Lee sets up an experiment and discussion session in her graduate seminar to explore the application of Conceptual Blending Theory to whataboutism. She tasks her students with identifying the elements involved in the whataboutist argument and understanding how these elements are blended to create a new meaning or argument. Dr. Lee’s goal is to identify whether whataboutism operates according to Conceptual Blending Theory, determine the types of elements that are blended, and understand the resulting blended element. This analysis will help her and her students gain a more comprehensive understanding of the cognitive processes underlying whataboutism.
 
 #### Priority: High
 
 #### Competency Questions (CQs):
-How does the blending mechanism work in the context of blaming situations?
-What are the components and dynamics of the blending process in whataboutism?
-which description do the blended eventualities satisfy?
+- How does the blending mechanism work in the context of blaming situations?
+- What are the components and dynamics of the blending process in whataboutism?
+- which description do the blended eventualities satisfy?
 
 ## Story 5
 ### Title : Tu quoque fallacy / Relevance fallacies
@@ -90,20 +93,10 @@ As a rhetoric teacher, I want to explore and teach the concept of whataboutism i
 ### Description:
 Dr. Amelia Johnson, a professor specializing in rhetoric and argumentation, has noticed an increasing use of whataboutism in public discourse, particularly in political debates. She understands that whataboutism, a rhetorical tactic used to deflect criticism, is not only a logical fallacy but also deeply intertwined with cognitive biases. Dr. Johnson is particularly interested in confirmation bias, which is the tendency to search for, interpret, and remember information in a way that confirms one's preexisting beliefs.
 
--Is Whataboutism linked to some cognitive biases?
+- Is Whataboutism linked to some cognitive biases?
 - What do Whataboutism and these biases have in common?
 
 
 -------------------------
-## Story 5
-### Title : 
-### Depends on : 
 
-### Description :
 
-In her latest project, Dr. Lee is examining a case study involving two siblings, Billy and Bonny. Billy deflects his father’s criticism for not tidying his room by pointing out that Bonny also did not tidy his room but was not punished. Dr. Lee recognizes this as a classic example of whataboutism and wants to delve deeper into the cognitive mechanisms at play.
-
-Dr. Lee sets up an experiment and discussion session in her graduate seminar to explore the application of Conceptual Blending Theory to whataboutism. She tasks her students with identifying the elements involved in the whataboutist argument and understanding how these elements are blended to create a new meaning or argument.
-
-Objective
-Dr. Lee’s goal is to identify whether whataboutism operates according to Conceptual Blending Theory, determine the types of elements that are blended, and understand the resulting blended element. This analysis will help her and her students gain a more comprehensive understanding of the cognitive processes underlying whataboutism.
