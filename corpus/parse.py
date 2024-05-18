@@ -27,7 +27,7 @@ for annotation in root.findall('.//{http://www.tei-c.org/ns/1.0}Annotation'):
     g.add((concept_uri, RDFS.label, Literal(concept)))
 
 # Save graph to a file in Turtle format (optional)
-g.serialize(destination='annotations.ttl', format='turtle')
+g.serialize(destination='C:\\Users\\lored\\OneDrive\\Desktop\\whata_ontology\\corpus\\annotations.ttl', format='turtle')
 
 # Query the graph using SPARQL
 query = """
