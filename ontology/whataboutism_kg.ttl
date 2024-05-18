@@ -159,7 +159,9 @@
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BiasLens
 :BiasLens rdf:type owl:NamedIndividual ,
-                   :ConfirmationBiasLens ;
+                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ,
+                   :ConfirmationBiasLens ,
+                   :FocusShiftingLens ;
           :relatedToLens :WhataboutistLens .
 
 
@@ -181,18 +183,22 @@
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FallacyLens
 :FallacyLens rdf:type owl:NamedIndividual ,
+                      <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ,
+                      :FocusShiftingLens ,
                       :RelevanceFallacyLens ;
              :relatedToLens :WhataboutistLens .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1
 :RoomEventuality1 rdf:type owl:NamedIndividual ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> ,
                            :BlamableEventuality ;
                   <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> :BlamingFrameDescription .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2
 :RoomEventuality2 rdf:type owl:NamedIndividual ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> ,
                            :BlamableEventuality ;
                   <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> :BlamingFrameDescription .
 
@@ -218,6 +224,7 @@
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomWhataboutistPerspectivisation
 :RoomWhataboutistPerspectivisation rdf:type owl:NamedIndividual ,
+                                            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                                             :WhataboutistPerspectivisation ;
                                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> :WhataboutistAttitude ;
                                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :RoomEventualityBackground ;
@@ -249,6 +256,8 @@
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens
 :WhataboutistLens rdf:type owl:NamedIndividual ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ,
+                           :FocusShiftingLens ,
                            :WhataboutistLens ;
                   :createsBlended :BlendedBlameFrame ;
                   :shiftsFocusFrom :RoomEventuality1 ;
