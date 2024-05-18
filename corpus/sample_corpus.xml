@@ -1,0 +1,33 @@
+<corpus>
+  <document id="1">
+    <text>
+      <![CDATA[
+      Dad: Billy, when did you last tidy your room? It’s an absolute tip. I’d like you to tidy it before you go to football practice please. 
+      Billy: That’s not fair! What about Bobby? His room is just as bad as mine and you’ve let him go out to his friend’s. You’re so unreasonable, it’s always one rule for him and another for me. I’m not doing it.
+      ]]>
+    </text>
+    <annotations>
+      <Annotation>
+        <Entity>Billy</Entity>
+        <Class>ResponsibilityOwner</Class>
+      </Annotation>
+      <Annotation>
+        <Entity>Bobby</Entity>
+        <Class>ResponsibilityOwner</Class>
+      </Annotation>
+      <Annotation>
+        <Entity>room</Entity>
+        <Class>BlamableEventuality</Class>
+      </Annotation>
+      <Annotation>
+        <Entity>football practice</Entity>
+        <Class>Event</Class>
+      </Annotation>
+      <Annotation>
+        <Entity>tidy your room</Entity>
+        <Class>Ought</Class>
+      </Annotation>
+      <!-- Additional annotations for other entities and classes -->
+    </annotations>
+  </document>
+</corpus>
