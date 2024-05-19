@@ -1,3 +1,4 @@
+
 import xml.etree.ElementTree as ET
 from rdflib import Graph, URIRef, Literal, Namespace, RDF
 from rdflib.namespace import RDFS
@@ -45,3 +46,4 @@ WHERE {
 # Execute the query and print results
 for row in g.query(query):
     print(f"Entity: {row.entity}, Concept: {row.conceptLabel}")
+
