@@ -11,8 +11,8 @@ root = tree.getroot()
 g = Graph()
 
 # Define namespaces
-NS = Namespace("http://example.org/annotations#")
-g.bind("ex", NS)  # Bind the namespace with prefix 'ex' for easy reference
+NS = Namespace("https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#")
+g.bind("whata", NS)  # Bind the namespace with prefix 'ex' for easy reference
 
 # Extract annotations and add to graph
 for annotation in root.findall('.//{http://www.tei-c.org/ns/1.0}Annotation'):

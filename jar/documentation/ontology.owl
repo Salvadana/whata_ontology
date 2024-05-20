@@ -1,16 +1,39 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#"
-     xml:base="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#"
+     xml:base="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:schema="https://w3id.org/framester/schema/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25">
+     xmlns:schema="https://w3id.org/framester/schema/"
+     xmlns:description="http://www.ontologydesignpatterns.org/cp/owl/description.owl#"
+     xmlns:perspectivisation="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#"
+     xmlns:whataboutism_ontology="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl">
+        <owl:imports rdf:resource="http://example.org/myontology"/>
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
     
 
 
@@ -26,92 +49,117 @@
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#actsAgainst -->
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#actsAgainst">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ResponsibilityOwner"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue"/>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#actsAgainst -->
+
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#actsAgainst">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#blames -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#createsBlended -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#blames">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#createsBlended">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#hasLinguisticIdentifyingPattern -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#hasParticipant -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#hasLinguisticIdentifyingPattern">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isLinguisticIdentifyingPatternOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#LinguisticIdentifyingPattern"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#hasParticipant">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isBasedOn -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isBasedOn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isContrastedIn -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedToLens -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isContrastedIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedToLens">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isLinguisticIdentifyingPatternOf -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusFrom -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isLinguisticIdentifyingPatternOf"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isObservedWith -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isObservedWith">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusFrom">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#relatedTo -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusOn -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#relatedTo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ConfirmationBias"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusOn">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#shiftsFocusOn -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#shiftsFocusOn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"/>
-    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedIdentifyingPattern -->
+
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedIdentifyingPattern">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedSentence -->
+
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedSentence">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -127,135 +175,353 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable -->
+    <!-- http://dbpedia.org/resource/Confirmation_bias -->
 
 
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"/>
+    <owl:Class rdf:about="http://dbpedia.org/resource/Confirmation_bias"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Whataboutism -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/resource/Whataboutism"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Category:Relevance_fallacies -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/resource/Category:Relevance_fallacies"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude -->
+
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality -->
+    <!-- http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality">
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens -->
+
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality -->
+
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
-        <rdfs:comment>The BlamableEventiality is a subclass of Eventuality which is equivalent to the class Blendable. Thus, it is also a subclass of the BlendingTheorySituation. This makes the BlamableEventuality blendable with others blamable eventualities by means of a blending element.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation"/>
-        <rdfs:comment>A BlamingClaim is a textual instance of blaming that accuses some ResponsibilityOwner to act against some MoralValue.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation -->
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
-        <rdfs:comment>A BlaimingClaimSituation is constituted by a blaming act, the BlaimimgClaim, a textual claim that accuses some ResponsibilityOwner for  acting against a MoralValue. The BlamingClaim blames some BlamableEventuality. The BlamingClaimSituation is a subclass of the Blending class. This means that it acts as a blending element according to the Blending Theory.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ConfirmationBias -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ConfirmationBias">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/schema/ConceptualFrame"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ConfirmationBiasLens -->
+
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ConfirmationBiasLens">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Confirmation_bias"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens -->
+
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
-        <rdfs:comment>A FocusShiftingLens modifies the perspectivisation of an eventuality by shifting the focus of the watcher on another element. It is used to observe a blamable eventuality by shifting the focus on another blamable eventuality.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#LinguisticIdentifyingPattern -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#LinguisticIdentifyingPattern">
-        <rdfs:comment>A Linguistic pattern that identifies Whataboutism as a Lens of Perspectivisation.</rdfs:comment>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RelevanceFallacyLens -->
+
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RelevanceFallacyLens">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category:Relevance_fallacies"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim"/>
-        <rdfs:comment>A MoralValue is contrasted by the action of a ResponsibilityOwner within a verbal accusation consisting in a BlaimingClaim.</rdfs:comment>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RedHerringFallacy -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RedHerringFallacy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Whataboutism"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ResponsibilityOwner -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ResponsibilityOwner">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim"/>
-        <rdfs:comment>A ResponsibilityOwner is accused of acting against a moral value within a blaiming claim.</rdfs:comment>
-    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#StrawManFallacy -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BiasLens -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#StrawManFallacy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"/>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BiasLens">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ConfirmationBiasLens"/>
+        <relatedToLens rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Confirmation_bias"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#TuQuoqueFallacy -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#TuQuoqueFallacy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"/>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation">
+        <description:satisfies rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism -->
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"/>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"/>
+        <description:satisfies rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FallacyLens -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FallacyLens">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RelevanceFallacyLens"/>
+        <relatedToLens rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category:Relevance_fallacies"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"/>
+        <description:satisfies rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"/>
+        <description:satisfies rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventualityBackground -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventualityBackground">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"/>
+        <actsAgainst rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught"/>
+        <isParticipantIn rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"/>
+        <rdfs:subClassOf>Agent</rdfs:subClassOf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"/>
+        <actsAgainst rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught"/>
+        <isParticipantIn rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2"/>
+        <rdfs:subClassOf>Agent</rdfs:subClassOf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomWhataboutistPerspectivisation -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomWhataboutistPerspectivisation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation"/>
+        <perspectivisation:Attitude rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistAttitude"/>
+        <perspectivisation:Background rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventualityBackground"/>
+        <perspectivisation:Conceptualiser rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner1"/>
+        <perspectivisation:Cut rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistCut"/>
+        <perspectivisation:Eventuality rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"/>
+        <perspectivisation:Lens rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"/>
+        <createsBlended rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"/>
+        <relatedIdentifyingPattern>what about</relatedIdentifyingPattern>
+        <relatedSentence>That’s not fair! What about Bobby? His room is just as bad as mine and you’ve let him go out to his friend’s. You’re so unreasonable, it’s always one rule for him and another for me. I’m not doing it.</relatedSentence>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought"/>
+        <isParticipantIn rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"/>
+        <isParticipantIn rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistAttitude -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistAttitude">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistCut -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistCut">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens -->
+
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"/>
+        <createsBlended rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"/>
+        <shiftsFocusFrom rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"/>
+        <shiftsFocusOn rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

@@ -2,136 +2,105 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.ontologydesignpatterns.org/cp/owl/description.owl", "https://w3id.org/framester/schema", "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25", "http://www.w3.org/2001/XMLSchema", "http://www.ontologydesignpatterns.org/cp/owl/situation.owl", "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl" ],
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25"
+    "baseIris" : [ "http://www.ontologydesignpatterns.org/cp/owl/description.owl", "https://w3id.org/framester/schema", "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl", "http://www.w3.org/2000/01/rdf-schema", "http://dbpedia.org/resource", "http://www.w3.org/2001/XMLSchema", "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl", "http://www.ontologydesignpatterns.org/cp/owl/situation.owl", "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl" ],
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl"
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "16",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
     "type" : "owl:Thing"
   }, {
-    "id" : "40",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "65",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
-    "type" : "owl:unionOf"
-  }, {
     "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "74",
     "type" : "owl:Class"
   }, {
     "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "54",
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
     "type" : "owl:Class"
   }, {
     "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MoralValue"
-    },
-    "comment" : {
-      "undefined" : "A MoralValue is contrasted by the action of a ResponsibilityOwner within a verbal accusation consisting in a BlaimingClaim."
-    },
-    "id" : "0",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "instances" : 0,
-    "annotations" : {
-      "date" : [ {
-        "identifier" : "date",
-        "language" : "undefined",
-        "value" : "2024-05-08T09:45:06Z",
-        "type" : "label"
-      } ],
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Aldo Gangemi",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "BlendingTheorySituation"
-    },
-    "subClasses" : [ "7" ],
-    "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "6" ]
-  }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
     "instances" : 0,
@@ -157,9 +126,10 @@
     "label" : {
       "IRI-based" : "Blended"
     },
+    "subClasses" : [ "5" ],
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "12" ]
+    "id" : "3",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -168,12 +138,12 @@
       "date" : [ {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2024-05-08T09:33:13Z",
+        "value" : "2024-05-08T09:35:13Z",
         "type" : "label"
       }, {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2024-05-08T09:35:13Z",
+        "value" : "2024-05-08T09:33:13Z",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -186,28 +156,42 @@
     "label" : {
       "IRI-based" : "Blendable"
     },
-    "subClasses" : [ "11" ],
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "12",
-    "superClasses" : [ "7" ]
+    "subClasses" : [ "3", "7" ],
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "6" ]
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Whataboutism"
+      "IRI-based" : "Ought"
     },
-    "id" : "16",
-    "superClasses" : [ "3" ]
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "labels" : {
+        "IRI-based" : "TidyingRoomOught"
+      }
+    } ],
+    "id" : "11"
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RedHerringFallacy",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "RedHerringFallacy"
-    },
+    "union" : [ "25", "5", "7" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
     "id" : "17",
-    "superClasses" : [ "18" ]
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "11", "31" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "30"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -234,37 +218,330 @@
     "label" : {
       "IRI-based" : "Blending"
     },
-    "subClasses" : [ "12", "35" ],
+    "subClasses" : [ "25", "4" ],
     "attributes" : [ "external" ],
-    "id" : "7",
-    "superClasses" : [ "5" ]
+    "id" : "6",
+    "superClasses" : [ "29" ]
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality",
-    "equivalent" : [ "12" ],
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FocusShiftingLens"
+    },
+    "subClasses" : [ "9", "1", "32" ],
+    "id" : "2",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "BlamingFrameDescription"
+    },
+    "id" : "37",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Situation"
+    },
+    "subClasses" : [ "39" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RelevanceFallacyLens",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RelevanceFallacyLens"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FallacyLens",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "annotations" : {
+        "subClassOf" : [ {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Category:Relevance_fallacies",
+          "type" : "iri"
+        }, {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FallacyLens"
+      }
+    } ],
+    "id" : "1",
+    "superClasses" : [ "2", "40" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ConfirmationBiasLens",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConfirmationBiasLens"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BiasLens",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "annotations" : {
+        "subClassOf" : [ {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens",
+          "type" : "iri"
+        }, {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Confirmation_bias",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BiasLens"
+      }
+    } ],
+    "id" : "9",
+    "superClasses" : [ "2", "54" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "WhataboutistLens"
+    },
+    "id" : "32",
+    "superClasses" : [ "55", "2" ]
+  }, {
+    "iri" : "http://dbpedia.org/resource/Category:Relevance_fallacies",
+    "baseIri" : "http://dbpedia.org/resource",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category:Relevance_fallacies"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResponsibilityOwner"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner1",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "annotations" : {
+        "subClassOf" : [ {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "Agent",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RoomResponsibilityOwner1"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner2",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "annotations" : {
+        "subClassOf" : [ {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "Agent",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RoomResponsibilityOwner2"
+      }
+    } ],
+    "id" : "31",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ],
+      "semanticRole" : [ {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
+        "type" : "iri"
+      }, {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
+        "type" : "iri"
+      }, {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
+        "type" : "iri"
+      }, {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background",
+        "type" : "iri"
+      }, {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
+        "type" : "iri"
+      }, {
+        "identifier" : "semanticRole",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Perspectivisation"
+    },
+    "subClasses" : [ "59" ],
+    "comment" : {
+      "undefined" : "A compositional frame for situations that provide a redescription of an eventuality by using a lens, with an attitude. It usually requires background knowledge for the eventuality (and possibly the lens), as well as one or more agents conceptualising it. \nA 'cut' (in the cinematic sense) emerges from a perspectivisation, which composes an eventuality with a lens, as in the example 'taxes are investments', where current taxation policies (the eventuality) is cut by shooting through the investment lens.\nThe OWL representation of this frame includes heavy punning: each aspect of a perspectivisation is in fact modeled as a semantic role (holding between perspectivisation situations and the things involved in them, as an individual (the frame projections), as well as classes (the intensional components of the frame), since almost all aspects are frames on their turn."
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
     "instances" : 0,
     "label" : {
       "IRI-based" : "BlamableEventuality"
     },
-    "comment" : {
-      "undefined" : "The BlamableEventiality is a subclass of Eventuality which is equivalent to the class Blendable. Thus, it is also a subclass of the BlendingTheorySituation. This makes the BlamableEventuality blendable with others blamable eventualities by means of a blending element."
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "4",
-    "superClasses" : [ "42" ]
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "annotations" : {
+        "subClassOf" : [ {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable",
+          "type" : "iri"
+        }, {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RoomEventuality1"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "annotations" : {
+        "subClassOf" : [ {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
+          "type" : "iri"
+        }, {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RoomEventuality2"
+      }
+    } ],
+    "subClasses" : [ "5" ],
+    "id" : "7",
+    "superClasses" : [ "4", "23" ]
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 0,
+    "annotations" : {
+      "subClassOf" : [ {
+        "identifier" : "subClassOf",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BlameSituation"
+    },
+    "id" : "25",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024-05-08T09:45:06Z",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BlendingTheorySituation"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 1,
+    "annotations" : {
+      "subClassOf" : [ {
+        "identifier" : "subClassOf",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended",
+        "type" : "iri"
+      }, {
+        "identifier" : "subClassOf",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BlendedBlameFrame"
+    },
+    "id" : "5",
+    "superClasses" : [ "3", "7" ]
+  }, {
+    "iri" : "http://dbpedia.org/resource/Confirmation_bias",
+    "baseIri" : "http://dbpedia.org/resource",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "BlamingClaimSituation"
+      "IRI-based" : "Confirmation_bias"
     },
-    "subClasses" : [ "1" ],
-    "comment" : {
-      "undefined" : "A BlaimingClaimSituation is constituted by a blaming act, the BlaimimgClaim, a textual claim that accuses some ResponsibilityOwner for  acting against a MoralValue. The BlamingClaim blames some BlamableEventuality. The BlamingClaimSituation is a subclass of the Blending class. This means that it acts as a blending element according to the Blending Theory."
-    },
-    "id" : "35",
-    "superClasses" : [ "7" ]
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "54"
   }, {
     "iri" : "https://w3id.org/framester/schema/ConceptualFrame",
     "baseIri" : "https://w3id.org/framester/schema",
@@ -279,42 +556,20 @@
         "IRI-based" : "Conceptualiser"
       }
     } ],
+    "subClasses" : [ "37" ],
     "attributes" : [ "external" ],
-    "id" : "39",
-    "superClasses" : [ "40" ]
+    "id" : "38",
+    "superClasses" : [ "35" ]
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
-    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+    "iri" : "http://dbpedia.org/resource/Whataboutism",
+    "baseIri" : "http://dbpedia.org/resource",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Situation"
+      "IRI-based" : "Whataboutism"
     },
-    "subClasses" : [ "6" ],
+    "subClasses" : [ "32" ],
     "attributes" : [ "external" ],
-    "id" : "15"
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#LinguisticIdentifyingPattern",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LinguisticIdentifyingPattern"
-    },
-    "comment" : {
-      "undefined" : "A Linguistic pattern that identifies Whataboutism as a Lens of Perspectivisation."
-    },
-    "id" : "49"
-  }, {
-    "instances" : 0,
-    "union" : [ "18", "59" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "44"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "27",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "55"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description",
     "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
@@ -322,9 +577,33 @@
     "label" : {
       "IRI-based" : "Description"
     },
-    "subClasses" : [ "39" ],
+    "subClasses" : [ "38" ],
     "attributes" : [ "external" ],
-    "id" : "40"
+    "id" : "35"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhataboutistPerspectivisation"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomWhataboutistPerspectivisation",
+      "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+      "annotations" : {
+        "subClassOf" : [ {
+          "identifier" : "subClassOf",
+          "language" : "undefined",
+          "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RoomWhataboutistPerspectivisation"
+      }
+    } ],
+    "id" : "59",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "https://w3id.org/framester/schema/FrameOccurrence",
     "baseIri" : "https://w3id.org/framester/schema",
@@ -332,68 +611,29 @@
     "label" : {
       "IRI-based" : "FrameOccurrence"
     },
-    "subClasses" : [ "5", "10" ],
+    "subClasses" : [ "29", "62" ],
     "attributes" : [ "external" ],
-    "id" : "6",
+    "id" : "39",
     "superClasses" : [ "15" ]
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#TuQuoqueFallacy",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "TuQuoqueFallacy"
-    },
-    "id" : "65",
-    "superClasses" : [ "18" ]
+    "union" : [ "21", "42" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "88"
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ConfirmationBias",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
     "label" : {
-      "IRI-based" : "ConfirmationBias"
-    },
-    "id" : "59",
-    "superClasses" : [ "3" ]
+      "IRI-based" : "string"
+    }
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
     "label" : {
-      "IRI-based" : "BlamingClaim"
-    },
-    "subClasses" : [ "0", "32" ],
-    "comment" : {
-      "undefined" : "A BlamingClaim is a textual instance of blaming that accuses some ResponsibilityOwner to act against some MoralValue."
-    },
-    "id" : "1",
-    "superClasses" : [ "35" ]
-  }, {
-    "instances" : 0,
-    "union" : [ "29", "54" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "66"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "instances" : 0,
-    "annotations" : {
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Aldo Gangemi",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Lens"
-    },
-    "subClasses" : [ "3" ],
-    "comment" : {
-      "undefined" : "The lens used by perspectivisation on an eventuality, e.g., 'investments' on current taxation policies."
-    },
-    "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "10" ]
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -415,128 +655,10 @@
     "label" : {
       "IRI-based" : "PerspectivisationTheorySituation"
     },
-    "subClasses" : [ "21", "9", "29", "54", "30", "42" ],
+    "subClasses" : [ "18", "19", "21", "42", "22", "23" ],
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "6" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#StrawManFallacy",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "StrawManFallacy"
-    },
-    "id" : "74",
-    "superClasses" : [ "18" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ResponsibilityOwner",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ResponsibilityOwner"
-    },
-    "comment" : {
-      "undefined" : "A ResponsibilityOwner is accused of acting against a moral value within a blaiming claim."
-    },
-    "id" : "32",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "instances" : 0,
-    "annotations" : {
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Aldo Gangemi",
-        "type" : "label"
-      } ],
-      "semanticRole" : [ {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
-        "type" : "iri"
-      }, {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
-        "type" : "iri"
-      }, {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
-        "type" : "iri"
-      }, {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background",
-        "type" : "iri"
-      }, {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
-        "type" : "iri"
-      }, {
-        "identifier" : "semanticRole",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Perspectivisation"
-    },
-    "comment" : {
-      "undefined" : "A compositional frame for situations that provide a redescription of an eventuality by using a lens, with an attitude. It usually requires background knowledge for the eventuality (and possibly the lens), as well as one or more agents conceptualising it. \nA 'cut' (in the cinematic sense) emerges from a perspectivisation, which composes an eventuality with a lens, as in the example 'taxes are investments', where current taxation policies (the eventuality) is cut by shooting through the investment lens.\nThe OWL representation of this frame includes heavy punning: each aspect of a perspectivisation is in fact modeled as a semantic role (holding between perspectivisation situations and the things involved in them, as an individual (the frame projections), as well as classes (the intensional components of the frame), since almost all aspects are frames on their turn."
-    },
-    "attributes" : [ "external" ],
-    "id" : "54",
-    "superClasses" : [ "10" ]
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "instances" : 0,
-    "annotations" : {
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Aldo Gangemi",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Eventuality"
-    },
-    "subClasses" : [ "4" ],
-    "comment" : {
-      "undefined" : "The eventuality targeted by perspectivisation, explicitly or implicitly extracted from its background knowledge (e.g., current taxation policies in 'taxes are investiments')."
-    },
-    "attributes" : [ "external" ],
-    "id" : "42",
-    "superClasses" : [ "10" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RelevanceFallacy"
-    },
-    "subClasses" : [ "65", "17", "74" ],
-    "id" : "18",
-    "superClasses" : [ "3" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FocusShiftingLens"
-    },
-    "subClasses" : [ "18", "59", "16" ],
-    "comment" : {
-      "undefined" : "A FocusShiftingLens modifies the perspectivisation of an eventuality by shifting the focus of the watcher on another element. It is used to observe a blamable eventuality by shifting the focus on another blamable eventuality."
-    },
-    "id" : "3",
-    "superClasses" : [ "9" ]
+    "id" : "62",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent",
     "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl",
@@ -544,144 +666,136 @@
     "label" : {
       "IRI-based" : "Agent"
     },
+    "subClasses" : [ "31" ],
     "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "43"
   } ],
   "property" : [ {
-    "id" : "2",
-    "type" : "owl:objectProperty"
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "8",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "19",
+    "id" : "16",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "23",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "24",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "26",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "31",
+    "id" : "28",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "33",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "34",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "36",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "37",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "38",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "41",
-    "type" : "rdfs:SubClassOf"
+    "type" : "rdf:Property"
   }, {
-    "id" : "43",
+    "id" : "20",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "rdf:Property"
   }, {
     "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "46",
-    "type" : "owl:objectProperty"
+    "type" : "rdf:Property"
   }, {
     "id" : "47",
-    "type" : "owl:objectProperty"
+    "type" : "rdf:Property"
   }, {
     "id" : "48",
-    "type" : "owl:objectProperty"
+    "type" : "rdf:Property"
+  }, {
+    "id" : "49",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "50",
+    "type" : "rdf:Property"
   }, {
     "id" : "51",
-    "type" : "owl:objectProperty"
+    "type" : "rdf:Property"
   }, {
     "id" : "52",
-    "type" : "owl:objectProperty"
+    "type" : "rdf:Property"
   }, {
     "id" : "53",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "28",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "56",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "57",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "58",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "60",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "61",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "62",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "63",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "29",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "64",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "67",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "68",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "69",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "70",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "71",
     "type" : "rdf:Property"
   }, {
     "id" : "21",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "50",
+    "id" : "56",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "72",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "73",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "75",
     "type" : "rdfs:SubClassOf"
@@ -690,13 +804,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "77",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "79",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "80",
     "type" : "rdfs:SubClassOf"
@@ -704,93 +818,88 @@
     "id" : "81",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "82",
     "type" : "owl:objectProperty"
   }, {
     "id" : "83",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "84",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "85",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "86",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "87",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "88",
-    "type" : "rdfs:SubClassOf"
+    "id" : "90",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "91",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "93",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#shiftsFocusOn",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "shiftsFocusOn"
-    },
-    "domain" : "3",
-    "attributes" : [ "object" ],
-    "id" : "2"
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
   }, {
-    "range" : "10",
+    "range" : "2",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "creates"
-    },
-    "domain" : "14",
-    "attributes" : [ "external", "object" ],
-    "id" : "13"
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "15",
-    "annotations" : {
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Aldo Gangemi",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "shotThrough"
-    },
-    "domain" : "15",
-    "attributes" : [ "external", "object" ],
-    "id" : "19"
-  }, {
-    "range" : "10",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "20"
-  }, {
-    "range" : "9",
+    "range" : "4",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
   }, {
-    "range" : "6",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "23"
-  }, {
-    "range" : "6",
+    "range" : "3",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -800,76 +909,33 @@
     },
     "domain" : "15",
     "attributes" : [ "external", "object" ],
-    "id" : "25"
+    "id" : "14"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor",
     "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
-    "range" : "27",
+    "range" : "17",
     "label" : {
       "IRI-based" : "isSettingFor"
     },
-    "domain" : "27",
-    "subproperty" : [ "21", "28", "29", "30" ],
+    "domain" : "17",
+    "subproperty" : [ "18", "19", "20", "21", "22", "23" ],
     "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "6",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "26"
   }, {
-    "range" : "1",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
-  }, {
-    "range" : "35",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "34"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "15",
-    "annotations" : {
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Aldo Gangemi",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "holds"
-    },
-    "domain" : "14",
-    "attributes" : [ "external", "object" ],
-    "id" : "36"
-  }, {
-    "range" : "7",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
-  }, {
-    "range" : "40",
-    "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "38"
-  }, {
-    "range" : "15",
+    "range" : "29",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#relatedTo",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "relatedTo"
-    },
-    "domain" : "44",
-    "attributes" : [ "object" ],
-    "id" : "43"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -887,17 +953,17 @@
     },
     "domain" : "15",
     "attributes" : [ "external", "object" ],
-    "id" : "45"
+    "id" : "33"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies",
     "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl",
-    "range" : "27",
+    "range" : "35",
     "label" : {
       "IRI-based" : "satisfies"
     },
-    "domain" : "27",
+    "domain" : "15",
     "attributes" : [ "external", "object" ],
-    "id" : "46"
+    "id" : "34"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -907,114 +973,108 @@
     },
     "domain" : "15",
     "attributes" : [ "external", "object" ],
-    "id" : "47"
+    "id" : "36"
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#hasLinguisticIdentifyingPattern",
-    "inverse" : "50",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "49",
+    "domain" : "38",
+    "range" : "6",
+    "id" : "41",
     "label" : {
-      "IRI-based" : "hasLinguisticIdentifyingPattern"
-    },
-    "domain" : "16",
-    "attributes" : [ "object" ],
-    "id" : "48"
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#blames",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "blames"
-    },
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "51"
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isBasedOn",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "35",
-    "label" : {
-      "IRI-based" : "isBasedOn"
-    },
-    "domain" : "16",
-    "attributes" : [ "object" ],
-    "id" : "52"
-  }, {
-    "range" : "12",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
+      "IRI-based" : "18",
+      "undefined" : "is a"
+    }
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "14",
+    "range" : "43",
     "label" : {
       "IRI-based" : "Conceptualiser"
     },
-    "superproperty" : [ "26" ],
-    "domain" : "54",
+    "superproperty" : [ "16" ],
+    "domain" : "42",
     "attributes" : [ "external", "object" ],
-    "id" : "28"
+    "id" : "20"
   }, {
-    "range" : "5",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "55"
+    "domain" : "38",
+    "range" : "18",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "17",
+      "undefined" : "is a"
+    }
   }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusOn",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
     "range" : "7",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
+    "label" : {
+      "IRI-based" : "shiftsFocusOn"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "45"
   }, {
-    "domain" : "39",
-    "range" : "12",
-    "id" : "57",
+    "domain" : "38",
+    "range" : "42",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "19",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "38",
+    "range" : "3",
+    "id" : "47",
     "label" : {
       "IRI-based" : "14",
       "undefined" : "is a"
     }
   }, {
-    "domain" : "39",
-    "range" : "7",
-    "id" : "58",
+    "domain" : "38",
+    "range" : "23",
+    "id" : "48",
     "label" : {
       "IRI-based" : "13",
       "undefined" : "is a"
     }
   }, {
-    "domain" : "39",
-    "range" : "30",
-    "id" : "60",
+    "domain" : "38",
+    "range" : "19",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "16",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "38",
+    "range" : "22",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "15",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "32",
+    "range" : "32",
+    "id" : "51",
     "label" : {
       "IRI-based" : "10",
       "undefined" : "is a"
     }
   }, {
-    "domain" : "39",
-    "range" : "21",
-    "id" : "61",
+    "domain" : "38",
+    "range" : "4",
+    "id" : "52",
     "label" : {
       "IRI-based" : "12",
       "undefined" : "is a"
     }
   }, {
-    "domain" : "39",
-    "range" : "54",
-    "id" : "62",
+    "domain" : "38",
+    "range" : "21",
+    "id" : "53",
     "label" : {
       "IRI-based" : "11",
       "undefined" : "is a"
     }
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isObservedWith",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "isObservedWith"
-    },
-    "domain" : "4",
-    "attributes" : [ "object" ],
-    "id" : "63"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -1030,15 +1090,80 @@
     "label" : {
       "IRI-based" : "Background"
     },
-    "superproperty" : [ "26" ],
-    "domain" : "54",
+    "superproperty" : [ "16" ],
+    "domain" : "42",
     "comment" : {
       "undefined" : "The background knowledge for an eventuality targeted by perspectivisation, e.g., fiscal knowledge behind current taxation policies in 'taxes are investiments'. In the example, only the background is expressed."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "29"
+    "id" : "21"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusFrom",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "shiftsFocusFrom"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "range" : "7",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "42",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "43",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "62",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "62",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "62",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "62",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isParticipantIn"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "range" : "62",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "62",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
     "range" : "15",
     "annotations" : {
@@ -1050,53 +1175,190 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "Attitude"
+      "IRI-based" : "perspectivisedThrough"
     },
-    "superproperty" : [ "26" ],
-    "domain" : "54",
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedSentence",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "relatedSentence"
+    },
+    "domain" : "59",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "range" : "40",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#hasParticipant",
+    "inverse" : "66",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasParticipant"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "range" : "35",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "55",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "39",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "39",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "54",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "15",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "creates"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "15",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "shotThrough"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "15",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holds"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "15",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Cut"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "42",
     "comment" : {
-      "undefined" : "The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as 'investment' in 'taxes are investiments'."
+      "undefined" : "The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in 'taxes are investiments'."
     },
     "attributes" : [ "external", "someValues", "object" ],
-    "id" : "64"
+    "id" : "85"
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#actsAgainst",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "0",
-    "label" : {
-      "IRI-based" : "actsAgainst"
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "15",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ]
     },
-    "domain" : "32",
-    "attributes" : [ "object" ],
-    "id" : "67"
-  }, {
-    "domain" : "39",
-    "range" : "42",
-    "id" : "68",
     "label" : {
-      "IRI-based" : "6",
-      "undefined" : "is a"
-    }
+      "IRI-based" : "Lens"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "The lens used by perspectivisation on an eventuality, e.g., 'investments' on current taxation policies."
+    },
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "86"
   }, {
-    "domain" : "39",
-    "range" : "9",
-    "id" : "69",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "43",
     "label" : {
-      "IRI-based" : "7",
-      "undefined" : "is a"
-    }
+      "IRI-based" : "Conceptualiser"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "42",
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "87"
   }, {
-    "domain" : "39",
-    "range" : "29",
-    "id" : "70",
+    "domain" : "37",
+    "range" : "37",
+    "id" : "90",
     "label" : {
       "IRI-based" : "8",
       "undefined" : "is a"
     }
   }, {
-    "domain" : "39",
-    "range" : "11",
-    "id" : "71",
+    "domain" : "5",
+    "range" : "5",
+    "id" : "91",
     "label" : {
       "IRI-based" : "9",
       "undefined" : "is a"
@@ -1116,36 +1378,15 @@
     "label" : {
       "IRI-based" : "Attitude"
     },
-    "superproperty" : [ "26" ],
-    "domain" : "54",
+    "superproperty" : [ "16" ],
+    "domain" : "42",
     "comment" : {
       "undefined" : "The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as 'investment' in 'taxes are investiments'."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "21"
+    "id" : "18"
   }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isLinguisticIdentifyingPatternOf",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "isLinguisticIdentifyingPatternOf"
-    },
-    "domain" : "27",
-    "attributes" : [ "object" ],
-    "id" : "50"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "Conceptualiser"
-    },
-    "superproperty" : [ "26" ],
-    "domain" : "54",
-    "attributes" : [ "external", "someValues", "object" ],
-    "id" : "72"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
     "range" : "15",
     "annotations" : {
@@ -1157,27 +1398,17 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "Cut"
+      "IRI-based" : "Lens"
     },
-    "superproperty" : [ "26" ],
-    "domain" : "54",
+    "superproperty" : [ "16" ],
+    "domain" : "42",
     "comment" : {
-      "undefined" : "The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in 'taxes are investiments'."
+      "undefined" : "The lens used by perspectivisation on an eventuality, e.g., 'investments' on current taxation policies."
     },
-    "attributes" : [ "external", "someValues", "object" ],
-    "id" : "73"
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
   }, {
-    "range" : "3",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "75"
-  }, {
-    "range" : "3",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "76"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
     "range" : "15",
     "annotations" : {
@@ -1189,36 +1420,109 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "perspectivisedThrough"
+      "IRI-based" : "Attitude"
     },
-    "domain" : "15",
-    "attributes" : [ "external", "object" ],
-    "id" : "77"
+    "superproperty" : [ "16" ],
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as 'investment' in 'taxes are investiments'."
+    },
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "92"
   }, {
-    "range" : "3",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "15",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Eventuality"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "The eventuality targeted by perspectivisation, explicitly or implicitly extracted from its background knowledge (e.g., current taxation policies in 'taxes are investiments')."
+    },
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedToLens",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "relatedToLens"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#actsAgainst",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "actsAgainst"
+    },
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
+    "range" : "15",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aldo Gangemi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Eventuality"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "The eventuality targeted by perspectivisation, explicitly or implicitly extracted from its background knowledge (e.g., current taxation policies in 'taxes are investiments')."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedIdentifyingPattern",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "relatedIdentifyingPattern"
+    },
+    "domain" : "59",
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#createsBlended",
+    "baseIri" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "createsBlended"
+    },
+    "domain" : "32",
+    "attributes" : [ "object" ],
+    "id" : "97"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
-    "range" : "30",
+    "range" : "22",
     "label" : {
       "IRI-based" : "contrasts"
     },
-    "domain" : "30",
-    "attributes" : [ "symmetric", "external", "object" ],
-    "id" : "79"
-  }, {
-    "range" : "18",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
-  }, {
-    "range" : "42",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
+    "domain" : "22",
+    "attributes" : [ "external", "symmetric", "object" ],
+    "id" : "98"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl",
@@ -1234,52 +1538,12 @@
     "label" : {
       "IRI-based" : "Cut"
     },
-    "superproperty" : [ "26" ],
-    "domain" : "66",
+    "superproperty" : [ "16" ],
+    "domain" : "88",
     "comment" : {
       "undefined" : "The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in 'taxes are investiments'."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "30"
-  }, {
-    "iri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isContrastedIn",
-    "baseIri" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "isContrastedIn"
-    },
-    "domain" : "0",
-    "attributes" : [ "object" ],
-    "id" : "82"
-  }, {
-    "range" : "18",
-    "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "83"
-  }, {
-    "range" : "18",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "84"
-  }, {
-    "range" : "10",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "85"
-  }, {
-    "range" : "10",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "86"
-  }, {
-    "range" : "10",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "87"
-  }, {
-    "range" : "10",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "88"
+    "id" : "22"
   } ]
 }

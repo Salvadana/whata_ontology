@@ -1,188 +1,370 @@
 [ {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable",
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"
+  "@id" : "http://dbpedia.org/resource/Category:Relevance_fallacies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Confirmation_bias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Whataboutism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25",
+  "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://example.org/myontology"
+  }, {
     "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The BlamableEventiality is a subclass of Eventuality which is equivalent to the class Blendable. Thus, it is also a subclass of the BlendingTheorySituation. This makes the BlamableEventuality blendable with others blamable eventualities by means of a blending element."
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BiasLens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ConfirmationBiasLens"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Confirmation_bias"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedToLens" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"
+  }, {
     "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A BlamingClaim is a textual instance of blaming that accuses some ResponsibilityOwner to act against some MoralValue."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A BlaimingClaimSituation is constituted by a blaming act, the BlaimimgClaim, a textual claim that accuses some ResponsibilityOwner for  acting against a MoralValue. The BlamingClaim blames some BlamableEventuality. The BlamingClaimSituation is a subclass of the Blending class. This means that it acts as a blending element according to the Blending Theory."
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ConfirmationBias",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"
+    "@id" : "https://w3id.org/framester/schema/ConceptualFrame"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A FocusShiftingLens modifies the perspectivisation of an eventuality by shifting the focus of the watcher on another element. It is used to observe a blamable eventuality by shifting the focus on another blamable eventuality."
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"
   } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ConfirmationBiasLens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Confirmation_bias"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FallacyLens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RelevanceFallacyLens"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Relevance_fallacies"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedToLens" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#LinguisticIdentifyingPattern",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A Linguistic pattern that identifies Whataboutism as a Lens of Perspectivisation."
-  } ]
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A MoralValue is contrasted by the action of a ResponsibilityOwner within a verbal accusation consisting in a BlaimingClaim."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RedHerringFallacy",
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RelevanceFallacyLens",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ResponsibilityOwner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A ResponsibilityOwner is accused of acting against a moral value within a blaiming claim."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#StrawManFallacy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#TuQuoqueFallacy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#actsAgainst",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ResponsibilityOwner"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#blames",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaim"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#hasLinguisticIdentifyingPattern",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#LinguisticIdentifyingPattern"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isLinguisticIdentifyingPatternOf"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isBasedOn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamingClaimSituation"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isContrastedIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#MoralValue"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isLinguisticIdentifyingPatternOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#isObservedWith",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#relatedTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#ConfirmationBias"
+    "@id" : "http://dbpedia.org/resource/Category:Relevance_fallacies"
   }, {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#RelevanceFallacy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#Whataboutism"
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#shiftsFocusOn",
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamingFrameDescription"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventualityBackground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@value" : "Agent"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#actsAgainst" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@value" : "Agent"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#actsAgainst" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomWhataboutistPerspectivisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistAttitude"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventualityBackground"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomResponsibilityOwner1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistCut"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#createsBlended" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedIdentifyingPattern" : [ {
+    "@value" : "what about"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedSentence" : [ {
+    "@value" : "That’s not fair! What about Bobby? His room is just as bad as mine and you’ve let him go out to his friend’s. You’re so unreasonable, it’s always one rule for him and another for me. I’m not doing it."
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#TidyingRoomOught",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistAttitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistCut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Whataboutism"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#createsBlended" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality1"
+  } ],
+  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusOn" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#RoomEventuality2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#actsAgainst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#FocusShiftingLens"
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/lored/ontologies/2024/4/untitled-ontology-25#BlamableEventuality"
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#createsBlended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistLens"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#isParticipantIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#Ought"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#ResponsibilityOwner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlameSituation"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlendedBlameFrame"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedIdentifyingPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedSentence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#WhataboutistPerspectivisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#relatedToLens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#shiftsFocusOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#FocusShiftingLens"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#BlamableEventuality"
   } ]
 } ]
