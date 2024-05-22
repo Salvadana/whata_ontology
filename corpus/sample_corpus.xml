@@ -36,6 +36,9 @@
         <Entity>tidy your room</Entity>
         <Class>Ought</Class>
       </Annotation>
+      <Annotation>
+        
+      </Annotation>
       <!-- Additional annotations for other entities and classes -->
     </annotations>
 

@@ -1,4 +1,5 @@
 
+'''
 import xml.etree.ElementTree as ET
 from rdflib import Graph, URIRef, Literal, Namespace, RDF
 from rdflib.namespace import RDFS
@@ -47,3 +48,43 @@ WHERE {
 for row in g.query(query):
     print(f"Entity: {row.entity}, Concept: {row.conceptLabel}")
 
+'''
+from rdflib import Graph, URIRef, Literal, Namespace
+from rdflib.namespace import RDF, XSD
+
+# Definisci i namespace
+ear = Namespace("http://www.essepuntato.it/2008/12/earmark#")
+whata = Namespace("https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#")
+
+# Crea il grafo RDF
+g = Graph()
+
+# Aggiungi i prefissi
+g.bind("ear", ear)
+g.bind("whata", whata)
+g.bind("xsd", XSD)
+
+# Definisci il documento
+doc = URIRef("http://example.org/doc1")
+g.add((doc, RDF.type, ear.StringDocuverse))
+g.add((doc, ear.hasContent, Literal("The West has no right to criticize our record on human rights, look at US actions in Central America, the history of slavery and of lynchings, not to mention apartheid in South Africa…", datatype=XSD.string)))
+
+# Definisci le annotazioni
+annotations = [
+    (URIRef("http://example.org/annotation1"), "WhataboutistPerspectivisation", 0, 53),
+    (URIRef("http://example.org/annotation2"), "actsAgainst", 63, 92),
+    (URIRef("http://example.org/annotation3"), "BlamableEventuality", 98, 136),
+    (URIRef("http://example.org/annotation4"), "BlamableEventuality", 150, 184)
+]
+
+# Aggiungi le annotazioni al grafo
+for ann, typ, start, end in annotations:
+    g.add((ann, RDF.type, ear.PointerRange))
+    g.add((ann, ear.refersTo, doc))
+    g.add((ann, ear.begins, Literal(start, datatype=XSD.nonNegativeInteger)))
+    g.add((ann, ear.ends, Literal(end, datatype=XSD.nonNegativeInteger)))
+    g.add((ann, RDF.type, whata[typ]))
+
+# Salva il grafo in un file Turtle
+with open("annotated_document.ttl", "wb") as f:
+    f.write(g.serialize(format="turtle"))

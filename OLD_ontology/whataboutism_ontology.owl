@@ -10,6 +10,9 @@ Ontology(<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontolo
 Import(<http://example.org/myontology>)
 Import(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl>)
 
+Declaration(Class(<http://dbpedia.org/resource/Confirmation_bias>))
+Declaration(Class(<http://dbpedia.org/resource/Whataboutism>))
+Declaration(Class(<http://dbpedia.org/resource/Category:Relevance_fallacies>))
 Declaration(Class(:BlamableEventuality))
 Declaration(Class(:BlameSituation))
 Declaration(Class(:BlamingFrameDescription))
@@ -117,10 +120,6 @@ DataPropertyRange(:relatedSentence xsd:string)
 # Class: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> (<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude>)
 
 SubClassOf(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation>)
-
-# Class: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended> (<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended>)
-
-SubClassOf(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
 
 # Class: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> (<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens>)
 
@@ -248,7 +247,6 @@ ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspec
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :RoomWhataboutistPerspectivisation :WhataboutistCut)
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> :RoomWhataboutistPerspectivisation :RoomEventuality1)
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> :RoomWhataboutistPerspectivisation :WhataboutistLens)
-ObjectPropertyAssertion(:createsBlended :RoomWhataboutistPerspectivisation :BlendedBlameFrame)
 DataPropertyAssertion(:relatedIdentifyingPattern :RoomWhataboutistPerspectivisation "what about")
 DataPropertyAssertion(:relatedSentence :RoomWhataboutistPerspectivisation "That’s not fair! What about Bobby? His room is just as bad as mine and you’ve let him go out to his friend’s. You’re so unreasonable, it’s always one rule for him and another for me. I’m not doing it.")
 

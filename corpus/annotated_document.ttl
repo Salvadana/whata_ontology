@@ -1,0 +1,31 @@
+@prefix ear: <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/annotation1> a ear:PointerRange,
+        whata:WhataboutistPerspectivisation ;
+    ear:begins "0"^^xsd:nonNegativeInteger ;
+    ear:ends "53"^^xsd:nonNegativeInteger ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/annotation2> a ear:PointerRange,
+        whata:actsAgainst ;
+    ear:begins "63"^^xsd:nonNegativeInteger ;
+    ear:ends "92"^^xsd:nonNegativeInteger ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/annotation3> a ear:PointerRange,
+        whata:BlamableEventuality ;
+    ear:begins "98"^^xsd:nonNegativeInteger ;
+    ear:ends "136"^^xsd:nonNegativeInteger ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/annotation4> a ear:PointerRange,
+        whata:BlamableEventuality ;
+    ear:begins "150"^^xsd:nonNegativeInteger ;
+    ear:ends "184"^^xsd:nonNegativeInteger ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/doc1> a ear:StringDocuverse ;
+    ear:hasContent "The West has no right to criticize our record on human rights, look at US actions in Central America, the history of slavery and of lynchings, not to mention apartheid in South Africa…"^^xsd:string .
+

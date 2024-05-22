@@ -91,12 +91,20 @@ rdfs:subClassOf rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
+###  http://dbpedia.org/resource/Confirmation_bias
+<http://dbpedia.org/resource/Confirmation_bias> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/resource/Whataboutism
+<http://dbpedia.org/resource/Whataboutism> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/resource/Category:Relevance_fallacies
+<http://dbpedia.org/resource/Category:Relevance_fallacies> rdf:type owl:Class .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude
 <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation> .
-
-
-###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended
-<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended> rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable> .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens
@@ -244,7 +252,6 @@ rdfs:subClassOf rdf:type owl:AnnotationProperty .
                                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :WhataboutistCut ;
                                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> :RoomEventuality1 ;
                                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> :WhataboutistLens ;
-                                   :createsBlended :BlendedBlameFrame ;
                                    :relatedIdentifyingPattern "what about" ;
                                    :relatedSentence "That’s not fair! What about Bobby? His room is just as bad as mine and you’ve let him go out to his friend’s. You’re so unreasonable, it’s always one rule for him and another for me. I’m not doing it." ;
                                    rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> .

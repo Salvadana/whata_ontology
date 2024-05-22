@@ -1,0 +1,27 @@
+@prefix ear: <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology/whataboutism_ontology.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/annotation1> a ear:Annotation,
+        whata:WhataboutistPerspectivisation ;
+    ear:hasXPathContext "//text()[contains(., 'The West has no right to criticize our record on human rights')]"^^xsd:string ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/annotation2> a ear:Annotation,
+        whata:actsAgainst ;
+    ear:hasXPathContext "//text()[contains(., 'US actions in Central America')]"^^xsd:string ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/annotation3> a ear:Annotation,
+        whata:BlamableEventuality ;
+    ear:hasXPathContext "//text()[contains(., 'the history of slavery and of lynchings')]"^^xsd:string ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/annotation4> a ear:Annotation,
+        whata:BlamableEventuality ;
+    ear:hasXPathContext "//text()[contains(., 'apartheid in South Africa')]"^^xsd:string ;
+    ear:refersTo <http://example.org/doc1> .
+
+<http://example.org/doc1> a ear:StringDocuverse ;
+    ear:hasContent "The West has no right to criticize our record on human rights, look at US actions in Central America, the history of slavery and of lynchings, not to mention apartheid in South Africa…"^^xsd:string .
+
