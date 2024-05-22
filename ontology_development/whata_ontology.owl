@@ -1,0 +1,204 @@
+Prefix(:=<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl>
+Import(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl>)
+
+Declaration(Class(:Blamable))
+Declaration(Class(:BlameSituation))
+Declaration(Class(:BlendedBlameBackground))
+Declaration(Class(:ConfirmationBiasLens))
+Declaration(Class(:CounterBlamable))
+Declaration(Class(:FocusShiftingLens))
+Declaration(Class(:Ought))
+Declaration(Class(:RelevanceFallacyLens))
+Declaration(Class(:ResponsibilityOwner))
+Declaration(Class(:WhataboutistLens))
+Declaration(Class(:WhataboutistPerspectivisation))
+Declaration(ObjectProperty(:actsAgainst))
+Declaration(ObjectProperty(:isParticipantIn))
+Declaration(ObjectProperty(:relatedToLens))
+Declaration(ObjectProperty(:shiftsFocusFrom))
+Declaration(DataProperty(:relatedIdentifyingPattern))
+Declaration(NamedIndividual(:Blamable))
+Declaration(NamedIndividual(:BlameSituation))
+Declaration(NamedIndividual(:BlendedBlameBackground))
+Declaration(NamedIndividual(:ConfirmationBias))
+Declaration(NamedIndividual(:CounterBlamable))
+Declaration(NamedIndividual(:Ought))
+Declaration(NamedIndividual(:ResponsibilityOwner1))
+Declaration(NamedIndividual(:ResponsibilityOwner2))
+Declaration(NamedIndividual(:TuQuoqueFallacy))
+Declaration(NamedIndividual(:WhataboutistLens))
+Declaration(NamedIndividual(:WhataboutistPerspectivisation))
+Declaration(AnnotationProperty(rdfs:subClassOf))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :actsAgainst (:actsAgainst)
+
+ObjectPropertyDomain(:actsAgainst :ResponsibilityOwner)
+ObjectPropertyRange(:actsAgainst :Ought)
+
+# Object Property: :isParticipantIn (:isParticipantIn)
+
+ObjectPropertyDomain(:isParticipantIn :Ought)
+ObjectPropertyDomain(:isParticipantIn :ResponsibilityOwner)
+ObjectPropertyRange(:isParticipantIn :BlameSituation)
+
+# Object Property: :relatedToLens (:relatedToLens)
+
+ObjectPropertyDomain(:relatedToLens :FocusShiftingLens)
+ObjectPropertyRange(:relatedToLens :FocusShiftingLens)
+
+# Object Property: :shiftsFocusFrom (:shiftsFocusFrom)
+
+ObjectPropertyDomain(:shiftsFocusFrom :FocusShiftingLens)
+ObjectPropertyRange(:shiftsFocusFrom <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :relatedIdentifyingPattern (:relatedIdentifyingPattern)
+
+DataPropertyDomain(:relatedIdentifyingPattern :WhataboutistPerspectivisation)
+DataPropertyRange(:relatedIdentifyingPattern xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> (<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> (<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation>)
+
+# Class: :Blamable (:Blamable)
+
+AnnotationAssertion(rdfs:subClassOf :Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
+AnnotationAssertion(rdfs:subClassOf :Blamable :BlameSituation)
+SubClassOf(:Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
+SubClassOf(:Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
+SubClassOf(:Blamable :BlameSituation)
+
+# Class: :BlameSituation (:BlameSituation)
+
+SubClassOf(:BlameSituation <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending>)
+
+# Class: :BlendedBlameBackground (:BlendedBlameBackground)
+
+AnnotationAssertion(rdfs:subClassOf :BlendedBlameBackground :BlameSituation)
+SubClassOf(:BlendedBlameBackground <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background>)
+SubClassOf(:BlendedBlameBackground <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended>)
+SubClassOf(:BlendedBlameBackground :BlameSituation)
+
+# Class: :ConfirmationBiasLens (:ConfirmationBiasLens)
+
+SubClassOf(:ConfirmationBiasLens :FocusShiftingLens)
+
+# Class: :CounterBlamable (:CounterBlamable)
+
+AnnotationAssertion(rdfs:subClassOf :CounterBlamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
+AnnotationAssertion(rdfs:subClassOf :CounterBlamable :BlameSituation)
+SubClassOf(:CounterBlamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut>)
+SubClassOf(:CounterBlamable :BlameSituation)
+
+# Class: :FocusShiftingLens (:FocusShiftingLens)
+
+SubClassOf(:FocusShiftingLens <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens>)
+
+# Class: :RelevanceFallacyLens (:RelevanceFallacyLens)
+
+SubClassOf(:RelevanceFallacyLens :FocusShiftingLens)
+
+# Class: :ResponsibilityOwner (:ResponsibilityOwner)
+
+SubClassOf(:ResponsibilityOwner <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent>)
+
+# Class: :WhataboutistLens (:WhataboutistLens)
+
+SubClassOf(:WhataboutistLens :FocusShiftingLens)
+
+# Class: :WhataboutistPerspectivisation (:WhataboutistPerspectivisation)
+
+SubClassOf(:WhataboutistPerspectivisation <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Blamable (:Blamable)
+
+ClassAssertion(:Blamable :Blamable)
+
+# Individual: :BlendedBlameBackground (:BlendedBlameBackground)
+
+ClassAssertion(:BlendedBlameBackground :BlendedBlameBackground)
+
+# Individual: :ConfirmationBias (:ConfirmationBias)
+
+ClassAssertion(:ConfirmationBiasLens :ConfirmationBias)
+ObjectPropertyAssertion(:relatedToLens :ConfirmationBias :WhataboutistLens)
+
+# Individual: :CounterBlamable (:CounterBlamable)
+
+ClassAssertion(:CounterBlamable :CounterBlamable)
+ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> :CounterBlamable :WhataboutistLens)
+
+# Individual: :Ought (:Ought)
+
+ClassAssertion(:Ought :Ought)
+ObjectPropertyAssertion(:isParticipantIn :Ought :Blamable)
+ObjectPropertyAssertion(:isParticipantIn :Ought :BlendedBlameBackground)
+ObjectPropertyAssertion(:isParticipantIn :Ought :CounterBlamable)
+
+# Individual: :ResponsibilityOwner1 (:ResponsibilityOwner1)
+
+ClassAssertion(:ResponsibilityOwner :ResponsibilityOwner1)
+ObjectPropertyAssertion(:actsAgainst :ResponsibilityOwner1 :Ought)
+ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner1 :Blamable)
+ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner1 :BlendedBlameBackground)
+
+# Individual: :ResponsibilityOwner2 (:ResponsibilityOwner2)
+
+ClassAssertion(:ResponsibilityOwner :ResponsibilityOwner2)
+ObjectPropertyAssertion(:actsAgainst :ResponsibilityOwner2 :Ought)
+ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner2 :BlendedBlameBackground)
+ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner2 :CounterBlamable)
+
+# Individual: :TuQuoqueFallacy (:TuQuoqueFallacy)
+
+ClassAssertion(:RelevanceFallacyLens :TuQuoqueFallacy)
+ObjectPropertyAssertion(:relatedToLens :TuQuoqueFallacy :WhataboutistLens)
+
+# Individual: :WhataboutistLens (:WhataboutistLens)
+
+ClassAssertion(:WhataboutistLens :WhataboutistLens)
+ObjectPropertyAssertion(:shiftsFocusFrom :WhataboutistLens :Blamable)
+
+# Individual: :WhataboutistPerspectivisation (:WhataboutistPerspectivisation)
+
+ClassAssertion(:WhataboutistPerspectivisation :WhataboutistPerspectivisation)
+ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :WhataboutistPerspectivisation :BlendedBlameBackground)
+ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :WhataboutistPerspectivisation :CounterBlamable)
+ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> :WhataboutistPerspectivisation :Blamable)
+ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> :WhataboutistPerspectivisation :WhataboutistLens)
+DataPropertyAssertion(:relatedIdentifyingPattern :WhataboutistPerspectivisation "what about")
+
+
+)

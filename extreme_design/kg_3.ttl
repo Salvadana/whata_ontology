@@ -1,0 +1,104 @@
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> .
+
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
+                                                                                                           owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable
+:Blamable rdf:type owl:NamedIndividual ,
+                   :Blamable .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlameSituation
+:BlameSituation rdf:type owl:NamedIndividual .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground
+:BlendedBlameBackground rdf:type owl:NamedIndividual ,
+                                 :BlendedBlameBackground .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias
+:ConfirmationBias rdf:type owl:NamedIndividual ,
+                           :ConfirmationBiasLens ;
+                  :relatedToLens :WhataboutistLens .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable
+:CounterBlamable rdf:type owl:NamedIndividual ,
+                          :CounterBlamable ;
+                 <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> :WhataboutistLens .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought
+:Ought rdf:type owl:NamedIndividual ,
+                :Ought ;
+       :isParticipantIn :Blamable ,
+                        :BlendedBlameBackground ,
+                        :CounterBlamable .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1
+:ResponsibilityOwner1 rdf:type owl:NamedIndividual ,
+                               :ResponsibilityOwner ;
+                      :actsAgainst :Ought ;
+                      :isParticipantIn :Blamable ,
+                                       :BlendedBlameBackground .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2
+:ResponsibilityOwner2 rdf:type owl:NamedIndividual ,
+                               :ResponsibilityOwner ;
+                      :actsAgainst :Ought ;
+                      :isParticipantIn :BlendedBlameBackground ,
+                                       :CounterBlamable .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#TuQuoqueFallacy
+:TuQuoqueFallacy rdf:type owl:NamedIndividual ,
+                          :RelevanceFallacyLens ;
+                 :relatedToLens :WhataboutistLens .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens
+:WhataboutistLens rdf:type owl:NamedIndividual ,
+                           :WhataboutistLens ;
+                  :shiftsFocusFrom :Blamable .
+
+
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation
+:WhataboutistPerspectivisation rdf:type owl:NamedIndividual ,
+                                        :WhataboutistPerspectivisation ;
+                               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :BlendedBlameBackground ;
+                               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :CounterBlamable ;
+                               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> :Blamable ;
+                               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> :WhataboutistLens ;
+                               :relatedIdentifyingPattern "what about" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Blamable rdfs:subClassOf :BlameSituation ,
+                          <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable> .
+
+
+:BlendedBlameBackground rdfs:subClassOf :BlameSituation .
+
+
+:CounterBlamable rdfs:subClassOf :BlameSituation ,
+                                 <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
