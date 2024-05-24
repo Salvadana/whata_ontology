@@ -1,0 +1,167 @@
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+@base <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> .
+
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
+     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
+
+                                                     
+whata:perspectivisation_3 a whata:WhataboutistPerspectivisation;
+    
+whata:relatedIdentifyingPattern 'other countries';
+per:Lens  fred:doubt_1;
+per:Eventuality fred:emit_1;
+per:Cut fred:emit_2;
+per:Background pbdata:emit-01.
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:impact_1,
+        fred:increase_1 ;
+    dul:hasPrecondition fred:stop_1 .
+
+fred:simple_1 a pbdata:simple-02 ;
+    pblr:easy fred:increase_1 ;
+    fschema:subsumedUnder fnframe:System_complexity .
+
+fred:Altogether rdfs:subClassOf dul:Quality,
+        fschema:AdverbialQuality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-wholly-adverb-1 .
+
+fred:Country rdfs:subClassOf dul:Organization,
+        wn30:supersense-noun_group ;
+    owl:equivalentClass wn30:synset-state-noun-4 .
+
+fred:Only rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-merely-adverb-1 .
+
+fred:Other rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-other-adjective-1 .
+
+fred:Tomorrow rdfs:subClassOf dul:Amount,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-tomorrow-noun-1 .
+
+fred:doubt_1 a pbdata:doubt-01 ;
+a whata:WhataboutistLens;
+whata:shiftsFocusFrom fred:emit_1;
+
+
+    boxing:hasTruthValue boxing:False ;
+    pblr:disbelief fred:increase_1 ;
+    fschema:subsumedUnder va:0045f,
+        fnframe:Certainty .
+
+fred:emit_1 a pbdata:emit-01 ;
+    a whata:Blamable;
+
+    pblr:emitting_entity fred:country_1 ;
+    fschema:subsumedUnder va:0059f .
+
+fred:emit_2 a pbdata:emit-01 ;
+     a whata:CounterBlamable;
+    per:shotThrough fred:doubt_1;
+    pblr:emitting_entity fred:person_1 ;
+    fschema:subsumedUnder va:0059f .
+
+fred:impact_1 a pbdata:impact-01 ;
+    boxing:hasTruthValue boxing:False ;
+    dul:hasQuality fred:Only ;
+    pblr:thing_affecting fred:doubt_1 ;
+    fschema:subsumedUnder va:0201f,
+        fnframe:Objective_influence,
+        fnframe:Subjective_influence .
+
+fred:stop_1 a pbdata:stop-01 ;
+
+ a whata:Ought;
+ whata:isParticipantIn fred:emit_1 ;
+  whata:isParticipantIn fred:emit_2 ;
+whata:isParticipantIn pbdata:emit-01 ;
+
+    dul:hasQuality fred:Altogether ;
+    vn.role:Time fred:tomorrow_1 ;
+    pblr:agent fred:person_1 ;
+    pblr:theme fred:emit_2 ;
+    fschema:subsumedUnder va:0029f,
+        fnframe:Activity_stop,
+        fnframe:Cause_to_end,
+        fnframe:Halt,
+        fnframe:Preventing,
+        fnframe:Process_stop,
+        fnframe:Thwarting .
+
+fred:tomorrow_1 a fred:Tomorrow .
+
+pbdata:doubt-01 rdfs:label "doubt, disbelieve" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:impact-01 rdfs:label "have an effect on" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:increase-01 rdfs:label "go up incrementally" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:simple-02 rdfs:label "easy, uncomplicated" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:stop-01 rdfs:label "stop, putting a stop to" ;
+    rdfs:subClassOf dul:Event .
+
+wn30:synset-merely-adverb-1 wn30schema:gloss "and nothing more; \"I was merely asking\"; \"it is simply a matter of time\"; \"just a scratch\"; \"he was only a child\"; \"hopes that last but a moment\""@en-us .
+
+wn30:synset-other-adjective-1 wn30schema:gloss "not the same one or ones already mentioned or implied; \"today isn't any other day\"- the White Queen; \"the construction of highways and other public works\"; \"he asked for other employment\"; \"any other person would tell the truth\"; \"his other books are still in storage\"; \"then we looked at the other house\"; \"hearing was good in his other ear\"; \"the other sex\"; \"she lived on the other side of the street from me\"; \"went in the other direction\""@en-us .
+
+wn30:synset-state-noun-4 wn30schema:gloss "a politically organized body of people under a single government; \"the state has elected a new president\"; \"African nations\"; \"students who had come to the nation's capitol\"; \"the country's largest manufacturer\"; \"an industrialized land\""@en-us .
+
+wn30:synset-tomorrow-noun-1 wn30schema:gloss "the day after today; \"what are our tasks for tomorrow?\""@en-us .
+
+wn30:synset-wholly-adverb-1 wn30schema:gloss "to a complete degree or to the full or entire extent (`whole' is often used informally for `wholly'); \"he was wholly convinced\"; \"entirely satisfied with the meal\"; \"it was completely different from what we expected\"; \"was completely at fault\"; \"a totally new situation\"; \"the directions were all wrong\"; \"it was not altogether her fault\"; \"an altogether new approach\"; \"a whole new idea\""@en-us .
+
+fred:country_1 a fred:Country ;
+a whata:ResponsibilityOwner;
+whata:actsAgainst fred:stop_1;
+whata:isParticipantIn fred:emit_1;
+whata:isParticipantIn  pbdata:emit-01 ;
+    dul:hasQuality fred:Other .
+
+fred:person_1 a amr:Person;
+ a whata:ResponsibilityOwner;
+ whata:actsAgainst fred:stop_1 ;
+ whata:isParticipantIn fred:emit_2;
+ whata:isParticipantIn pbdata:emit-01 .
+
+pbdata:emit-01 rdfs:label "emit, let forth" ;
+ a whata:BlendedBlameBackground;
+    rdfs:subClassOf dul:Event .
+
+fred:increase_1 a pbdata:increase-01 ;
+    pblr:causer_of_increase fred:country_1 ;
+    pblr:thing_increasing fred:emit_1 ;
+    fschema:subsumedUnder va:0430f .
+

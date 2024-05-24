@@ -15,7 +15,7 @@ Presutti, V., Daga, E., Gangemi, A., & Blomqvist, E. (2009). eXtreme Design with
 
 ### Title: Perspectivisation Theory Research
 ### Description:
-Emma is a researcher in the cognitive science field and she wants to understand the connections of the whataboutism phenomenon with the cognitive perspectivisation. She wants to explore the phenomenon as an act of perspective shifting. Her aim is to compare the elements and means involved in a perspectivisation act with the elements present in a whataboutist discourse.
+Emma is a researcher in the cognitive science field and she wants to understand the connections of the whataboutism phenomenon with the cognitive perspectivisation. She wants to explore the phenomenon as an act of focus shifting within a cognitive perspectivisation situation. Her aim is to compare and, if possible, align the elements and means involved in a perspectivisation act with the elements present in a whataboutist discourse.
 
 #### cqs: 
 1.  Is whataboutism recognisable as an (or part of an ) act of perspectivisation? Which elements of the cognitive perspectivisation are present and manifest concretely in a whataboutist claim?
@@ -36,7 +36,7 @@ Within a political debate I want to analyze a blaming situation is generated: pe
 ### Competency Questions:
 4. Which linguistic elements do denote whataboutism?
 expected result: string with pattern, string with sentence
-11. Is the blamed speaker engaging in whataboutism?
+5. Is the blamed speaker engaging in whataboutism?
 ### User Story 3: Blaming Claim Situation
 
 #### Title: Blaming Claim Situation
@@ -49,26 +49,22 @@ Bonny, curious about the dynamics of this interaction, decides to investigate th
 #### Priority: High
 
 #### Competency Questions (CQs):
-5. On which kind of situation does Whataboutism act?
-6.  Do these blamable eventualities perspectivised by whataboutism all correspond to a common description? And if so, which is this description?
-7. What entities are involved in the blaming situation?
+6. On which kind of situation does Whataboutism act?
+7.  Do all the blamable eventualities have as participants responsibility owners and oughts?
+8. Which ROs and or Oughts are involved in the blaming situation?
 ### User Story 4: Blending
 
 #### Title: Blending
 #### Depends on: Blaming Situation
 #### Description:
 
-After analyzing the Blaming situation, Bonny realizes that it serves as the key element enabling the blending of the two scenarios: his own and Billy's. Intrigued by this mechanism, Bonny seeks to comprehend how the blending process functions. He discovers that the Blamed eventuality is an instance of the Blame situation, thus satisfying the description of a blaming frame. Similarly, the co-Blamed eventuality is blended with the first one based on the fact that it also meets the criteria required by a blaming frame situation.
-
+After analyzing the Blaming situation, Bonny realizes that it serves as the key element enabling the blending of the two scenarios: his own and Billy's. Intrigued by this mechanism, Bonny starts studying to comprehend how the blending process functions. He discovers that both the Blamed eventuality and the CounterBlamed Cut are specific manifestations  of a generic Blame situation and this create the condition for them to be blended together and create an extended space. This is what the Conceptual Blending theory creator, Facounnier, calls a Blended Space: the result of two input spaces which are merged creating a new element (different from both of them).
 #### Priority: High
 
 #### Competency Questions (CQs):
-- What are the components and dynamics of the blending process in whataboutism?
-- which description do the blended eventualities satisfy?
----------
-8. What entities are involved in the blaming situation?
-9. Which kind of elements are blended together by whataboutism? i.e. which are the blendable elements involved?
-10. which are the features of the resulting the resulting Blanded Element?
+9. Does Whataboutism act accordingly to the Conceptual Blanding Theory? I.e. Does it create a blended space? 
+10. Which kind of elements are the blended spaces created as a basis for applying whataboutism? 
+11. which are the features of the resulting the resulting Blanded Element? Which ROs and oughts are involved in a blended space?
 
 ## Story 5
 ### Title : Tu quoque fallacy / Relevance fallacies

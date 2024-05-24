@@ -1,0 +1,188 @@
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+@base <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> .
+
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
+                                                                                                           owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
+
+
+whata:perspectivisation_1 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern 'look at';
+    per:Lens fred:look_1;
+    per:Cut fred:conjunct_1;
+    per:Background pbdata:act-02;
+    per:Eventuality fred:record_1.
+
+
+fred:look_1 a pbdata:look-01 ;
+    a whata:WhataboutistLens;
+    whata:shiftsFocusFrom fred:record_1;
+
+    amr:mode amr:imperative ;
+    pblr:looker fred:person_2 ;
+    pblr:thing_looked_at_or_for_or_on fred:conjunct_1 ;
+    fschema:subsumedUnder va:0521f,
+        fnframe:Perception_active,
+        fnframe:Scrutiny,
+        fnframe:Seeking .
+
+
+
+fred:right_1 a pbdata:right-05 ;
+    boxing:hasTruthValue boxing:False ;
+    pblr:entity_with_a_right fred:West ;
+    pblr:what_they_have_a_right_to fred:criticize_1 .
+
+fred:Apartheid rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_communication ;
+    owl:equivalentClass wn30:synset-apartheid-noun-1 .
+
+fred:Central_America a amr:World-region ;
+    owl:sameAs dbpedia:Central_America,
+        wd:Q27611 .
+
+fred:Human rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_pert ;
+    owl:equivalentClass wn30:synset-human-adjective-2 .
+
+fred:Record rdfs:subClassOf d0:Activity,
+        wn30:supersense-noun_act ;
+    owl:equivalentClass wn30:synset-record-noun-4 .
+
+fred:Slavery rdfs:subClassOf dul:Description,
+        wn30:supersense-noun_act ;
+    owl:equivalentClass wn30:synset-slavery-noun-2 .
+
+fred:South_Africa a amr:Country ;
+    owl:sameAs dbpedia:South_Africa,
+        wd:Q258 .
+
+fred:US a amr:Country ;
+ a whata:ResponsibilityOwner;
+ whata:actsAgainst fred:right_2;
+ whata:isParticipantIn fred:conjunct_1;
+ whata:isParticipantIn pbdata:act-02;
+    owl:sameAs dbpedia:United_States,
+        wd:Q30 .
+
+fred:act_1 a pbdata:act-02 ;
+    
+    vn.role:Location fred:Central_America ;
+    pblr:actor fred:US ;
+    fschema:subsumedUnder va:0147f,
+        fnframe:Conduct,
+        fnframe:Intentionally_act .
+
+fred:apartheid_1 a fred:Apartheid ;
+    vn.role:Location fred:South_Africa .
+
+fred:conjunct_1 a boxing:Conjunct ;
+    a whata:CounterBlamable;
+    
+    per:shotThrough fred:look_1;
+
+    dul:hasMember fred:act_1,
+        fred:apartheid_1,
+        fred:history_1,
+        fred:history_2 .
+
+fred:criticize_1 a pbdata:criticize-01 ;
+    pblr:critic fred:West ;
+    pblr:entity_being_criticized fred:record_1 ;
+    fschema:subsumedUnder va:0602f,
+        fnframe:Judgement_communication,
+        fnframe:Judgment,
+        fnframe:Judgment_communication .
+
+fred:history_1 a fred:History ;
+    fred:about fred:slavery_1 .
+
+fred:history_2 a fred:History ;
+    fred:about fred:lynch_1 .
+
+fred:human_1 a fred:Human .
+
+fred:lynch_1 a pbdata:lynch-01 .
+
+fred:person_1 a amr:Person ;
+ a whata:ResponsibilityOwner;
+ whata:actsAgainst fred:right_2;
+ whata:isParticipantIn fred:record_1;
+ whata:isParticipantIn pbdata:act-02;.
+
+fred:person_2 a amr:Person .
+
+fred:record_1 a fred:Record ;
+    a whata:Blamable;
+    
+    fred:about fred:right_2 ;
+    fred:recordOf fred:person_1 .
+
+fred:right_2 a pbdata:right-05 ;
+    a whata:Ought;
+    whata:isParticipantIn fred:record_1;
+    whata:isParticipantIn fred:conjunct_1;
+    whata:isParticipantIn pbdata:act-02;
+    pblr:entity_with_a_right fred:human_1 .
+
+fred:slavery_1 a fred:Slavery .
+
+pbdata:act-02 rdfs:label "do something, perform an action" ;
+a whata:BlendedBlameBackground;
+    rdfs:subClassOf dul:Event .
+
+pbdata:criticize-01 rdfs:label "criticize, blame, judging harshly and negatively" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:look-01 rdfs:label "vision, look" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:lynch-01 rdfs:label "execution as by a mob, often by hanging" ;
+    rdfs:subClassOf dul:Event .
+
+wn30:synset-apartheid-noun-1 wn30schema:gloss "a social policy or racial segregation involving political and economic and legal discrimination against people who are not Whites; the former official policy in South Africa"@en-us .
+
+wn30:synset-history-noun-1 wn30schema:gloss "the aggregate of past events; \"a critical time in the school's history\""@en-us .
+
+wn30:synset-human-adjective-2 wn30schema:gloss "relating to a person; \"the experiment was conducted on 6 monkeys and 2 human subjects\""@en-us .
+
+wn30:synset-record-noun-4 wn30schema:gloss "the sum of recognized accomplishments; \"the lawyer has a good record\"; \"the track record shows that he will be a good president\""@en-us .
+
+wn30:synset-slavery-noun-2 wn30schema:gloss "the practice of owning slaves"@en-us .
+
+fred:History rdfs:subClassOf dul:TimeInterval,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-history-noun-1 .
+
+fred:West a amr:World-region ;
+    owl:sameAs dbpedia:Western_world,
+        wd:Q160381 .
+
+pbdata:right-05 rdfs:label "something due to you by law, tradition or moral principle" ;
+    
+    rdfs:subClassOf dul:Event .
+

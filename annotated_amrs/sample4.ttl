@@ -1,0 +1,310 @@
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+@base <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> .
+
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
+     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
+
+whata:perspectivisation_4 a whata:WhataboutistPerspectivisation;
+whata:relatedIdentifyingPattern 'but what about';
+    per:Lens fred:contrast_1;
+    per:Eventuality fred:penalty_1;
+    per:Cut fred:crime_2;
+    per:Background pbdata:crime-02 .
+
+fred:contrast_1 a pbdata:contrast-01;
+ a whata:WhataboutistLens;
+ whata:shiftsFocusFrom fred:penalty_1;
+    pblr:first_item_in_comparison fred:possible_1 ;
+    pblr:second_item_in_comparison owl:Thing ;
+    fschema:subsumedUnder va:0627f .
+
+fred:crime_2 a pbdata:crime-02 ;
+a whata:CounterBlamable;
+per:shotThrough fred:contrast_1;
+    pblr:act fred:victim_1 .
+
+fred:effective_1 a pbdata:effective-04 ;
+a whata:Ought;
+whata:isParticipantIn fred:penalty_1;
+whata:isParticipantIn pbdata:crime-02 ;
+
+    boxing:hasTruthValue boxing:False ;
+    pblr:cause fred:deter_1 ;
+    fschema:subsumedUnder fnframe:Being_in_effect,
+        fnframe:Usefulness .
+
+fred:have-rel-role_1 a pbdata:have-rel-role-91 ;
+    pblr:entity_a fred:person_2 ;
+    pblr:entity_b fred:member_1 ;
+    pblr:role_of_entity_a fred:son_1 .
+
+fred:keep_1 a pbdata:keep-01 ;
+    fred:keepBy fred:compromise_1 ;
+    vn.role:Location fred:prison_1 ;
+    pblr:thing_kept fred:man_1 ;
+    fschema:subsumedUnder va:0012f .
+
+fred:murder_1 a pbdata:murder-01 ;
+    pblr:corpse fred:person_2 ;
+    pblr:killer fred:man_1 ;
+    fschema:subsumedUnder va:0062f,
+        fnframe:Killing .
+
+fred:right_1 a pbdata:right-02 ;
+    boxing:hasTruthValue boxing:Unknown ;
+    pblr:suitable_thing fred:recommend_1 ;
+    fschema:subsumedUnder fnframe:Morality_evaluation,
+        fnframe:Suitability .
+
+fred:survive_1 a pbdata:survive-01 ;
+    pblr:survivor fred:member_1 ;
+    fschema:subsumedUnder va:0486f,
+        fnframe:Surviving .
+
+fred:think_1 a pbdata:think-01 ;
+    pblr:thinker fred:person_1 ;
+    pblr:thought fred:feel_1 ;
+    fschema:subsumedUnder va:0096f,
+        fnframe:Awareness,
+        fnframe:Cogitation,
+        fnframe:Opinion,
+        fnframe:Regard .
+
+fred:Family rdfs:subClassOf dul:Organization,
+        wn30:supersense-noun_group ;
+    owl:equivalentClass wn30:synset-family-noun-1 .
+
+fred:Man rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-man-noun-1 .
+
+fred:Member rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-member-noun-1 .
+
+fred:Penalty rdfs:subClassOf d0:Activity,
+        wn30:supersense-noun_act ;
+    owl:equivalentClass wn30:synset-punishment-noun-1 .
+
+fred:Prison rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-prison-noun-1 .
+
+fred:Son rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-son-noun-1 .
+
+fred:Victim rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-victim-noun-1 .
+
+fred:claim_1 a pbdata:claim-01 ;
+    pblr:claimer fred:person_1 ;
+    pblr:thing_claimed fred:deter_1 ;
+    fschema:subsumedUnder va:0424f,
+        fnframe:Statement .
+
+fred:compromise_1 a pbdata:compromise-02 ;
+    pblr:causer_of_loss fred:man_1 ;
+    fschema:subsumedUnder va:0461f .
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:feed_1,
+        fred:house_1 .
+
+fred:crime_1 a pbdata:crime-02 .
+
+fred:die_1 a pbdata:die-01 ;
+    fschema:subsumedUnder va:0062f,
+        fnframe:Death .
+
+fred:family_1 a fred:Family .
+
+fred:feed_1 a pbdata:feed-01 ;
+    pblr:eater fred:man_1 ;
+    fschema:subsumedUnder va:0231f,
+        fnframe:Capacity,
+        fnframe:Ingestion .
+
+fred:feel_1 a pbdata:feel-01 ;
+    vn.role:Time fred:see_1 ;
+    pblr:emotion_or_sensation owl:Thing ;
+    pblr:feeler fred:member_1 ;
+    fschema:subsumedUnder va:0550f,
+        fnframe:Appearance,
+        fnframe:Feeling,
+        fnframe:Perception_experience .
+
+fred:house_1 a pbdata:house-01 ;
+    pblr:entity_housed fred:man_1 ;
+    fschema:subsumedUnder va:0509f,
+        fnframe:Provide_lodging .
+
+fred:pay_1 a pbdata:pay-01 ;
+    pblr:commodity fred:conjunct_1 ;
+    pblr:payer_or_buyer fred:person_3 ;
+    fschema:subsumedUnder va:0306f,
+        fnframe:Commerce_pay .
+
+fred:penalty_1 a fred:Penalty ;
+a whata:Blamable;
+    dul:hasQuality fred:die_1 .
+
+whata:PenaltyResponsibilityOwner a whata:ResponsibilityOwner;
+whata:actsAgainst fred:effective_1;
+whata:isParticipantIn fred:penalty_1;
+whata:isParticipantIn pbdata:crime-02 .
+
+
+
+fred:person_3 a amr:Person .
+
+fred:possible_1 a pbdata:possible-01 ;
+    pblr:thing_that_is_possible fred:claim_1 ;
+    fschema:subsumedUnder fnframe:Awareness_status,
+        fnframe:Likelihood .
+
+fred:prison_1 a fred:Prison .
+
+fred:recommend_1 a pbdata:recommend-01 ;
+    pblr:recommendation fred:pay_1 ;
+    fschema:subsumedUnder va:0227f .
+
+fred:see_1 a pbdata:see-01 ;
+    pblr:thing_viewed fred:man_1 ;
+    pblr:viewer fred:member_1 ;
+    fschema:subsumedUnder va:0521f,
+        fnframe:Arriving,
+        fnframe:Categorization,
+        fnframe:Coming_to_believe,
+        fnframe:Grasp,
+        fnframe:Perception_active,
+        fnframe:Perception_experience .
+
+fred:son_1 a fred:Son .
+
+pbdata:claim-01 rdfs:label "assert" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:compromise-02 rdfs:label "lose security, concede, cause to weaken, endanger" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:contrast-01 rdfs:label "point out differences, measure of difference" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:deter-01 rdfs:label "deter, scare away" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:die-01 rdfs:label "sterben" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:effective-04 rdfs:label "cause an effect, successful in creating a desired effect" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:feed-01 rdfs:label "cause to eat" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:feel-01 rdfs:label "experience emotion or sensation" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:have-rel-role-91 rdfs:subClassOf dul:Event .
+
+pbdata:house-01 rdfs:label "to contain or provide housing for, provide a home for" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:keep-01 rdfs:label "maintain possession" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:murder-01 rdfs:label "cause to die" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:pay-01 rdfs:label "cf buy and sell, pay for, pay for again" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:possible-01 rdfs:label "likely or able to be/occur" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:recommend-01 rdfs:label "recommend, endorsing" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:right-02 rdfs:label "morally/legally appropriate" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:see-01 rdfs:label "view" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:survive-01 rdfs:label "live despite" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:think-01 rdfs:label "think, believing, imagining" ;
+    rdfs:subClassOf dul:Event .
+
+wn30:synset-family-noun-1 wn30schema:gloss "a social unit living together; \"he moved his family to Virginia\"; \"It was a good Christian household\"; \"I waited until the whole house was asleep\"; \"the teacher asked how many people made up his home\""@en-us .
+
+wn30:synset-man-noun-1 wn30schema:gloss "an adult person who is male (as opposed to a woman); \"there were two women and six men on the bus\""@en-us .
+
+wn30:synset-member-noun-1 wn30schema:gloss "one of the persons who compose a social group (especially individuals who have joined and participate in a group organization); \"only members will be admitted\"; \"a member of the faculty\"; \"she was introduced to all the members of his family\""@en-us .
+
+wn30:synset-prison-noun-1 wn30schema:gloss "a correctional institution where persons are confined while on trial or for punishment"@en-us .
+
+wn30:synset-punishment-noun-1 wn30schema:gloss "the act of punishing"@en-us .
+
+wn30:synset-son-noun-1 wn30schema:gloss "a male human offspring; \"their son became a famous judge\"; \"his boy is taller than he is\""@en-us .
+
+wn30:synset-victim-noun-1 wn30schema:gloss "an unfortunate person who suffers from some adverse circumstance"@en-us .
+
+fred:deter_1 a pbdata:deter-01 ;
+    pblr:agent fred:penalty_1 ;
+    pblr:patient fred:crime_1 ;
+    fschema:subsumedUnder va:0326f,
+        fnframe:Suasion .
+
+fred:person_1 a amr:Person .
+
+fred:person_2 a fred:Person .
+
+fred:victim_1 a fred:Victim ;
+a whata:Ought;
+whata:isParticipantIn fred:crime_2;
+whata:isParticipantIn pbdata:crime-02 .
+
+
+owl:Thing fred:about fred:victim_1 .
+
+pbdata:crime-02 rdfs:label "a violent or evil act" ;
+a whata:BlendedBlameBackground;
+    rdfs:subClassOf dul:Event .
+
+fred:member_1 a fred:Member ;
+    amr:part-of fred:family_1 .
+
+fred:man_1 a fred:Man ;
+a whata:ResponsibilityOwner;
+whata:actsAgainst fred:victim_1;
+whata:isParticipantIn fred:crime_2;
+whata:isParticipantIn pbdata:crime-02 .
+

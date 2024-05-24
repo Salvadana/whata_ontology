@@ -1,0 +1,317 @@
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxer: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+@base <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> .
+
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
+     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
+
+whata:perspectivisation_5 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern 'what about';
+    per:Lens fred:equal_1;
+    per:Background pbdata:bad-07;
+    per:Eventuality fred:tidy_1;
+    per:Cut fred:bad_1;
+    per:Conceptualiser fred:Billy.
+
+whata:relevance_fallacy_1 a whata:RelevanceFallacyLens;
+whata:relatedToLens fred:equal_1.
+
+fred:conjunct_2 a boxing:Conjunct ;
+    dul:hasMember fred:bad_1,
+        fred:let_1 .
+
+fred:have-degree_1 a pbdata:have-degree-91 ;
+    pblr:attribute fred:bad_1 ;
+    pblr:compared-to fred:room_3 ;
+    pblr:degree_itself fred:equal_1 ;
+    pblr:domain fred:room_2 .
+
+fred:have-rel-role_1 a pbdata:have-rel-role-91 ;
+    pblr:entity_a fred:person_1 ;
+    pblr:entity_b fred:conjunct_1 ;
+    pblr:role_of_entity_a fred:dad_1 .
+
+fred:have-rel-role_2 a pbdata:have-rel-role-91 ;
+    pblr:entity_a fred:person_6 ;
+    pblr:entity_b fred:Bobby ;
+    pblr:role_of_entity_a fred:friend_1 .
+
+fred:neuter_2 a fred:And,
+        fred:Neuter .
+
+fred:reasonable_1 a pbdata:reasonable-02 ;
+    boxing:hasTruthValue boxing:False ;
+    dul:hasQuality fred:So ;
+    pblr:reasonable_entity fred:person_7 .
+
+fred:rule_1 a fred:Rule ;
+    dul:associatedWith fred:And ;
+    dul:hasDataValue 1.0 ;
+    vn.role:Beneficiary fred:male_1 ;
+    vn.role:Time fred:always_1 .
+
+fred:rule_2 a fred:Rule ;
+    dul:hasAmount fred:Another ;
+    vn.role:Beneficiary fred:person_8 ;
+    vn.role:Time fred:always_2 .
+
+fred:say_1 a pbdata:say-01 ;
+    dul:associatedWith fred:And ;
+    pblr:sayer fred:person_1 ;
+    pblr:utterance fred:conjunct_1 ;
+    fschema:subsumedUnder va:0424f,
+        fnframe:Communication,
+        fnframe:Request,
+        fnframe:Spelling_and_pronouncing,
+        fnframe:Statement,
+        fnframe:Text_creation .
+
+fred:say_2 a pbdata:say-01 ;
+    pblr:sayer fred:Billy ;
+    pblr:utterance fred:fair_1 ;
+    fschema:subsumedUnder va:0424f,
+        fnframe:Communication,
+        fnframe:Request,
+        fnframe:Spelling_and_pronouncing,
+        fnframe:Statement,
+        fnframe:Text_creation .
+
+fred:Billy a amr:Person;
+a whata:ResponsibilityOwner;
+whata:actsAgainst pbdata:clean-01;
+whata:isParticipantIn fred:tidy_1;
+whata:isParticipantIn pbdata:bad-07 .
+
+fred:Football rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-football-noun-2 .
+
+fred:Friend rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-friend-noun-1 .
+
+fred:Last rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-last-adverb-1 .
+
+fred:So rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-so-adverb-1 .
+
+fred:always_1 a fred:Always .
+
+fred:always_2 a fred:Always .
+
+fred:be-temporally-at_1 a pbdata:be-temporally-at-91 ;
+    pblr:entity fred:clean_1 ;
+    pblr:time owl:Thing .
+
+fred:clean_1 a pbdata:clean-01 ;
+    vn.role:Time fred:last_1 ;
+    pblr:cleaner fred:person_2 ;
+    pblr:thing_cleaned fred:room_1 ;
+    fschema:subsumedUnder va:0155f,
+        fnframe:Grooming .
+
+fred:dad_1 a fred:Dad .
+
+fred:equal_1 a fred:Equal; 
+a whata:WhataboutistLens;
+whata:shiftsFocusFrom fred:tidy_1.
+
+fred:fair_1 a pbdata:fair-01 ;
+    boxing:hasTruthValue boxing:False ;
+    pblr:fair_action fred:neuter_1 ;
+    fschema:subsumedUnder fnframe:Fairness_evaluation,
+        fnframe:Legality .
+
+fred:football_1 a fred:Football .
+
+fred:friend_1 a fred:Friend .
+
+fred:go-out_1 a pbdata:go-out-17 ;
+    pblr:entity_leaving fred:Bobby ;
+    pblr:place_left fred:house_1 .
+
+fred:go_1 a pbdata:go-02 ;
+    pblr:goer fred:person_2 ;
+    pblr:journey fred:practice_1 ;
+    fschema:subsumedUnder va:0119f,
+        fnframe:Change_position_on_a_scale,
+        fnframe:Departing,
+        fnframe:Motion,
+        fnframe:Travel,
+        fnframe:Waver_between_options .
+
+fred:house_1 a fred:House ;
+    fred:houseOf fred:person_6 .
+
+fred:last_1 a fred:Last .
+
+fred:let_1 a pbdata:let-01 ;
+    pblr:action_allowed fred:go-out_1 ;
+    pblr:allower fred:person_5 ;
+    fschema:subsumedUnder va:0182f,
+        fnframe:Grant_permission,
+        fnframe:Make_possible_to_do,
+        fnframe:Permitting,
+        fnframe:Statement .
+
+fred:like_1 a pbdata:like-02 ;
+    pblr:phrasal_complement fred:tidy_1 ;
+    pblr:subject fred:person_3 ;
+    fschema:subsumedUnder va:0032f,
+        fnframe:Experiencer_focus .
+
+fred:male_1 a fred:Male .
+
+fred:neuter_1 a fred:Neuter .
+
+fred:person_3 a amr:Person .
+
+fred:person_4 a amr:Person .
+
+fred:person_5 a amr:Person .
+
+fred:person_7 a amr:Person .
+
+fred:person_8 a amr:Person .
+
+fred:practice_1 a pbdata:practice-01 ;
+    pblr:skill fred:football_1 ;
+    fschema:subsumedUnder va:0331f .
+
+fred:room_3 a fred:Room ;
+    fred:roomOf fred:person_4 .
+
+fred:tidy_1 a pbdata:tidy-01 ;
+ a whata:Blamable;
+    boxer:agent fred:person_2 ;
+    boxer:patient fred:room_1 ;
+    dul:hasQuality fred:Before ;
+    vn.role:Time fred:go_1 .
+
+pbdata:bad-07 rdfs:label "generally negative, morally bad, displeasing" ;
+ a whata:BlendedBlameBackground;
+    rdfs:subClassOf dul:Event .
+
+pbdata:be-temporally-at-91 rdfs:subClassOf dul:Event .
+
+pbdata:clean-01 rdfs:label "to free from dirt" ;
+a whata:Ought;
+whata:isParticipantIn fred:bad_1;
+whata:isParticipantIn fred:tidy_1;
+whata:isParticipantIn pbdata:bad-07;
+    rdfs:subClassOf dul:Event .
+
+pbdata:fair-01 rdfs:label "just" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:go-02 rdfs:label "self-directed motion, disapear or go away" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:go-out-17 rdfs:label "leave" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:have-degree-91 rdfs:subClassOf dul:Event .
+
+pbdata:let-01 rdfs:label "allow" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:like-02 rdfs:label "would like, wish, want (polite)" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:practice-01 rdfs:label "practice" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:reasonable-02 rdfs:label "being of moderate, prudent, or well-thought-out nature" ;
+    rdfs:subClassOf dul:Event .
+
+wn30:synset-always-adverb-1 wn30schema:gloss "at all times; all the time and on every occasion; \"I will always be there to help you\"; \"always arrives on time\"; \"there is always some pollution in the air\"; \"ever hoping to strike it rich\"; \"ever busy\""@en-us .
+
+wn30:synset-football-noun-2 wn30schema:gloss "the inflated oblong ball used in playing American football"@en-us .
+
+wn30:synset-friend-noun-1 wn30schema:gloss "a person you know well and regard with affection and trust; \"he was my best friend at the university\""@en-us .
+
+wn30:synset-last-adverb-1 wn30schema:gloss "most_recently; \"I saw him last in London\""@en-us .
+
+wn30:synset-room-noun-1 wn30schema:gloss "an area within a building enclosed by walls and floor and ceiling; \"the rooms were very small but they had a nice view\""@en-us .
+
+wn30:synset-rule-noun-3 wn30schema:gloss "prescribed guide for conduct or action"@en-us .
+
+wn30:synset-so-adverb-1 wn30schema:gloss "to a very great extent or degree; \"the idea is so obvious\"; \"never been so happy\"; \"I love you so\"; \"my head aches so!\""@en-us .
+
+fred:Always rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-always-adverb-1 .
+
+fred:Neuter a owl:Thing .
+
+fred:Rule rdfs:subClassOf d0:Topic,
+        wn30:supersense-noun_communication ;
+    owl:equivalentClass wn30:synset-rule-noun-3 .
+
+fred:bad_1 a pbdata:bad-07 ;
+ a whata:CounterBlamable;
+ per:shotThrough fred:equal_1;
+    pblr:generally_negative fred:room_2 ;
+    fschema:subsumedUnder fnframe:Desirability,
+        fnframe:Morality_evaluation .
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:be-temporally-at_1,
+        fred:like_1 .
+
+fred:person_1 a fred:Person .
+
+fred:person_6 a fred:Person .
+
+fred:room_1 a fred:Room ;
+    fred:roomOf fred:person_2 .
+
+fred:room_2 a fred:Room ;
+    fred:roomOf fred:Bobby .
+
+pbdata:have-rel-role-91 rdfs:subClassOf dul:Event .
+
+pbdata:say-01 rdfs:label "say" ;
+    rdfs:subClassOf dul:Event .
+
+fred:Bobby a amr:Person ;
+a whata:ResponsibilityOwner;
+whata:actsAgainst pbdata:clean-01;
+whata:isParticipantIn fred:bad_1;
+whata:isParticipantIn pbdata:bad-07.
+
+fred:Room rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-room-noun-1 .
+
+fred:person_2 a amr:Person .
+
