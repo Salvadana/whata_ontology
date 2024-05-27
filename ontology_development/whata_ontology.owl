@@ -89,8 +89,6 @@ SubClassOf(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.ow
 
 # Class: :Blamable (:Blamable)
 
-AnnotationAssertion(rdfs:subClassOf :Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
-AnnotationAssertion(rdfs:subClassOf :Blamable :BlameSituation)
 SubClassOf(:Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
 SubClassOf(:Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
 SubClassOf(:Blamable :BlameSituation)
@@ -101,7 +99,6 @@ SubClassOf(:BlameSituation <http://www.ontologydesignpatterns.org/ont/persp/pers
 
 # Class: :BlendedBlameBackground (:BlendedBlameBackground)
 
-AnnotationAssertion(rdfs:subClassOf :BlendedBlameBackground :BlameSituation)
 SubClassOf(:BlendedBlameBackground <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background>)
 SubClassOf(:BlendedBlameBackground <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended>)
 SubClassOf(:BlendedBlameBackground :BlameSituation)
@@ -112,8 +109,6 @@ SubClassOf(:ConfirmationBiasLens :FocusShiftingLens)
 
 # Class: :CounterBlamable (:CounterBlamable)
 
-AnnotationAssertion(rdfs:subClassOf :CounterBlamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
-AnnotationAssertion(rdfs:subClassOf :CounterBlamable :BlameSituation)
 SubClassOf(:CounterBlamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut>)
 SubClassOf(:CounterBlamable :BlameSituation)
 

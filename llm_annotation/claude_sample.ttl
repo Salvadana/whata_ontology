@@ -1,0 +1,55 @@
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+
+:BlameSituation1 rdf:type :BlameSituation ;
+    :isParticipantIn :Criticize1 ,
+                     :Criticize2 ,
+                     :Kill1 .
+
+:Criticize1 rdf:type :Blamable ;
+    :isParticipantIn :BlameSituation1 ;
+    rdfs:label "It's easy to criticise Venezuela" .
+
+:Criticize2 rdf:type :CounterBlamable ;
+    :isParticipantIn :BlameSituation1 ;
+    rdfs:label "there are many other places that could also be criticised" ;
+    per:shotThrough :WhataboutistLens1 .
+
+:Kill1 rdf:type :BlendedBlameBackground ;
+    :isParticipantIn :BlameSituation1 ;
+    rdfs:label "they just killed four mayors in Asuncion, Paraguay, right next to him" .
+
+:WhataboutistLens1 rdf:type :WhataboutistLens ;
+    :shiftsFocusFrom :Criticize1 .
+
+:WhataboutistPerspective1 rdf:type :WhataboutistPerspectivisation ;
+    per:Eventuality :Criticize1 ;
+    per:Background :Kill1 ;
+    per:Lens :WhataboutistLens1 ;
+    per:Cut :Criticize2 ;
+    :relatedIdentifyingPattern "there are many other places"^^xsd:string .
+
+:Speaker1 rdf:type :ResponsibilityOwner ;
+    :actsAgainst :Ought1 ;
+    :isParticipantIn :Criticize1 ,
+                     :Criticize2 .
+
+:Venezuela rdf:type :ResponsibilityOwner ;
+    :actsAgainst :Ought1 ;
+    :isParticipantIn :Criticize1 .
+
+:Paraguay rdf:type :ResponsibilityOwner ;
+    :actsAgainst :Ought2 ;
+    :isParticipantIn :Kill1 .
+
+:Ought1 rdf:type :Ought ;
+    :isParticipantIn :Criticize1 .
+
+:Ought2 rdf:type :Ought ;
+    :isParticipantIn :Kill1 .
