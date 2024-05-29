@@ -36,8 +36,7 @@ None
 ### Priority:
 High
 ### Description:
-As a journalists who deals with political discourse analysis, I want to identify and analyze instances of whataboutism in public speeches to understand how politicians use this rhetorical technique to deflect criticism and shift focus from one blamed eventuality to another. Within a political debate, I want to analyze a situation where person A is blamed by person B for infringing norms and values. Person A responds by accusing person B of their own faults and wrongdoings, thereby suggesting that person B has no right to criticize.
-
+As a journalists who deals with political discourse analysis, I want to identify and analyze instances of whataboutism in public speeches to understand how politicians use this rhetorical technique to deflect criticism and shift focus from one blamed eventuality to another. Within a political debate, I want to analyze a situation where person A is blamed by person B and responds by accusing person B of their own faults and wrongdoings, thereby suggesting that person B has no right to criticize them. I want to examine the words and phrasal expressions characterising person A’s argumentation.
 ### Competency Questions:
 4. Which linguistic elements do denote whataboutism?
 expected result: string with pattern, string with sentence
