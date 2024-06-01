@@ -509,6 +509,9 @@ per:Eventuality fred:emit_1;
 per:Cut fred:emit_2;
 per:Background pbdata:emit-01.
 
+whata:c_bias_1 a whata:ConfirmationBiasLens;
+whata:relatedToLens fred:doubt_1.
+
 fred:conjunct_1 a boxing:Conjunct ;
     dul:hasMember fred:impact_1,
         fred:increase_1 ;

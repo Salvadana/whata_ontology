@@ -1,0 +1,116 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+
+
+whata:relevance_fallacy a whata:RelevanceFallacyLens;
+ whata:relatedToLens fred:infer_1.
+
+
+whata:perspectivisation_10 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern "you have no right to criticize";
+    per:Lens fred:infer_1;
+    per:Cut fred:AlsoBigot;
+    per:Background fred:Bigotry;
+    per:Eventuality fred:bigotry_1.
+
+fred:infer_1 a pbdata:infer-01 ;
+a whata:WhataboutistLens;
+whata:shiftsFocusFrom fred:bigotry_1;
+    pblr:belief fred:cause_1 .
+
+fred:Also rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-besides-adverb-2 .
+
+fred:Bigot rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-bigot-noun-1 .
+
+fred:Bigotry rdfs:subClassOf d0:CognitiveEntity,
+        wn30:supersense-noun_cognition ;
+        a whata:BlendedBlameBackground;
+    owl:equivalentClass wn30:synset-bigotry-noun-1 .
+
+fred:bigotry_1 a fred:Bigotry ;
+a whata:Blamable;
+    fred:bigotryOf fred:person_2 .
+
+fred:cause_1 a pbdata:cause-01 ;
+    pblr:forcer fred:AlsoBigot ;
+    pblr:impelled_action fred:right_1 .
+
+fred:criticize_1 a pbdata:criticize-01 ;
+    pblr:critic fred:person_1 ;
+    pblr:entity_being_criticized fred:bigotry_1 .
+
+fred:person_2 a amr:Person ;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:bigotry_1;
+whata:isParticipantIn fred:Bigotry.
+
+fred:right_1 a pbdata:right-05 ;
+    boxing:hasTruthValue boxing:False ;
+    pblr:entity_with_a_right fred:person_1 ;
+    pblr:what_they_have_a_right_to fred:criticize_1 .
+
+pbdata:cause-01 rdfs:label "impelled action" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0619f,
+        fnframe:Causation .
+
+pbdata:criticize-01 rdfs:label "criticize, blame, judging harshly and negatively" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0602f,
+        fnframe:Judgement_communication,
+        fnframe:Judgment,
+        fnframe:Judgment_communication .
+
+pbdata:infer-01 rdfs:label "deduce, come to believe" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0548f,
+        fnframe:Coming_to_believe .
+
+pbdata:right-05 rdfs:label "something due to you by law, tradition or moral principle" ;
+    rdfs:subClassOf dul:Event .
+
+wn30:synset-besides-adverb-2 wn30schema:gloss "in addition; \"he has a Mercedes, too\""@en-us .
+
+wn30:synset-bigot-noun-1 wn30schema:gloss "a prejudiced person who is intolerant of any opinions differing from his own"@en-us .
+
+wn30:synset-bigotry-noun-1 wn30schema:gloss "the intolerance and prejudice of a bigot"@en-us .
+
+fred:AlsoBigot dul:associatedWith fred:Also ;
+a whata:CounterBlamable;
+per:shotThrough fred:infer_1;
+    rdfs:subClassOf fred:Bigot .
+
+fred:person_1 a amr:Person;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:AlsoBigot;
+whata:isParticipantIn fred:Bigotry .
+
+whata:ought_10 a whata:Ought;
+whata:isParticipantIn fred:bigotry_1;
+whata:isParticipantIn fred:AlsoBigot;
+whata:isParticipantIn fred:Bigotry.

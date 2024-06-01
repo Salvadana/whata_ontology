@@ -1,0 +1,88 @@
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+
+
+
+whata:relevance_fallacy a whata:RelevanceFallacyLens;
+ whata:relatedToLens whata:lens_8.
+
+whata:perspectivisation_8 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern "don't you";
+    per:Lens whata:lens_8;
+    per:Cut fred:car_1;
+    per:Background pbdata:pollute-01;
+    per:Eventuality fred:pollute_1.
+
+whata:lens_8 a whata:WhataboutistLens;
+whata:shiftsFocusFrom fred:pollute_1.
+
+fred:pollute_1 a pbdata:pollute-01 ;
+a whata:Blamable;
+    boxing:hasTruthValue boxing:False,
+        boxing:Unknown ;
+    fred:polluteBy fred:take-out_1 ;
+    pblr:causer fred:person_1 ;
+    pblr:entity_polluted fred:air_1 .
+
+fred:Air rdfs:subClassOf dul:PhysicalObject;
+a whata:Ought;
+whata:isParticipantIn fred:car_1; 
+whata:isParticipantIn pbdata:pollute-01;
+whata:isParticipantIn fred:pollute_1;
+
+    owl:equivalentClass wn30:synset-air-noun-1 .
+
+fred:Car rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-car-noun-1 .
+
+fred:air_1 a fred:Air .
+
+fred:car_1 a fred:Car ;
+a whata:CounterBlamable;
+per:shotThrough whata:lens_8;
+    fred:carOf fred:person_1 .
+
+fred:take-out_1 a pbdata:take-out-11 ;
+    pblr:entity_drawing_something_forth fred:person_1 ;
+    pblr:thing_taken_out fred:car_1 .
+
+pbdata:pollute-01 rdfs:label "to contaminate, contaminating of" ;
+a whata:BlendedBlameBackground;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0437f .
+
+pbdata:take-out-11 rdfs:label "take out: obtain, draw (out)" ;
+    rdfs:subClassOf dul:Event .
+
+wn30:synset-air-noun-1 wn30schema:gloss "a mixture of gases (especially oxygen) required for breathing; the stuff that the wind consists of; \"air pollution\"; \"a smell of chemicals in the air\"; \"open a window and let in some air\"; \"I need some fresh air\""@en-us .
+
+wn30:synset-car-noun-1 wn30schema:gloss "a motor vehicle with four wheels; usually propelled by an internal combustion engine; \"he needs a car to get to work\""@en-us .
+
+fred:person_1 a amr:Person ;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:car_1;
+whata:isParticipantIn pbdata:pollute-01.
+
+whata:person_0 a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:pollute_1;
+whata:isParticipantIn pbdata:pollute-01.

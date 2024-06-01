@@ -1,0 +1,66 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+:A a whata:Blamable .
+
+:B a whata:CounterBlamable ;
+    per:shotThrough :WhataboutistLens_1 .
+
+
+:WhataboutistPerspectivisation_1 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "what about" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Cut :B ;
+    per:Background :BlendedBlameBackground ;
+    per:Eventuality :A .
+
+
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :A .
+
+
+:BlendedBlameBackground a whata:BlendedBlameBackground ;
+    per:Background :BackgroundEvent .
+
+
+:MoralJudgment a whata:Ought ;
+    whata:isParticipantIn :A ;
+    whata:isParticipantIn :B ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+
+:BackgroundEvent a pbdata:blame-01 ;
+    pbdata:actor :We ;
+    pbdata:action_target :A, :B .
+
+
+:CondemnA a pbdata:condemn-01 ;
+    pbdata:condemner :We ;
+    pbdata:condemned :A .
+
+:CondemnB a pbdata:condemn-01 ;
+    pbdata:condemner :We ;
+    pbdata:condemned :B .
+
+:DoSomethingA a pbdata:do-something-01 ;
+    pbdata:actor :We ;
+    pbdata:action_target :A .
+
+:DoSomethingB a pbdata:do-something-01 ;
+    pbdata:actor :We ;
+    pbdata:action_target :B .
+
+
+:We a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :A ;
+    whata:isParticipantIn :B ;
+    whata:isParticipantIn :BlendedBlameBackground .

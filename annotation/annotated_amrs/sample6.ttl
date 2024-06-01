@@ -1,0 +1,251 @@
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix ns2: <file:///usr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix quant: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+whata:relevance_fallacy a whata:RelevanceFallacyLens;
+ whata:relatedToLens fred:raise_1.
+
+whata:perspectivisation_6 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern 'other cases';
+    per:Lens fred:raise_1;
+    per:Cut fred:case_1;
+    per:Background fred:violence_1;
+    per:Eventuality fred:CrocodileTear.
+
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:hit_1,
+        fred:raise_1 ;
+    fred:conjuBy fred:see_1 .
+
+fred:govern_1 a pbdata:govern-01 ;
+    pblr:governor fred:political-party_1 .
+
+fred:include_1 a pbdata:include-01 ;
+    pblr:group fred:person_2 ;
+    pblr:theme fred:person_3 .
+
+fred:involve_1 a pbdata:involve-01 ;
+    pblr:group fred:case_1 ;
+    pblr:theme fred:person_2 .
+
+fred:lead_1 a pbdata:lead-02 ;
+    pblr:entity_lead fred:party_1 ;
+    pblr:leader fred:person_1 .
+
+fred:lead_2 a pbdata:lead-02 ;
+    boxing:hasTruthValue boxing:False ;
+    pblr:leader fred:person_2 .
+
+fred:temporal-quantity_1 a fred:Temporal-quantity ;
+    ns2:instance "age-01" ;
+    amr:unit fred:decade_1 ;
+    dul:hasDataValue 1.0 ;
+    vn.role:Predicate <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#malformed_amr/z26>,
+        fred:person_3 .
+
+fred:Crocodile rdfs:subClassOf dul:Organism,
+        wn30:supersense-noun_animal ;
+    owl:equivalentClass wn30:synset-crocodile-noun-1 .
+
+fred:CrocodileTear dul:associatedWith fred:Crocodile ;
+a whata:Blamable;
+    rdfs:subClassOf fred:Tear .
+
+fred:Decade rdfs:subClassOf dul:TimeInterval,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-decade-noun-1 .
+
+fred:Other rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-other-adjective-1 .
+
+fred:Party rdfs:subClassOf dul:Organization,
+        wn30:supersense-noun_group ;
+    owl:equivalentClass wn30:synset-party-noun-1 .
+
+fred:Tear rdfs:subClassOf dul:Amount,
+        wn30:supersense-noun_body ;
+    owl:equivalentClass wn30:synset-tear-noun-1 .
+
+fred:Violence rdfs:subClassOf d0:Activity,
+        wn30:supersense-noun_act ;
+    owl:equivalentClass wn30:synset-violence-noun-1 .
+
+fred:Woman rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-woman-noun-1 .
+
+fred:decade_1 a fred:Decade .
+
+fred:hit_1 a pbdata:hit-01 ;
+    pblr:agent fred:person_1 ;
+    pblr:instrument fred:shed_1 ;
+    pblr:thing_hit fred:political-party_1 .
+
+fred:issue_1 a pbdata:issue-02 ;
+    pblr:stimulus_of_problematic_state fred:safe_1 .
+
+fred:issue_2 a pbdata:issue-02 ;
+    pblr:stimulus_of_problematic_state fred:case_1 .
+
+fred:party_1 a fred:Party .
+
+fred:person_4 a fred:Person ;
+    quant:hasQuantifier quant:multiple .
+
+fred:raise_1 a pbdata:raise-01 ;
+a whata:WhataboutistLens;
+whata:shiftsFocusFrom fred:CrocodileTear;
+    pblr:agent fred:person_1 ;
+    pblr:logical_subject fred:issue_2 .
+
+fred:safe_1 a pbdata:safe-01 ;
+a whata:Ought;
+whata:isParticipantIn fred:case_1;
+whata:isParticipantIn fred:CrocodileTear;
+whata:isParticipantIn fred:violence_1;
+    pblr:entity_protected fred:woman_1 .
+
+fred:see_1 a pbdata:see-01 ;
+    pblr:attribute_of_arg1 fred:whataboutery_1 ;
+    pblr:thing_viewed fred:case_1 ;
+    pblr:viewer fred:person_4 .
+
+fred:shed_1 a pbdata:shed-01 ;
+    fred:about fred:issue_1 ;
+    pblr:entity_removing fred:political-party_1 ;
+    pblr:thing_being_removed fred:tear_1 .
+
+fred:tear_1 a fred:CrocodileTear .
+
+fred:violence_1 a fred:Violence ;
+a whata:BlendedBlameBackground;
+    fred:against fred:woman_1 .
+
+fred:whataboutery_1 a fred:Whataboutery .
+
+pbdata:case-04 rdfs:label "instance" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:govern-01 rdfs:label "to control or influence, governing, leading" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0125f,
+        fnframe:Leadership .
+
+pbdata:hit-01 rdfs:label "strike" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0092f,
+        fnframe:Cause_harm,
+        fnframe:Cause_impact,
+        fnframe:Experience_bodily_harm,
+        fnframe:Hit_target,
+        fnframe:Impact .
+
+pbdata:include-01 rdfs:label "include" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0082f,
+        fnframe:Inclusion .
+
+pbdata:involve-01 rdfs:label "include, connected, associated, wrapped up in" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0080f,
+        fnframe:Participation .
+
+pbdata:raise-01 rdfs:label "move upward, quantifiably or metaphorically, (cause of) upward movement/increase" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0219f .
+
+pbdata:safe-01 rdfs:label "safe" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder fnframe:Being_at_risk,
+        fnframe:Risky_situation .
+
+pbdata:see-01 rdfs:label "view" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0521f,
+        fnframe:Arriving,
+        fnframe:Categorization,
+        fnframe:Coming_to_believe,
+        fnframe:Grasp,
+        fnframe:Perception_active,
+        fnframe:Perception_experience .
+
+pbdata:shed-01 rdfs:label "get rid of, remove" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0255f,
+        fnframe:Undressing .
+
+wn30:synset-crocodile-noun-1 wn30schema:gloss "large voracious aquatic reptile having a long snout with massive jaws and sharp teeth and a body covered with bony plates; of sluggish tropical waters"@en-us .
+
+wn30:synset-decade-noun-1 wn30schema:gloss "a period of 10 years"@en-us .
+
+wn30:synset-other-adjective-1 wn30schema:gloss "not the same one or ones already mentioned or implied; \"today isn't any other day\"- the White Queen; \"the construction of highways and other public works\"; \"he asked for other employment\"; \"any other person would tell the truth\"; \"his other books are still in storage\"; \"then we looked at the other house\"; \"hearing was good in his other ear\"; \"the other sex\"; \"she lived on the other side of the street from me\"; \"went in the other direction\""@en-us .
+
+wn30:synset-party-noun-1 wn30schema:gloss "an organization to gain political power; \"in 1992 Perot tried to organize a third party at the national level\""@en-us .
+
+wn30:synset-tear-noun-1 wn30schema:gloss "a drop of the clear salty saline solution secreted by the lacrimal glands; \"his story brought tears to her eyes\""@en-us .
+
+wn30:synset-violence-noun-1 wn30schema:gloss "an act of aggression (as one against a person who resists); \"he may accomplish by craft in the long run what he cannot do by force and violence in the short one\""@en-us .
+
+wn30:synset-woman-noun-1 wn30schema:gloss "an adult female person (as opposed to a man); \"the woman kept house while the man hunted\""@en-us .
+
+fred:person_3 a fred:Person ;
+    dul:hasQuality fred:Over ;
+    quant:hasQuantifier quant:multiple .
+
+fred:woman_1 a fred:Woman .
+
+pbdata:issue-02 rdfs:label "problematic state" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder fnframe:Emanating,
+        fnframe:Fluidic_motion,
+        fnframe:Point_of_dispute .
+
+pbdata:lead-02 rdfs:label "act as project leader, be the leader" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0125f,
+        fnframe:Leadership .
+
+fred:case_1 a pbdata:case-04 ;
+a whata:CounterBlamable;
+per:shotThrough fred:raise_1;
+    dul:hasQuality fred:Other ;
+    pblr:instance_of fred:violence_1 .
+
+fred:person_1 a fred:Person ;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:CrocodileTear;
+whata:isParticipantIn fred:violence_1;
+    quant:hasQuantifier quant:multiple .
+
+fred:person_2 a fred:Person ;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:violence_1;
+whata:isParticipantIn fred:case_1.
+
+fred:political-party_1 a fred:Political-party .
+

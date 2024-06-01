@@ -1,0 +1,53 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+
+# Define entities "We", "Your side", ResponsibilityOwner1, ResponsibilityOwner2
+:We a whata:Blamable ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :ResponsibilityOwner1 ;
+    whata:isParticipantIn :OughtWe .
+
+:YourSide a whata:CounterBlamable ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :ResponsibilityOwner2 ;
+    whata:isParticipantIn :OughtYourSide ;
+    per:shotThrough :WhataboutistLens_2 .
+
+:ResponsibilityOwner1 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :We ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+:ResponsibilityOwner2 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :YourSide ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_4 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "but 'your side' does shitty things too" ;
+    per:Lens :WhataboutistLens_2 ;
+    per:Cut :YourSide ;
+    per:Background :BlendedBlameBackground ;
+    per:Eventuality :We .
+
+# Define the Whataboutist Lens
+:WhataboutistLens_2 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :YourSide .
+
+# Define the blended blame background
+:BlendedBlameBackground a whata:BlendedBlameBackground .
+
+# Define the oughts (norms or duties being infringed)
+:OughtWe a whata:Ought ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :We .
+
+:OughtYourSide a whata:Ought ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :YourSide .
+
+# Define 'They' as a collective entity (mentioned in the background)
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :BlendedBlameBackground .

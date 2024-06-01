@@ -1,0 +1,67 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+
+# Define entities A and B
+:AltRightViolence a whata:Blamable .
+:AltLeftViolence a whata:CounterBlamable ;
+per:shotThrough :WhataboutistLens_1.
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_1 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "what about" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Background :BlendedBlameBackground ;
+    per:Eventuality :AltRightViolence ;
+    per:Cut :AltLeftViolence .
+
+# Define the Whataboutist Lens
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :AltRightViolence .
+
+# Define the blended blame background
+:BlendedBlameBackground a whata:BlendedBlameBackground ;
+    per:Background :BackgroundEvent .
+
+# Define the moral judgment event
+:MoralJudgment a whata:Ought ;
+    whata:isParticipantIn :AltRightViolence ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :AltLeftViolence .
+
+# Define the background event (the context of the blended blame)
+:BackgroundEvent a pbdata:blame-01 ;
+    pbdata:actor :Speaker ;
+    pbdata:action_target :AltRightViolence, :AltLeftViolence .
+
+# Define the actions (condemn and do something)
+:CondemnAltRightViolence a pbdata:condemn-01 ;
+    pbdata:condemner :Speaker ;
+    pbdata:condemned :AltRightViolence .
+
+:CondemnAltLeftViolence a pbdata:condemn-01 ;
+    pbdata:condemner :Speaker ;
+    pbdata:condemned :AltLeftViolence .
+
+:AddressAltRightViolence a pbdata:do-something-01 ;
+    pbdata:actor :Speaker ;
+    pbdata:action_target :AltRightViolence .
+
+:AddressAltLeftViolence a pbdata:do-something-01 ;
+    pbdata:actor :Speaker ;
+    pbdata:action_target :AltLeftViolence .
+
+# Define 'Speaker' as a collective entity
+:Speaker a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :AltRightViolence ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :AltLeftViolence .

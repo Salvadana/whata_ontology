@@ -1,0 +1,305 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxer: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+whata:perspectivisation_7 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern "i don't doubt it but";
+    per:Lens fred:doubt_1;
+    per:Cut fred:take-away_1;
+    per:Background fred:starve_1;
+    per:Eventuality fred:rise_1.
+
+
+fred:contrast_1 a pbdata:contrast-01 ;
+    pblr:second_item_in_comparison fred:conjunct_1 .
+
+fred:contribute_1 a pbdata:contribute-01 ;
+    pblr:giver fred:factor_1 .
+
+fred:doubt_1 a pbdata:doubt-01 ;
+a whata:WhataboutistLens;
+whata:shiftsFocusFrom fred:rise_1;
+    boxing:hasTruthValue boxing:False ;
+    pblr:disbelief fred:neuter_1 ;
+    pblr:disbeliever fred:person_2 .
+
+fred:farm_2 a pbdata:farm-01 ;
+a whata:Ought;
+whata:isParticipantIn fred:take-away_1;
+whata:isParticipantIn fred:starve_1;
+    pblr:farmer fred:person_1 .
+
+fred:force_1 a pbdata:force-01 ;
+    pblr:impelled_action fred:take-away_1 ;
+    pblr:impelled_agent fred:Robert_Mugabe .
+
+fred:go-on_1 a pbdata:go-on-15 ;
+    boxer:agent fred:article_1 ;
+    boxer:patient fred:blame_1 .
+
+fred:have-org-role_1 a pbdata:have-org-role-91 ;
+    pblr:office_holder fred:Robert_Mugabe ;
+    pblr:organization fred:Zimbabwe ;
+    pblr:title_of_office_held fred:president_1 .
+
+fred:have_1 a pbdata:have-03 ;
+    pblr:owner fred:case_1 ;
+    pblr:possession fred:inflate_1 .
+
+fred:include_1 a pbdata:include-91 ;
+    pblr:subset fred:factor_1 ;
+    pblr:superset fred:price_1 .
+
+fred:rise_1 a pbdata:rise-01 ;
+a whata:Blamable;
+    pblr:logical_subject fred:price_1 .
+
+fred:starve_1 a pbdata:starve-01 ;
+a whata:BlendedBlameBackground;
+    pblr:cause_of_starvation fred:case_1 .
+
+fred:white_1 a pbdata:white-02 ;
+    pblr:entity_identifying_as_white fred:person_1 .
+
+fred:Article rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_communication ;
+    owl:equivalentClass wn30:synset-article-noun-1 .
+
+fred:Basket rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-basket-noun-1 .
+
+fred:BasketCase dul:associatedWith fred:Basket ;
+    rdfs:subClassOf fred:Case .
+
+fred:Case rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-case-noun-5 .
+
+fred:Country rdfs:subClassOf d0:Location,
+        wn30:supersense-noun_location ;
+    owl:equivalentClass wn30:synset-country-noun-2 .
+
+fred:Factor rdfs:subClassOf dul:Situation,
+        wn30:supersense-noun_event ;
+    owl:equivalentClass wn30:synset-factor-noun-1 .
+
+fred:Farm rdfs:subClassOf d0:Location,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-farm-noun-1 .
+
+fred:Food rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_tops ;
+    owl:equivalentClass wn30:synset-food-noun-1 .
+
+fred:NY_Times a amr:Newspaper ;
+    owl:sameAs dbpedia:The_New_York_Times,
+        wd:Q9684 .
+
+fred:Neuter a owl:Thing .
+
+fred:Then rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-then-adverb-1 .
+
+fred:blame_1 a pbdata:blame-01 ;
+    pblr:blame fred:factor_1 ;
+    pblr:blamer fred:article_1 ;
+    pblr:entity_blamed fred:price_1 .
+
+fred:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember fred:take-away_1,
+        fred:turn_1 ;
+    vn.role:Time fred:use_1 .
+
+fred:farm_1 a fred:Farm .
+
+fred:food_1 a fred:Food;
+a whata:Ought;
+whata:isParticipantIn fred:rise_1;
+whata:isParticipantIn fred:starve_1.
+
+fred:inflate_1 a pbdata:inflate-01 ;
+    pblr:amount_increased_by fred:percentage-entity_1 .
+
+fred:neuter_1 a fred:Neuter .
+
+fred:percentage-entity_1 a amr:Percentage-entity ;
+    dul:hasDataValue 1000.0 .
+
+fred:person_2 a amr:Person .
+
+fred:president_1 a fred:President .
+
+fred:then_1 a fred:Then .
+
+fred:turn_1 a pbdata:turn-02 ;
+    pblr:causer_of_transformation fred:Robert_Mugabe ;
+    pblr:end_state fred:case_1 ;
+    pblr:thing_changing fred:Zimbabwe .
+
+fred:use_1 a pbdata:use-03 .
+
+pbdata:blame-01 rdfs:label "assign culpability" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0272f .
+
+pbdata:contrast-01 rdfs:label "point out differences, measure of difference" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0627f .
+
+pbdata:contribute-01 rdfs:label "give" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0496f,
+        fnframe:Giving .
+
+pbdata:doubt-01 rdfs:label "doubt, disbelieve" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0045f,
+        fnframe:Certainty .
+
+pbdata:farm-01 rdfs:label "to cultivate or produce a crop on" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0586f,
+        fnframe:Agriculture,
+        fnframe:Growing_food .
+
+pbdata:force-01 rdfs:label "impelled action" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0086f,
+        fnframe:Causation,
+        fnframe:Cause_motion .
+
+pbdata:go-on-15 rdfs:label "go on: occur, continue" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder fnframe:Process_continue .
+
+pbdata:have-03 rdfs:label "own, possess" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0104f,
+        fnframe:Possession .
+
+pbdata:have-org-role-91 rdfs:subClassOf dul:Event .
+
+pbdata:include-91 rdfs:subClassOf dul:Event .
+
+pbdata:inflate-01 rdfs:label "cause to expand, stagnant growth accompanied by inflation" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0430f,
+        fnframe:Cause_expansion,
+        fnframe:Expansion .
+
+pbdata:price-01 rdfs:label "assign/identify the price of, cf cost" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0064f .
+
+pbdata:rise-01 rdfs:label "go up" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0430f,
+        fnframe:Change_position_on_a_scale,
+        fnframe:Getting_up,
+        fnframe:Motion_directional,
+        fnframe:Path_shape,
+        fnframe:Progress,
+        fnframe:Sidereal_appearance .
+
+pbdata:starve-01 rdfs:label "to suffer or cause to suffer  from deprivation or hunger" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0431f,
+        fnframe:Death,
+        fnframe:Killing,
+        fnframe:Prevent_from_having .
+
+pbdata:take-away-05 rdfs:label "take away: remove" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:turn-02 rdfs:label "transformation, becoming" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0564f,
+        fnframe:Becoming,
+        fnframe:Cause_change,
+        fnframe:Undergo_change .
+
+pbdata:white-02 rdfs:label "of an ethnic background featuring light skin" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder fnframe:Race_descriptor .
+
+wn30:synset-article-noun-1 wn30schema:gloss "nonfictional prose forming an independent part of a publication"@en-us .
+
+wn30:synset-basket-noun-1 wn30schema:gloss "a container that is usually woven and has handles"@en-us .
+
+wn30:synset-case-noun-5 wn30schema:gloss "a portable container for carrying several objects; \"the musicians left their instrument cases backstage\""@en-us .
+
+wn30:synset-country-noun-2 wn30schema:gloss "the territory occupied by a nation; \"he returned to the land of his birth\"; \"he visited several European countries\""@en-us .
+
+wn30:synset-factor-noun-1 wn30schema:gloss "anything that contributes causally to a result; \"a number of factors determined the outcome\""@en-us .
+
+wn30:synset-farm-noun-1 wn30schema:gloss "workplace consisting of farm buildings and cultivated land as a unit; \"it takes several people to work the farm\""@en-us .
+
+wn30:synset-food-noun-1 wn30schema:gloss "any substance that can be metabolized by an animal to give energy and build tissue"@en-us .
+
+wn30:synset-then-adverb-1 wn30schema:gloss "subsequently or soon afterward (often used as sentence connectors); \"then he left\"; \"go left first, then right\"; \"first came lightning, then thunder\"; \"we watched the late movie and then went to bed\"; \"and so home and to bed\""@en-us .
+
+fred:article_1 a fred:Article ;
+    fred:articleOf fred:NY_Times .
+
+fred:take-away_1 a pbdata:take-away-05 ;
+a whata:CounterBlamable;
+per:shotThrough fred:doubt_1;
+    boxer:agent fred:Robert_Mugabe ;
+    boxer:patient fred:farm_1 ;
+    vn.role:Predicate fred:person_1 ;
+    vn.role:Time fred:then_1 .
+
+fred:Zimbabwe a amr:Country ;
+    dul:associatedWith fred:Country ;
+    rdfs:subClassOf fred:Person ;
+    owl:sameAs dbpedia:Zimbabwe,
+        wd:Q954 .
+
+fred:case_1 a fred:BasketCase .
+
+fred:factor_1 a fred:Factor .
+
+fred:person_1 a fred:Zimbabwe .
+
+fred:price_1 a pbdata:price-01 ;
+    pblr:commodity fred:food_1 .
+
+fred:Robert_Mugabe a amr:Person ;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:take-away_1;
+whata:isParticipantIn fred:starve_1;
+    owl:sameAs dbpedia:Robert_Mugabe,
+        wd:Q10707 .
+
+whata:ro1 a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:rise_1;
+whata:isParticipantIn fred:starve_1.

@@ -1,0 +1,223 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix quant: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+whata:relevance_fallacy a whata:RelevanceFallacyLens;
+ whata:relatedToLens whata:contrast_1.
+
+
+whata:perspectivisation_9 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern "but what about";
+    per:Lens fred:contrast_1;
+    per:Cut fred:kill_2;
+    per:Background fred:emit_1;
+    per:Eventuality fred:kill_1.
+
+fred:cause_1 a pbdata:cause-01 ;
+    pblr:forcer fred:pollute_1 ;
+    pblr:impelled_action fred:kill_1 .
+
+fred:cause_2 a pbdata:cause-01 ;
+    pblr:forcer fred:cause_3 ;
+    pblr:impelled_action fred:have-degree_2 .
+
+fred:contrast_1 a pbdata:contrast-01 ;
+a whata:WhataboutistLens;
+whata:shiftsFocusFrom fred:kill_1;
+    pblr:first_item_in_comparison fred:kill_1 ;
+    pblr:second_item_in_comparison owl:Thing .
+
+fred:have-degree_1 a pbdata:have-degree-91 ;
+    pblr:attribute fred:great_1 ;
+    pblr:degree_itself fred:more_1 ;
+    pblr:domain fred:CO2 .
+
+fred:kill_2 a pbdata:kill-01 ;
+a whata:CounterBlamable;
+per:shotThrough fred:contrast_1;
+    vn.role:Time fred:change_1 ;
+    pblr:corpse fred:person_3 ;
+    pblr:killer fred:emit_1 .
+
+fred:Climate rdfs:subClassOf dul:Situation,
+        wn30:supersense-noun_state ;
+    owl:equivalentClass wn30:synset-climate-noun-1 .
+
+fred:Diesel rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-diesel-noun-2 .
+
+fred:DieselCar dul:associatedWith fred:Diesel ;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:kill_1;
+whata:isParticipantIn fred:emit_1;
+    rdfs:subClassOf fred:Car .
+
+fred:Great rdfs:subClassOf dul:Quality,
+        fschema:AdjectivalQuality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-great-adjectivesatellite-1 .
+
+fred:Neuter a owl:Thing .
+
+fred:Petrol rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_substance ;
+    owl:equivalentClass wn30:synset-gasoline-noun-1 .
+
+fred:PetrolCar dul:associatedWith fred:Petrol ;
+a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:kill_2;
+whata:isParticipantIn fred:emit_1;
+    rdfs:subClassOf fred:Car .
+
+fred:bad_1 a pbdata:bad-07 ;
+    pblr:generally_negative fred:neuter_1 .
+
+fred:car_1 a fred:DieselCar .
+
+fred:car_2 a fred:PetrolCar .
+
+fred:cause_3 a pbdata:cause-01 ;
+    pblr:forcer fred:person_2 ;
+    pblr:impelled_action fred:emit_1 .
+
+fred:change_1 a pbdata:change-01 ;
+    pblr:thing_changing fred:climate_1 .
+
+fred:climate_1 a fred:Climate ;
+a whata:Ought;
+whata:isParticipantIn fred:kill_1;
+whata:isParticipantIn fred:kill_2;
+whata:isParticipantIn fred:emit_1.
+
+fred:drive_1 a pbdata:drive-01 ;
+    pblr:vehicle_or_path fred:car_2 .
+
+fred:great_1 a fred:Great .
+
+fred:have-degree_2 a pbdata:have-degree-91 ;
+    pblr:attribute fred:bad_1 ;
+    pblr:degree_itself fred:more_2 ;
+    pblr:domain fred:neuter_1 .
+
+fred:more_1 a fred:More .
+
+fred:more_2 a fred:More .
+
+fred:person_1 a fred:Person ;
+    dul:hasDataValue 10000.0 ;
+    quant:hasQuantifier quant:multiple .
+
+fred:person_3 a fred:Person ;
+    quant:hasQuantifier quant:multiple .
+
+fred:pollute_1 a pbdata:pollute-01 .
+
+pbdata:bad-07 rdfs:label "generally negative, morally bad, displeasing" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder fnframe:Desirability,
+        fnframe:Morality_evaluation .
+
+pbdata:change-01 rdfs:label "transform" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0016f,
+        fnframe:Cause_change,
+        fnframe:Undergo_change .
+
+pbdata:contrast-01 rdfs:label "point out differences, measure of difference" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0627f .
+
+pbdata:drive-01 rdfs:label "drive or be driven around in a vehicle" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0242f,
+        fnframe:Bringing,
+        fnframe:Operate_vehicle,
+        fnframe:Self_motion .
+
+pbdata:emit-01 rdfs:label "emit, let forth" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0059f .
+
+pbdata:pollute-01 rdfs:label "to contaminate, contaminating of" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0437f .
+
+wn30:synset-car-noun-1 wn30schema:gloss "a motor vehicle with four wheels; usually propelled by an internal combustion engine; \"he needs a car to get to work\""@en-us .
+
+wn30:synset-climate-noun-1 wn30schema:gloss "the weather in some location averaged over some long period of time; \"the dank climate of southern Wales\"; \"plants from a cold clime travel best in winter\""@en-us .
+
+wn30:synset-diesel-noun-2 wn30schema:gloss "an internal-combustion engine that burns heavy oil"@en-us .
+
+wn30:synset-gasoline-noun-1 wn30schema:gloss "a volatile flammable mixture of hydrocarbons (hexane and heptane and octane etc.) derived from petroleum; used mainly as a fuel in internal-combustion engines"@en-us .
+
+wn30:synset-great-adjectivesatellite-1 wn30schema:gloss "relatively large in size or number or extent; larger than others of its kind; \"a great juicy steak\"; \"a great multitude\"; \"the great auk\"; \"a great old oak\"; \"a great ocean liner\"; \"a great delay\""@en-us .
+
+wn30:synset-more-adjective-2 wn30schema:gloss "(comparative of `many' used with count nouns) quantifier meaning greater in number; \"a hall with more seats\"; \"we have no more bananas\"; \"more than one\""@en-us .
+
+fred:CO2 a amr:Small-molecule ;
+    owl:sameAs dbpedia:Carbon_monoxide,
+        wd:Q2025 .
+
+fred:Car rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-car-noun-1 .
+
+fred:More rdfs:subClassOf dul:Quality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-more-adjective-2 .
+
+fred:emit_1 a pbdata:emit-01 ;
+a whata:BlendedBlameBackground;
+    pblr:emitting_entity fred:person_2 ;
+    pblr:thing_emitted fred:CO2 .
+
+fred:kill_1 a pbdata:kill-01 ;
+a whata:Blamable;
+    pblr:corpse fred:person_1 ;
+    pblr:killer fred:car_1 .
+
+fred:neuter_1 a fred:Neuter .
+
+fred:person_2 a amr:Person .
+
+owl:Thing fred:about fred:drive_1 .
+
+pbdata:have-degree-91 rdfs:subClassOf dul:Event .
+
+pbdata:kill-01 rdfs:label "cause to die, murder" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0062f,
+        fnframe:Killing .
+
+quant:multiple quant:hasQuantifier quant:multiple .
+
+pbdata:cause-01 rdfs:label "impelled action" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0619f,
+        fnframe:Causation .
+

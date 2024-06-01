@@ -1,0 +1,67 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+
+
+# Define entities Venezuela, Other places, Asuncion, Paraguay, Four Mayors, "They"
+:Venezuela a whata:Blamable .
+
+:OtherPlaces a whata:CounterBlamable ;
+    per:shotThrough :WhataboutistLens_1 .
+
+:Asuncion a whata:BlameSituation .
+
+:Paraguay a whata:BlameSituation .
+
+:FourMayors a whata:BlameSituation .
+
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :Venezuela ;
+    whata:isParticipantIn :OtherPlaces ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_2 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "but there are many other places" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Cut :OtherPlaces ;
+    per:Background :BlendedBlameBackground ;
+    per:Eventuality :Venezuela .
+
+# Define the Whataboutist Lens
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :Venezuela .
+
+# Define the blended blame background
+:BlendedBlameBackground a whata:BlendedBlameBackground ;
+    per:Background :BackgroundEvent .
+
+# Define the moral judgment event
+:MoralJudgment a whata:Ought ;
+    whata:isParticipantIn :Venezuela ;
+    whata:isParticipantIn :OtherPlaces ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+# Define the background event (the context of the blended blame)
+:BackgroundEvent a pbdata:blame-01 ;
+    pbdata:actor :They ;
+    pbdata:action_target :Venezuela, :OtherPlaces .
+
+# Define the criticism event
+:CriticismEvent a pbdata:criticize-01 ;
+    pbdata:critic :They ;
+    pbdata:entity_being_criticized :Venezuela, :OtherPlaces .
+
+# Define the killing event
+:KillingEvent a pbdata:kill-01 ;
+    pbdata:killer :They ;
+    pbdata:entity_killed :FourMayors ;
+    pbdata:location :Asuncion, :Paraguay .
+
+# Define 'They' as a collective entity
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :CriticismEvent ;
+    whata:isParticipantIn :KillingEvent ;
+    whata:isParticipantIn :BlendedBlameBackground .

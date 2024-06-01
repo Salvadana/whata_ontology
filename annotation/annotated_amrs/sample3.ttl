@@ -28,7 +28,9 @@
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
      owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
 
-                                                     
+whata:c_bias_1 a whata:ConfirmationBiasLens;
+whata:relatedToLens fred:doubt_1.
+
 whata:perspectivisation_3 a whata:WhataboutistPerspectivisation;
     
 whata:relatedIdentifyingPattern 'other countries';

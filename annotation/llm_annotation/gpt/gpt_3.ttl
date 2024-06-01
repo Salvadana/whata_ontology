@@ -1,0 +1,84 @@
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+
+# Define entities alt-right, alt-left, ResponsibilityOwner1, ResponsibilityOwner2, clubs, problem, guilt, and "they"
+:AltRight a whata:Blamable ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :ResponsibilityOwner1 ;
+    whata:isParticipantIn :OughtAltRight .
+
+:AltLeft a whata:CounterBlamable ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :ResponsibilityOwner2 ;
+    whata:isParticipantIn :OughtAltLeft ;
+    per:shotThrough :WhataboutistLens_1 .
+
+:ResponsibilityOwner1 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :AltRight ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+:ResponsibilityOwner2 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :AltLeft ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+:Clubs a whata:BlameSituation .
+
+:Problem a whata:BlameSituation .
+
+:Guilt a whata:BlameSituation .
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_3 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "what about the alt-left" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Cut :AltLeft ;
+    per:Background :BlendedBlameBackground ;
+    per:Eventuality :AltRight .
+
+# Define the Whataboutist Lens
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :AltRight .
+
+# Define the blended blame background
+:BlendedBlameBackground a whata:BlendedBlameBackground .
+
+# Define the oughts (norms or duties being infringed)
+:OughtAltRight a whata:Ought ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :AltRight .
+
+:OughtAltLeft a whata:Ought ;
+    whata:isParticipantIn :BlendedBlameBackground ;
+    whata:isParticipantIn :AltLeft .
+
+# Define the charging event
+:ChargingEvent a pbdata:charge-01 ;
+    pbdata:charger :They ;
+    pbdata:entity_being_charged :AltLeft ;
+    pbdata:weapon_used :Clubs ;
+    pbdata:location :BlameSituation .
+
+# Define the guilt event
+:GuiltEvent a pbdata:guilt-01 ;
+    pbdata:guilty_party :They ;
+    pbdata:guilt_target :AltRight ;
+    pbdata:questioned :Problem .
+
+# Define the problem event
+:ProblemEvent a pbdata:problem-01 ;
+    pbdata:problem_entity :They ;
+    pbdata:problem_target :AltRight .
+
+# Define 'They' as a collective entity
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :ChargingEvent ;
+    whata:isParticipantIn :GuiltEvent ;
+    whata:isParticipantIn :ProblemEvent .
