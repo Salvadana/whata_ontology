@@ -1,8 +1,6 @@
 @prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
 @prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
-@prefix boxer: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
 @prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
 @prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
@@ -10,16 +8,28 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pbdata: <https://w3id.org/framester/pb/data/> .
 @prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix quant: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix va: <http://verbatlas.org/> .
 @prefix vn.role: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/vnrole.owl#> .
-@prefix wd: <http://www.wikidata.org/entity/> .
 @prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
 @prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+
+
+@prefix boxer: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix ns2: <file:///usr/> .
 @prefix quant: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
 
+
+
+
 @prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -27,10 +37,533 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
 
-@base <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> .
 
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
-                                                                                                           owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
+
+whata:relevance_fallacy a whata:RelevanceFallacyLens;
+ whata:relatedToLens fred:respond_1.
+
+whata:perspectivisation_11 a whata:WhataboutistPerspectivisation;
+     
+    whata:relatedIdentifyingPattern "you're not exactly a runway model either";
+    per:Eventuality fred:have-rel-role_1;
+    per:Cut fred:have-mod-91_2;
+    per:Lens fred:respond_1;
+    per:Background fred:model_1.
+
+
+fred:have-rel-role_1 a pbdata:have-rel-role-91 ;
+a whata:Blamable;
+    pblr:entity_a fred:person_1 ;
+    pblr:entity_b fred:disjunct_1 ;
+    pblr:role_of_entity_a fred:doctor_1 .
+
+fred:respond_1 a pbdata:respond-01 ;
+whata:shiftsFocusFrom fred:have-rel-role_1;
+    pblr:in_response_to fred:say_1 ;
+    pblr:replier fred:person_3 .
+
+fred:tell_1 a pbdata:tell-01 ;
+    pblr:hearer fred:person_2 ;
+    pblr:speaker fred:person_1 ;
+    pblr:utterance fred:disjunct_1 .
+
+fred:Either rdfs:subClassOf dul:Quality,
+        wn30:supersense-adv_all ;
+    owl:equivalentClass wn30:synset-either-adverb-1 .
+
+fred:EitherHave-mod-91 dul:associatedWith fred:Either ;
+    rdfs:subClassOf fred:Have-mod-91 .
+
+fred:Model rdfs:subClassOf dul:InformationEntity,
+        wn30:supersense-noun_cognition ;
+    owl:equivalentClass wn30:synset-exemplar-noun-1 .
+
+fred:Oh-yeahHave-mod-91 amr:mode amr:expressive ;
+    dul:associatedWith fred:Oh-yeah ;
+    rdfs:subClassOf fred:Have-mod-91 .
+
+fred:Runway rdfs:subClassOf d0:Location,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-runway-noun-3 .
+
+fred:RunwayModel dul:associatedWith fred:Runway ;
+    rdfs:subClassOf fred:Model .
+
+fred:Weight rdfs:subClassOf d0:Characteristic,
+        wn30:supersense-noun_attribute ;
+    owl:equivalentClass wn30:synset-weight-noun-1 .
+
+fred:doctor_1 a fred:Doctor .
+
+whata:doctor a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:model_1;
+whata:isParticipantIn fred:have-mod-91_2.
+
+whata:ill_person a whata:ResponsibilityOwner;
+whata:isParticipantIn fred:model_1;
+whata:isParticipantIn fred:have-rel-role_1.
+
+fred:doctor_2 a fred:Doctor .
+
+fred:have-mod-91_2 a fred:EitherHave-mod-91;
+a whata:CounterBlamable;
+per:shotThrough fred:respond_1;   
+    boxing:hasTruthValue boxing:False ;
+    vn.role:Predicate fred:model_1,
+        fred:person_3 .
+
+fred:have_1 a pbdata:have-06 ;
+    pblr:true_predicate fred:heart-attack_1 ;
+    pblr:true_subject fred:disjunct_1 .
+
+fred:heart-attack_1 a fred:Heart-attack .
+
+fred:lose_1 a pbdata:lose-01 ;
+a whata:Ought;
+whata:isParticipantIn fred:model_1;
+whata:isParticipantIn fred:have-rel-role_1;
+whata:isParticipantIn fred:have-mod-91_2;
+    pblr:logical_subject fred:weight_1 .
+
+fred:model_1 a fred:RunwayModel ;
+a whata:BlendedBlameBackground;
+    dul:hasQuality fred:Exact .
+
+fred:need_1 a pbdata:need-01 ;
+    pblr:needer fred:disjunct_1 ;
+    pblr:thing_needed fred:lose_1 .
+
+fred:person_2 a amr:Person .
+
+fred:say_1 a pbdata:say-01 ;
+    pblr:hearer fred:doctor_2 ;
+    pblr:sayer fred:person_3 ;
+    pblr:utterance fred:have-mod-91_2 .
+
+fred:weight_1 a fred:Weight ;
+    quant:hasQuantifier quant:multiple .
+
+pbdata:have-06 rdfs:label "light verb-- FOR AMR USE ONLY" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:have-rel-role-91 rdfs:subClassOf dul:Event .
+
+pbdata:lose-01 rdfs:label "decrease, fall" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0533f,
+        fnframe:Earnings_and_losses,
+        fnframe:Finish_competition,
+        fnframe:Finish_game .
+
+pbdata:need-01 rdfs:label "need, required, necessary" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0032f,
+        fnframe:Being_necessary,
+        fnframe:Have_as_requirement,
+        fnframe:Needing,
+        fnframe:Required_event .
+
+pbdata:respond-01 rdfs:label "give an answer, reply" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0325f,
+        fnframe:Communication_response,
+        fnframe:Response .
+
+pbdata:say-01 rdfs:label "say" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0424f,
+        fnframe:Communication,
+        fnframe:Request,
+        fnframe:Spelling_and_pronouncing,
+        fnframe:Statement,
+        fnframe:Text_creation .
+
+pbdata:tell-01 rdfs:label "pass along information" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0009f,
+        fnframe:Communication,
+        fnframe:Evidence,
+        fnframe:Reporting,
+        fnframe:Request,
+        fnframe:Statement,
+        fnframe:Telling,
+        fnframe:Text_creation .
+
+wn30:synset-doctor-noun-1 wn30schema:gloss "a licensed medical practitioner; \"I felt so bad I went to see my doctor\""@en-us .
+
+wn30:synset-either-adverb-1 wn30schema:gloss "after a negative statement used as an intensive meaning something like `likewise' or `also'; \"he isn't stupid, but he isn't exactly a genius either\"; \"I don't know either\"; \"if you don't order dessert I won't either\""@en-us .
+
+wn30:synset-exemplar-noun-1 wn30schema:gloss "something to be imitated; \"an exemplar of success\"; \"a model of clarity\"; \"he is the very model of a modern major general\""@en-us .
+
+wn30:synset-runway-noun-3 wn30schema:gloss "a narrow platform extending from the stage into the audience in a theater or nightclub etc."@en-us .
+
+wn30:synset-weight-noun-1 wn30schema:gloss "the vertical force exerted by a mass as a result of gravity"@en-us .
+
+fred:Doctor rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-doctor-noun-1 .
+
+fred:person_1 a fred:Person .
+
+fred:person_3 a amr:Person .
+
+fred:disjunct_1 a boxing:Disjunct ;
+    dul:hasMember fred:have_1,
+        fred:need_1 .
+
+
+
+
+
+# Define entities Venezuela, Other places, Asuncion, Paraguay, Four Mayors, "They"
+:Venezuela a whata:Blamable .
+
+:OtherPlaces a whata:CounterBlamable ;
+    per:shotThrough :WhataboutistLens_1 .
+
+:Asuncion a whata:BlameSituation .
+
+:Paraguay a whata:BlameSituation .
+
+:FourMayors a whata:BlameSituation .
+
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :Venezuela ;
+    whata:isParticipantIn :OtherPlaces ;
+    whata:isParticipantIn :Blended.
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_14 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "but there are many other places" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Cut :OtherPlaces ;
+    per:Background :Blended ;
+    per:Eventuality :Venezuela .
+
+# Define the Whataboutist Lens
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :Venezuela .
+
+# Define the blended blame background
+:Blended a whata:BlendedBlameBackground ;
+    per:Background :BackgroundEvent .
+
+# Define the moral judgment event
+:MoralJudgment a whata:Ought ;
+    whata:isParticipantIn :Venezuela ;
+    whata:isParticipantIn :OtherPlaces ;
+    whata:isParticipantIn :Blended .
+
+# Define the background event (the context of the blended blame)
+:BackgroundEvent a pbdata:blame-01 ;
+    pbdata:actor :They ;
+    pbdata:action_target :Venezuela, :OtherPlaces .
+
+# Define the criticism event
+:CriticismEvent a pbdata:criticize-01 ;
+    pbdata:critic :They ;
+    pbdata:entity_being_criticized :Venezuela, :OtherPlaces .
+
+# Define the killing event
+:KillingEvent a pbdata:kill-01 ;
+    pbdata:killer :They ;
+    pbdata:entity_killed :FourMayors ;
+    pbdata:location :Asuncion, :Paraguay .
+
+# Define 'They' as a collective entity
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :CriticismEvent ;
+    whata:isParticipantIn :KillingEvent ;
+    whata:isParticipantIn :Blended.
+
+
+# Define entities alt-right, alt-left, ResponsibilityOwner1, ResponsibilityOwner2, clubs, problem, guilt, and "they"
+:AltRight a whata:Blamable .
+   
+    
+    
+
+:AltLeft a whata:CounterBlamable ;
+    
+    per:shotThrough :WhataboutistLens_1 .
+
+:ResponsibilityOwner1 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :AltRight ;
+    whata:isParticipantIn :Blended.
+
+:ResponsibilityOwner2 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :AltLeft ;
+    whata:isParticipantIn :Blended.
+
+:Clubs a whata:BlameSituation .
+
+:Problem a whata:BlameSituation .
+
+:Guilt a whata:BlameSituation .
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_3 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "what about the alt-left" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Cut :AltLeft ;
+    per:Background :blended;
+    per:Eventuality :AltRight .
+
+# Define the Whataboutist Lens
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :AltRight .
+
+# Define the blended blame background
+:Blended a whata:BlendedBlameBackground .
+
+# Define the oughts (norms or duties being infringed)
+:OughtAltRight a whata:Ought ;
+    whata:isParticipantIn :Blended ;
+    whata:isParticipantIn :AltRight .
+
+:OughtAltLeft a whata:Ought ;
+    whata:isParticipantIn :Blended ;
+    whata:isParticipantIn :AltLeft .
+
+# Define the charging event
+:ChargingEvent a pbdata:charge-01 ;
+    pbdata:charger :They ;
+    pbdata:entity_being_charged :AltLeft ;
+    pbdata:weapon_used :Clubs ;
+    pbdata:location :BlameSituation .
+
+# Define the guilt event
+:GuiltEvent a pbdata:guilt-01 ;
+    pbdata:guilty_party :They ;
+    pbdata:guilt_target :AltRight ;
+    pbdata:questioned :Problem .
+
+# Define the problem event
+:ProblemEvent a pbdata:problem-01 ;
+    pbdata:problem_entity :They ;
+    pbdata:problem_target :AltRight .
+
+# Define 'They' as a collective entity
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :ChargingEvent ;
+    whata:isParticipantIn :GuiltEvent ;
+    whata:isParticipantIn :ProblemEvent .
+
+
+
+ 
+:We a whata:Blamable .
+    
+
+:YourSide a whata:CounterBlamable ;
+    
+    per:shotThrough :WhataboutistLens_2 .
+
+:ResponsibilityOwner1 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :We ;
+    whata:isParticipantIn :Blended.
+
+:ResponsibilityOwner2 a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :YourSide ;
+    whata:isParticipantIn :Blended .
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_4 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "but 'your side' does shitty things too" ;
+    per:Lens :WhataboutistLens_2 ;
+    per:Cut :YourSide ;
+    per:Background :Blended ;
+    per:Eventuality :We .
+
+# Define the Whataboutist Lens
+:WhataboutistLens_2 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :YourSide .
+
+# Define the blended blame background
+:Blended a whata:BlendedBlameBackground .
+
+# Define the oughts (norms or duties being infringed)
+:OughtWe a whata:Ought ;
+    whata:isParticipantIn :Blended;
+    whata:isParticipantIn :We .
+
+:OughtYourSide a whata:Ought ;
+    whata:isParticipantIn :Blended ;
+    whata:isParticipantIn :YourSide .
+
+# Define 'They' as a collective entity (mentioned in the background)
+:They a whata:ResponsibilityOwner ;
+    whata:isParticipantIn :Blended .
+
+
+
+# Define entities
+:average_1 a pbdata:average-04 ;
+    pblr:average_entity :man_1 .
+
+:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember :lynch_1 .
+
+:have-quant_1 a pbdata:have-quant-91 ;
+    pblr:consequence :buy_1 ;
+    pblr:degree_mention_modifying_quantity :enough_1 ;
+    pblr:entity :money_1 .
+
+:take_1 a pbdata:take-10 ;
+    pblr:requirer :earn_1 ;
+    pblr:thing_required :temporal-quantity_1 .
+
+:Car rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-car-noun-1 .
+
+:Decade rdfs:subClassOf dul:TimeInterval,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-decade-noun-1 .
+
+:Enough rdfs:subClassOf dul:Quality,
+        fschema:AdjectivalQuality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-adequate-adjectivesatellite-2 .
+
+:Man rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-man-noun-1 .
+
+:Money rdfs:subClassOf dul:Amount,
+        wn30:supersense-noun_possession ;
+    owl:equivalentClass wn30:synset-money-noun-1 .
+
+:Negro a amr:Ethnic-group ;
+    owl:sameAs dbpedia:Negro,
+        wd:Q1130557 .
+
+:buy_1 a pbdata:buy-01 ;
+    pblr:buyer :man_1 ;
+    pblr:thing_bought :car_1 .
+
+:car_1 a fred:Soviet_Union .
+
+:decade_1 a fred:Decade .
+
+:earn_1 a pbdata:earn-01 ;
+    pblr:earner :man_1 ;
+    pblr:wages :money_1 .
+
+:enough_1 a fred:Enough .
+
+:lynch_1 a pbdata:lynch-01 ;
+    pblr:victim :person_2 ;
+    pblr:violent_mob :person_1 ;
+    a whata:CounterBlamable ;
+    per:shotThrough :WhataboutistLens_1 .
+
+:money_1 a fred:Money .
+
+:temporal-quantity_1 a fred:Temporal-quantity ;
+    amr:quant owl:Thing ;
+    amr:unit :decade_1 .
+
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :person_2 .
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_15 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "and you" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Cut :lynch_1 ;
+    per:Background :Blended;
+    per:Eventuality :person_2 .
+
+:person_2 a whata:Blamable.
+
+# Define the blended blame background
+:Blended a whata:BlendedBlameBackground ;
+    whata:isParticipantIn :person_1 ;
+    whata:isParticipantIn :person_2 ;
+    whata:isParticipantIn :lynch_1 .
+
+# Define the oughts (norms or duties being infringed)
+:Ought_1 a whata:Ought ;
+    whata:isParticipantIn :person_2 ;
+    whata:isParticipantIn :Blended .
+
+:Ought_2 a whata:Ought ;
+    whata:isParticipantIn :lynch_1 ;
+    whata:isParticipantIn :Blended .
+
+# Define additional entities and relationships
+:average_1 a pbdata:average-04 ;
+    pblr:average_entity :man_1 .
+
+:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember :lynch_1 .
+
+:have-quant_1 a pbdata:have-quant-91 ;
+    pblr:consequence :buy_1 ;
+    pblr:degree_mention_modifying_quantity :enough_1 ;
+    pblr:entity :money_1 .
+
+:take_1 a pbdata:take-10 ;
+    pblr:requirer :earn_1 ;
+    pblr:thing_required :temporal-quantity_1 .
+
+pbdata:average-04 rdfs:label "normal, in the range of mean, median or mode" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder fnframe:Desirability,
+        fnframe:Typicality .
+
+pbdata:buy-01 rdfs:label "purchase" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0185f,
+        fnframe:Commerce_buy .
+
+pbdata:earn-01 rdfs:label "wages" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0279f,
+        fnframe:Earnings_and_losses .
+
+pbdata:have-quant-91 rdfs:subClassOf dul:Event .
+
+pbdata:lynch-01 rdfs:label "execution as by a mob, often by hanging" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:take-10 rdfs:label "need, requiring" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0032f,
+        fnframe:Bearing_arms,
+        fnframe:Capacity,
+        fnframe:Have_as_requirement,
+        fnframe:Inclusion,
+        fnframe:Removing,
+        fnframe:Taking_time,
+        fnframe:Undressing .
+
+wn30:synset-adequate-adjectivesatellite-2 wn30schema:gloss "sufficient for the purpose; \"an adequate income\"; \"the food was adequate\"; \"a decent wage\"; \"enough food\"; \"food enough\""@en-us .
+
+wn30:synset-car-noun-1 wn30schema:gloss "a motor vehicle with four wheels; usually propelled by an internal combustion engine; \"he needs a car to get to work\""@en-us .
+
+wn30:synset-decade-noun-1 wn30schema:gloss "a period of 10 years"@en-us .
+
+wn30:synset-man-noun-1 wn30schema:gloss "an adult person who is male (as opposed to a woman); \"there were two women and six men on the bus\""@en-us .
+
+wn30:synset-money-noun-1 wn30schema:gloss "the most common medium of exchange; functions as legal tender; \"we tried to collect the money he owed us\""@en-us .
+
+:Soviet_Union a amr:Country ;
+    dul:associatedWith :Country ;
+    rdfs:subClassOf :Car ;
+    owl:sameAs dbpedia:Soviet_Union,
+        wd:Q15180 .
+
+
+
+
+
+
+
+
+
+
 
 
 whata:perspectivisation_1 a whata:WhataboutistPerspectivisation;

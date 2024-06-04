@@ -1,0 +1,175 @@
+@prefix amr: <http://www.ontologydesignpatterns.org/ont/amr/> .
+@prefix boxing: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fnframe: <https://w3id.org/framester/framenet/abox/frame/> .
+@prefix fred: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pbdata: <https://w3id.org/framester/pb/data/> .
+@prefix pblr: <https://w3id.org/framester/pb/localrole/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix va: <http://verbatlas.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wn30: <https://w3id.org/framester/wn/wn30/instances/> .
+@prefix wn30schema: <https://w3id.org/framester/wn/wn30/schema/> .
+@prefix whata: <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+# Define entities
+:average_1 a pbdata:average-04 ;
+    pblr:average_entity :man_1 .
+
+:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember :lynch_1 .
+
+:have-quant_1 a pbdata:have-quant-91 ;
+    pblr:consequence :buy_1 ;
+    pblr:degree_mention_modifying_quantity :enough_1 ;
+    pblr:entity :money_1 .
+
+:take_1 a pbdata:take-10 ;
+    pblr:requirer :earn_1 ;
+    pblr:thing_required :temporal-quantity_1 .
+
+:Car rdfs:subClassOf dul:PhysicalObject,
+        wn30:supersense-noun_artifact ;
+    owl:equivalentClass wn30:synset-car-noun-1 .
+
+:Decade rdfs:subClassOf dul:TimeInterval,
+        wn30:supersense-noun_time ;
+    owl:equivalentClass wn30:synset-decade-noun-1 .
+
+:Enough rdfs:subClassOf dul:Quality,
+        fschema:AdjectivalQuality,
+        wn30:supersense-adj_all ;
+    owl:equivalentClass wn30:synset-adequate-adjectivesatellite-2 .
+
+:Man rdfs:subClassOf dul:Person,
+        wn30:supersense-noun_person ;
+    owl:equivalentClass wn30:synset-man-noun-1 .
+
+:Money rdfs:subClassOf dul:Amount,
+        wn30:supersense-noun_possession ;
+    owl:equivalentClass wn30:synset-money-noun-1 .
+
+:Negro a amr:Ethnic-group ;
+    owl:sameAs dbpedia:Negro,
+        wd:Q1130557 .
+
+:buy_1 a pbdata:buy-01 ;
+    pblr:buyer :man_1 ;
+    pblr:thing_bought :car_1 .
+
+:car_1 a fred:Soviet_Union .
+
+:decade_1 a fred:Decade .
+
+:earn_1 a pbdata:earn-01 ;
+    pblr:earner :man_1 ;
+    pblr:wages :money_1 .
+
+:enough_1 a fred:Enough .
+
+:lynch_1 a pbdata:lynch-01 ;
+    pblr:victim :person_2 ;
+    pblr:violent_mob :person_1 ;
+    a whata:CounterBlamable ;
+    per:shotThrough :WhataboutistLens_1 .
+
+:money_1 a fred:Money .
+
+:temporal-quantity_1 a fred:Temporal-quantity ;
+    amr:quant owl:Thing ;
+    amr:unit :decade_1 .
+
+:WhataboutistLens_1 a whata:WhataboutistLens ;
+    whata:shiftsFocusFrom :person_2 .
+
+# Define the Whataboutist Perspectivisation
+:WhataboutistPerspectivisation_1 a whata:WhataboutistPerspectivisation ;
+    whata:relatedIdentifyingPattern "and you" ;
+    per:Lens :WhataboutistLens_1 ;
+    per:Cut :lynch_1 ;
+    per:Background :BlendedBlameBackground ;
+    per:Eventuality :person_2 .
+
+# Define the blended blame background
+:BlendedBlameBackground a whata:BlendedBlameBackground ;
+    whata:isParticipantIn :person_1 ;
+    whata:isParticipantIn :person_2 ;
+    whata:isParticipantIn :lynch_1 .
+
+# Define the oughts (norms or duties being infringed)
+:Ought_1 a whata:Ought ;
+    whata:isParticipantIn :person_2 ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+:Ought_2 a whata:Ought ;
+    whata:isParticipantIn :lynch_1 ;
+    whata:isParticipantIn :BlendedBlameBackground .
+
+# Define additional entities and relationships
+:average_1 a pbdata:average-04 ;
+    pblr:average_entity :man_1 .
+
+:conjunct_1 a boxing:Conjunct ;
+    dul:hasMember :lynch_1 .
+
+:have-quant_1 a pbdata:have-quant-91 ;
+    pblr:consequence :buy_1 ;
+    pblr:degree_mention_modifying_quantity :enough_1 ;
+    pblr:entity :money_1 .
+
+:take_1 a pbdata:take-10 ;
+    pblr:requirer :earn_1 ;
+    pblr:thing_required :temporal-quantity_1 .
+
+pbdata:average-04 rdfs:label "normal, in the range of mean, median or mode" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder fnframe:Desirability,
+        fnframe:Typicality .
+
+pbdata:buy-01 rdfs:label "purchase" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0185f,
+        fnframe:Commerce_buy .
+
+pbdata:earn-01 rdfs:label "wages" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0279f,
+        fnframe:Earnings_and_losses .
+
+pbdata:have-quant-91 rdfs:subClassOf dul:Event .
+
+pbdata:lynch-01 rdfs:label "execution as by a mob, often by hanging" ;
+    rdfs:subClassOf dul:Event .
+
+pbdata:take-10 rdfs:label "need, requiring" ;
+    rdfs:subClassOf dul:Event ;
+    fschema:subsumedUnder va:0032f,
+        fnframe:Bearing_arms,
+        fnframe:Capacity,
+        fnframe:Have_as_requirement,
+        fnframe:Inclusion,
+        fnframe:Removing,
+        fnframe:Taking_time,
+        fnframe:Undressing .
+
+wn30:synset-adequate-adjectivesatellite-2 wn30schema:gloss "sufficient for the purpose; \"an adequate income\"; \"the food was adequate\"; \"a decent wage\"; \"enough food\"; \"food enough\""@en-us .
+
+wn30:synset-car-noun-1 wn30schema:gloss "a motor vehicle with four wheels; usually propelled by an internal combustion engine; \"he needs a car to get to work\""@en-us .
+
+wn30:synset-decade-noun-1 wn30schema:gloss "a period of 10 years"@en-us .
+
+wn30:synset-man-noun-1 wn30schema:gloss "an adult person who is male (as opposed to a woman); \"there were two women and six men on the bus\""@en-us .
+
+wn30:synset-money-noun-1 wn30schema:gloss "the most common medium of exchange; functions as legal tender; \"we tried to collect the money he owed us\""@en-us .
+
+:Soviet_Union a amr:Country ;
+    dul:associatedWith :Country ;
+    rdfs:subClassOf :Car ;
+    owl:sameAs dbpedia:Soviet_Union,
+        wd:Q15180 .

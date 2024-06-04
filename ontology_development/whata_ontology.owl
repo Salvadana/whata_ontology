@@ -20,7 +20,7 @@ Declaration(Class(:RelevanceFallacyLens))
 Declaration(Class(:ResponsibilityOwner))
 Declaration(Class(:WhataboutistLens))
 Declaration(Class(:WhataboutistPerspectivisation))
-Declaration(ObjectProperty(:actsAgainst))
+Declaration(ObjectProperty(:hasParticipant))
 Declaration(ObjectProperty(:isParticipantIn))
 Declaration(ObjectProperty(:relatedToLens))
 Declaration(ObjectProperty(:shiftsFocusFrom))
@@ -42,10 +42,12 @@ Declaration(AnnotationProperty(rdfs:subClassOf))
 #   Object Properties
 ############################
 
-# Object Property: :actsAgainst (:actsAgainst)
+# Object Property: :hasParticipant (:hasParticipant)
 
-ObjectPropertyDomain(:actsAgainst :ResponsibilityOwner)
-ObjectPropertyRange(:actsAgainst :Ought)
+InverseObjectProperties(:hasParticipant :isParticipantIn)
+ObjectPropertyDomain(:hasParticipant :BlameSituation)
+ObjectPropertyRange(:hasParticipant :Ought)
+ObjectPropertyRange(:hasParticipant :ResponsibilityOwner)
 
 # Object Property: :isParticipantIn (:isParticipantIn)
 
@@ -89,47 +91,62 @@ SubClassOf(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.ow
 
 # Class: :Blamable (:Blamable)
 
+AnnotationAssertion(rdfs:comment :Blamable "The Blamable is the Eventuality the focus is shift from in a Whataboutist Perspectivisation. It is blendable with a CounterBlamable eventuality within a conceptual blending operation.")
 SubClassOf(:Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
 SubClassOf(:Blamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality>)
 SubClassOf(:Blamable :BlameSituation)
 
 # Class: :BlameSituation (:BlameSituation)
 
+AnnotationAssertion(rdfs:comment :BlameSituation "The Blame Situation represents the element blending the Blamable situation with the CounterBlamable situation.")
 SubClassOf(:BlameSituation <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending>)
 
 # Class: :BlendedBlameBackground (:BlendedBlameBackground)
 
+AnnotationAssertion(rdfs:comment :BlendedBlameBackground "The BlendedBlameBackground is the enlarged background used in a WhataboutistPerspectivisation. It is a blended space resulting from the conceptual blanding of the Blamable and the CounterBlamable situation.")
 SubClassOf(:BlendedBlameBackground <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background>)
 SubClassOf(:BlendedBlameBackground <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended>)
 SubClassOf(:BlendedBlameBackground :BlameSituation)
 
 # Class: :ConfirmationBiasLens (:ConfirmationBiasLens)
 
+AnnotationAssertion(rdfs:comment :ConfirmationBiasLens "The Confirmation Bias Lens is a focus shifting lens.")
 SubClassOf(:ConfirmationBiasLens :FocusShiftingLens)
 
 # Class: :CounterBlamable (:CounterBlamable)
 
+AnnotationAssertion(rdfs:comment :CounterBlamable "The CounterBlamable represents the Cut shot through the Whataboutist Lens. It is blendable with a Blamable eventuality within a conceptual blending operation.")
+SubClassOf(:CounterBlamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable>)
 SubClassOf(:CounterBlamable <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut>)
 SubClassOf(:CounterBlamable :BlameSituation)
 
 # Class: :FocusShiftingLens (:FocusShiftingLens)
 
+AnnotationAssertion(rdfs:comment :FocusShiftingLens "The focus shifting lens is the lens responsible for a focus shift within a perspectivisation.")
 SubClassOf(:FocusShiftingLens <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens>)
+
+# Class: :Ought (:Ought)
+
+AnnotationAssertion(rdfs:comment :Ought "The Ought represents the shared norm, due or value that is addressed in the Blame Situation.")
 
 # Class: :RelevanceFallacyLens (:RelevanceFallacyLens)
 
+AnnotationAssertion(rdfs:comment :RelevanceFallacyLens "The RelevanceFallacyLens is a Focus Shifting Lens.")
 SubClassOf(:RelevanceFallacyLens :FocusShiftingLens)
 
 # Class: :ResponsibilityOwner (:ResponsibilityOwner)
 
+AnnotationAssertion(rdfs:comment :ResponsibilityOwner "The Responsibility Owner is the entity owning a certain responsibility towards a Ought within a Blame situation.")
 SubClassOf(:ResponsibilityOwner <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent>)
 
 # Class: :WhataboutistLens (:WhataboutistLens)
 
+AnnotationAssertion(rdfs:comment :WhataboutistLens "The Whataboutist Lens is the Focus Shifting Lens which is responsible for the focus shift within a Whataboutist Perspectivisation. It shifts the focus from a blamable eventuality and tailors the CounterBlamable Cut within the perspectivisation.")
 SubClassOf(:WhataboutistLens :FocusShiftingLens)
 
 # Class: :WhataboutistPerspectivisation (:WhataboutistPerspectivisation)
 
+AnnotationAssertion(rdfs:comment :WhataboutistPerspectivisation "The Whataboutist Perspectivisation is the perspectivisation characterised by a Whataboutis Lens that shifts the focus from a Blamable situation towards a CounterBlamable situation having as Background the blended space resulting from the blending of the Blamable and the CounterBlamable.")
 SubClassOf(:WhataboutistPerspectivisation <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation>)
 
 
@@ -165,14 +182,12 @@ ObjectPropertyAssertion(:isParticipantIn :Ought :CounterBlamable)
 # Individual: :ResponsibilityOwner1 (:ResponsibilityOwner1)
 
 ClassAssertion(:ResponsibilityOwner :ResponsibilityOwner1)
-ObjectPropertyAssertion(:actsAgainst :ResponsibilityOwner1 :Ought)
 ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner1 :Blamable)
 ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner1 :BlendedBlameBackground)
 
 # Individual: :ResponsibilityOwner2 (:ResponsibilityOwner2)
 
 ClassAssertion(:ResponsibilityOwner :ResponsibilityOwner2)
-ObjectPropertyAssertion(:actsAgainst :ResponsibilityOwner2 :Ought)
 ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner2 :BlendedBlameBackground)
 ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner2 :CounterBlamable)
 

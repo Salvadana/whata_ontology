@@ -34,7 +34,7 @@ whata:perspectivisation_9 a whata:WhataboutistPerspectivisation;
     whata:relatedIdentifyingPattern "but what about";
     per:Lens fred:contrast_1;
     per:Cut fred:kill_2;
-    per:Background fred:emit_1;
+    per:Background whata:emit_1;
     per:Eventuality fred:kill_1.
 
 fred:cause_1 a pbdata:cause-01 ;
@@ -74,7 +74,7 @@ fred:Diesel rdfs:subClassOf dul:PhysicalObject,
 fred:DieselCar dul:associatedWith fred:Diesel ;
 a whata:ResponsibilityOwner;
 whata:isParticipantIn fred:kill_1;
-whata:isParticipantIn fred:emit_1;
+whata:isParticipantIn whata:emit_1;
     rdfs:subClassOf fred:Car .
 
 fred:Great rdfs:subClassOf dul:Quality,
@@ -91,7 +91,7 @@ fred:Petrol rdfs:subClassOf dul:PhysicalObject,
 fred:PetrolCar dul:associatedWith fred:Petrol ;
 a whata:ResponsibilityOwner;
 whata:isParticipantIn fred:kill_2;
-whata:isParticipantIn fred:emit_1;
+whata:isParticipantIn whata:emit_1;
     rdfs:subClassOf fred:Car .
 
 fred:bad_1 a pbdata:bad-07 ;
@@ -112,7 +112,7 @@ fred:climate_1 a fred:Climate ;
 a whata:Ought;
 whata:isParticipantIn fred:kill_1;
 whata:isParticipantIn fred:kill_2;
-whata:isParticipantIn fred:emit_1.
+whata:isParticipantIn whata:emit_1.
 
 fred:drive_1 a pbdata:drive-01 ;
     pblr:vehicle_or_path fred:car_2 .
@@ -192,9 +192,11 @@ fred:More rdfs:subClassOf dul:Quality,
     owl:equivalentClass wn30:synset-more-adjective-2 .
 
 fred:emit_1 a pbdata:emit-01 ;
-a whata:BlendedBlameBackground;
+
     pblr:emitting_entity fred:person_2 ;
     pblr:thing_emitted fred:CO2 .
+
+whata:emit_1 a whata:BlendedBlameBackground.
 
 fred:kill_1 a pbdata:kill-01 ;
 a whata:Blamable;
