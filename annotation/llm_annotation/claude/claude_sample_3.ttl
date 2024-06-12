@@ -1,0 +1,67 @@
+@prefix : <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+# Whataboutist Text 1
+:blamable1 rdf:type :Blamable ;
+    rdfs:comment "The West criticizing the speaker's human rights record" .
+        
+:counterblamable1 rdf:type :CounterBlamable ;
+    rdfs:comment "US actions in Central America, history of slavery, lynchings, apartheid in South Africa" .
+
+:blendedblamebg1 rdf:type :BlendedBlameBackground ;
+    rdfs:comment "Human rights violations are unacceptable" ;
+    :hasParticipant :ought1 ;
+    :isParticipantIn :blamable1, :counterblamable1 .
+        
+:ought1 rdf:type :Ought ;
+    :isParticipantIn :blamable1, :counterblamable1, :blendedblamebg1 .
+    
+:respowner1 rdf:type :ResponsibilityOwner ;
+    :isParticipantIn :blamable1, :blendedblamebg1 .
+    
+:respowner2 rdf:type :ResponsibilityOwner ;
+    :isParticipantIn :counterblamable1, :blendedblamebg1 .
+    
+:whataboutistperspectivisation1 rdf:type :WhataboutistPerspectivisation ;
+    per:Eventuality :blamable1 ;
+    per:Lens :whataboutistlens1 ;
+    per:Background :blendedblamebg1 ;
+    per:Cut :counterblamable1 .
+    
+:whataboutistlens1 rdf:type :WhataboutistLens ;
+    :shiftsFocusFrom :blamable1 .
+    
+# Whataboutist Text 3
+:blamable3 rdf:type :Blamable ;
+    rdfs:comment "Yale focusing on consumption rather than production of fossil fuels" .
+        
+:counterblamable3 rdf:type :CounterBlamable ;
+    rdfs:comment "Claim that other countries would increase emissions if Yale stopped" .
+
+:blendedblamebg3 rdf:type :BlendedBlameBackground ;
+    rdfs:comment "Addressing climate change through reduced emissions" ;
+    :hasParticipant :ought3 ;
+    :isParticipantIn :blamable3, :counterblamable3 .
+
+:ought3 rdf:type :Ought ;
+    :isParticipantIn :blamable3, :counterblamable3, :blendedblamebg3 .
+    
+:respowner3 rdf:type :ResponsibilityOwner ;
+    :isParticipantIn :blamable3, :blendedblamebg3 .
+    
+:respowner4 rdf:type :ResponsibilityOwner ;
+    :isParticipantIn :counterblamable3, :blendedblamebg3 .
+
+:whataboutistperspectivisation3 rdf:type :WhataboutistPerspectivisation ;
+    per:Eventuality :blamable3 ; 
+    per:Lens :whataboutistlens3 ;
+    per:Background :blendedblamebg3 ;
+    per:Cut :counterblamable3 .
+    
+:whataboutistlens3 rdf:type :WhataboutistLens ;
+    :shiftsFocusFrom :blamable3 .
+    
+# ... (Additional whataboutist texts represented similarly)
