@@ -19,10 +19,7 @@
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Blamable is the Eventuality the focus is shift from in a Whataboutist Perspectivisation. It is blendable with a CounterBlamable eventuality within a conceptual blending operation."
   } ],
@@ -35,7 +32,7 @@
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlameSituation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Blame Situation represents the element blending the Blamable situation with the CounterBlamable situation."
   } ],
@@ -45,9 +42,6 @@
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The BlendedBlameBackground is the enlarged background used in a WhataboutistPerspectivisation. It is a blended space resulting from the conceptual blanding of the Blamable and the CounterBlamable situation."
   } ],
@@ -60,10 +54,7 @@
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBiasLens"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#relatedToLens" : [ {
     "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens"
   } ]
@@ -78,12 +69,9 @@
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough" : [ {
     "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The CounterBlamable represents the Cut shot through the Whataboutist Lens. It is blendable with a Blamable eventuality within a conceptual blending operation."
@@ -106,10 +94,7 @@
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Ought represents the shared norm, due or value that is addressed in the Blame Situation."
   } ],
@@ -131,18 +116,12 @@
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Responsibility Owner is the entity owning a certain responsibility towards a Ought within a Blame situation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"
-  } ]
-}, {
-  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner"
   } ],
   "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn" : [ {
     "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable"
@@ -150,31 +129,8 @@
     "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground"
   } ]
 }, {
-  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner"
-  } ],
-  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground"
-  }, {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable"
-  } ]
-}, {
-  "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#TuQuoqueFallacy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#RelevanceFallacyLens"
-  } ],
-  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#relatedToLens" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens"
-  } ]
-}, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Whataboutist Lens is the Focus Shifting Lens which is responsible for the focus shift within a Whataboutist Perspectivisation. It shifts the focus from a blamable eventuality and tailors the CounterBlamable Cut within the perspectivisation."
   } ],
@@ -186,7 +142,7 @@
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/framester/schema/ConceptualFrame" ],
   "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background" : [ {
     "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground"
   } ],
@@ -199,17 +155,11 @@
   "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens" : [ {
     "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens"
   } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Whataboutist Perspectivisation is the perspectivisation characterised by a Whataboutis Lens that shifts the focus from a Blamable situation towards a CounterBlamable situation having as Background the blended space resulting from the blending of the Blamable and the CounterBlamable."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation"
-  } ],
-  "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#relatedIdentifyingPattern" : [ {
-    "@value" : "what about"
   } ]
 }, {
   "@id" : "https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#hasParticipant",

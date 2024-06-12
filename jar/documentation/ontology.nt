@@ -116,7 +116,6 @@
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The Responsibility Owner is the entity owning a certain responsibility towards a Ought within a Blame situation." .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -137,62 +136,50 @@
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlameSituation
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlameSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlameSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBiasLens> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#relatedToLens> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> .
 # 
-# https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> .
-# 
-# https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> .
-# 
-# https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#TuQuoqueFallacy
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#TuQuoqueFallacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#TuQuoqueFallacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#RelevanceFallacyLens> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#TuQuoqueFallacy> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#relatedToLens> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> .
+# https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#isParticipantIn> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#shiftsFocusFrom> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> .
 # 
 # https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> .
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/framester/schema/ConceptualFrame> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable> .
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> .
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation> <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#relatedIdentifyingPattern> "what about" .
 # 
 # 
 # 
@@ -212,6 +199,8 @@
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable> <http://www.w3.org/2000/01/rdf-schema#comment> "The CounterBlamable represents the Cut shot through the Whataboutist Lens. It is blendable with a Blamable eventuality within a conceptual blending operation." .
 # 
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought> <http://www.w3.org/2000/01/rdf-schema#comment> "The Ought represents the shared norm, due or value that is addressed in the Blame Situation." .
+# 
+<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The Responsibility Owner is the entity owning a certain responsibility towards a Ought within a Blame situation." .
 # 
 <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens> <http://www.w3.org/2000/01/rdf-schema#comment> "The Whataboutist Lens is the Focus Shifting Lens which is responsible for the focus shift within a Whataboutist Perspectivisation. It shifts the focus from a blamable eventuality and tailors the CounterBlamable Cut within the perspectivisation." .
 # 
