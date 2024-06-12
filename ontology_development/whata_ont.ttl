@@ -120,8 +120,7 @@ rdfs:subClassOf rdf:type owl:AnnotationProperty .
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner
 :ResponsibilityOwner rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> ;
-                     rdfs:comment "The Responsibility Owner is the entity owning a certain responsibility towards a Ought within a Blame situation." .
+                     rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens
@@ -140,72 +139,58 @@ rdfs:subClassOf rdf:type owl:AnnotationProperty .
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Blamable
 :Blamable rdf:type owl:NamedIndividual ,
-                   :Blamable .
+                   <https://w3id.org/framester/schema/ConceptualFrame> .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlameSituation
-:BlameSituation rdf:type owl:NamedIndividual .
+:BlameSituation rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/framester/schema/ConceptualFrame> .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#BlendedBlameBackground
-:BlendedBlameBackground rdf:type owl:NamedIndividual ,
-                                 :BlendedBlameBackground .
+:BlendedBlameBackground rdf:type owl:NamedIndividual .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ConfirmationBias
 :ConfirmationBias rdf:type owl:NamedIndividual ,
-                           :ConfirmationBiasLens ;
+                           <https://w3id.org/framester/schema/ConceptualFrame> ;
                   :relatedToLens :WhataboutistLens .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#CounterBlamable
 :CounterBlamable rdf:type owl:NamedIndividual ,
-                          :CounterBlamable ;
+                          <https://w3id.org/framester/schema/ConceptualFrame> ;
                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> :WhataboutistLens .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#Ought
 :Ought rdf:type owl:NamedIndividual ,
-                :Ought ;
+                <https://w3id.org/framester/schema/ConceptualFrame> ;
        :isParticipantIn :Blamable ,
                         :BlendedBlameBackground ,
                         :CounterBlamable .
 
 
-###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner1
-:ResponsibilityOwner1 rdf:type owl:NamedIndividual ,
-                               :ResponsibilityOwner ;
-                      :isParticipantIn :Blamable ,
-                                       :BlendedBlameBackground .
-
-
-###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner2
-:ResponsibilityOwner2 rdf:type owl:NamedIndividual ,
-                               :ResponsibilityOwner ;
-                      :isParticipantIn :BlendedBlameBackground ,
-                                       :CounterBlamable .
-
-
-###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#TuQuoqueFallacy
-:TuQuoqueFallacy rdf:type owl:NamedIndividual ,
-                          :RelevanceFallacyLens ;
-                 :relatedToLens :WhataboutistLens .
+###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#ResponsibilityOwner
+:ResponsibilityOwner rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/framester/schema/ConceptualFrame> ;
+                     :isParticipantIn :Blamable ,
+                                      :BlendedBlameBackground .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistLens
 :WhataboutistLens rdf:type owl:NamedIndividual ,
-                           :WhataboutistLens ;
+                           <https://w3id.org/framester/schema/ConceptualFrame> ;
                   :shiftsFocusFrom :Blamable .
 
 
 ###  https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl#WhataboutistPerspectivisation
 :WhataboutistPerspectivisation rdf:type owl:NamedIndividual ,
-                                        :WhataboutistPerspectivisation ;
+                                        <https://w3id.org/framester/schema/ConceptualFrame> ;
                                <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :BlendedBlameBackground ;
                                <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :CounterBlamable ;
                                <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> :Blamable ;
-                               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> :WhataboutistLens ;
-                               :relatedIdentifyingPattern "what about" .
+                               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> :WhataboutistLens .
 
 
 #################################################################
@@ -225,6 +210,9 @@ rdfs:subClassOf rdf:type owl:AnnotationProperty .
 
 
 :Ought rdfs:comment "The Ought represents the shared norm, due or value that is addressed in the Blame Situation." .
+
+
+:ResponsibilityOwner rdfs:comment "The Responsibility Owner is the entity owning a certain responsibility towards a Ought within a Blame situation." .
 
 
 :WhataboutistLens rdfs:comment "The Whataboutist Lens is the Focus Shifting Lens which is responsible for the focus shift within a Whataboutist Perspectivisation. It shifts the focus from a blamable eventuality and tailors the CounterBlamable Cut within the perspectivisation." .

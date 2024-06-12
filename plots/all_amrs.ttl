@@ -230,14 +230,14 @@ fred:disjunct_1 a boxing:Disjunct ;
 :They a whata:ResponsibilityOwner ;
     whata:isParticipantIn :Venezuela ;
     whata:isParticipantIn :OtherPlaces ;
-    whata:isParticipantIn :Blended.
+    whata:isParticipantIn :blended_resp_country.
 
 # Define the Whataboutist Perspectivisation
 :WhataboutistPerspectivisation_14 a whata:WhataboutistPerspectivisation ;
     whata:relatedIdentifyingPattern "but there are many other places" ;
     per:Lens :WhataboutistLens_1 ;
     per:Cut :OtherPlaces ;
-    per:Background :Blended ;
+    per:Background :blended_resp_country ;
     per:Eventuality :Venezuela .
 
 # Define the Whataboutist Lens
@@ -245,14 +245,14 @@ fred:disjunct_1 a boxing:Disjunct ;
     whata:shiftsFocusFrom :Venezuela .
 
 # Define the blended blame background
-:Blended a whata:BlendedBlameBackground ;
+:blended_resp_country a whata:BlendedBlameBackground ;
     per:Background :BackgroundEvent .
 
 # Define the moral judgment event
 :MoralJudgment a whata:Ought ;
     whata:isParticipantIn :Venezuela ;
     whata:isParticipantIn :OtherPlaces ;
-    whata:isParticipantIn :Blended .
+    whata:isParticipantIn :blended_resp_country.
 
 # Define the background event (the context of the blended blame)
 :BackgroundEvent a pbdata:blame-01 ;
@@ -274,7 +274,7 @@ fred:disjunct_1 a boxing:Disjunct ;
 :They a whata:ResponsibilityOwner ;
     whata:isParticipantIn :CriticismEvent ;
     whata:isParticipantIn :KillingEvent ;
-    whata:isParticipantIn :Blended.
+    whata:isParticipantIn :blended_resp_country.
 
 
 # Define entities alt-right, alt-left, ResponsibilityOwner1, ResponsibilityOwner2, clubs, problem, guilt, and "they"
@@ -289,11 +289,11 @@ fred:disjunct_1 a boxing:Disjunct ;
 
 :ResponsibilityOwner1 a whata:ResponsibilityOwner ;
     whata:isParticipantIn :AltRight ;
-    whata:isParticipantIn :Blended.
+    whata:isParticipantIn :blended_r_politics.
 
 :ResponsibilityOwner2 a whata:ResponsibilityOwner ;
     whata:isParticipantIn :AltLeft ;
-    whata:isParticipantIn :Blended.
+    whata:isParticipantIn :blended_r_politics.
 
 :Clubs a whata:BlameSituation .
 
@@ -306,7 +306,7 @@ fred:disjunct_1 a boxing:Disjunct ;
     whata:relatedIdentifyingPattern "what about the alt-left" ;
     per:Lens :WhataboutistLens_1 ;
     per:Cut :AltLeft ;
-    per:Background :blended;
+    per:Background :blended_r_politics;
     per:Eventuality :AltRight .
 
 # Define the Whataboutist Lens
@@ -314,15 +314,15 @@ fred:disjunct_1 a boxing:Disjunct ;
     whata:shiftsFocusFrom :AltRight .
 
 # Define the blended blame background
-:Blended a whata:BlendedBlameBackground .
+:blended_r_politics a whata:BlendedBlameBackground .
 
 # Define the oughts (norms or duties being infringed)
 :OughtAltRight a whata:Ought ;
-    whata:isParticipantIn :Blended ;
+    whata:isParticipantIn :blended_r_politics ;
     whata:isParticipantIn :AltRight .
 
 :OughtAltLeft a whata:Ought ;
-    whata:isParticipantIn :Blended ;
+    whata:isParticipantIn :blended_r_politics ;
     whata:isParticipantIn :AltLeft .
 
 # Define the charging event
@@ -361,18 +361,18 @@ fred:disjunct_1 a boxing:Disjunct ;
 
 :ResponsibilityOwner1 a whata:ResponsibilityOwner ;
     whata:isParticipantIn :We ;
-    whata:isParticipantIn :Blended.
+    whata:isParticipantIn :blended_r_party.
 
 :ResponsibilityOwner2 a whata:ResponsibilityOwner ;
     whata:isParticipantIn :YourSide ;
-    whata:isParticipantIn :Blended .
+    whata:isParticipantIn :blended_r_party.
 
 # Define the Whataboutist Perspectivisation
 :WhataboutistPerspectivisation_4 a whata:WhataboutistPerspectivisation ;
     whata:relatedIdentifyingPattern "but 'your side' does shitty things too" ;
     per:Lens :WhataboutistLens_2 ;
     per:Cut :YourSide ;
-    per:Background :Blended ;
+    per:Background :blended_r_party ;
     per:Eventuality :We .
 
 # Define the Whataboutist Lens
@@ -380,20 +380,20 @@ fred:disjunct_1 a boxing:Disjunct ;
     whata:shiftsFocusFrom :YourSide .
 
 # Define the blended blame background
-:Blended a whata:BlendedBlameBackground .
+:blended_r_party a whata:BlendedBlameBackground .
 
 # Define the oughts (norms or duties being infringed)
 :OughtWe a whata:Ought ;
-    whata:isParticipantIn :Blended;
+    whata:isParticipantIn :blended_r_party;
     whata:isParticipantIn :We .
 
 :OughtYourSide a whata:Ought ;
-    whata:isParticipantIn :Blended ;
+    whata:isParticipantIn :blended_r_party ;
     whata:isParticipantIn :YourSide .
 
 # Define 'They' as a collective entity (mentioned in the background)
 :They a whata:ResponsibilityOwner ;
-    whata:isParticipantIn :Blended .
+    whata:isParticipantIn :blended_r_party .
 
 
 
@@ -472,25 +472,22 @@ fred:disjunct_1 a boxing:Disjunct ;
     whata:relatedIdentifyingPattern "and you" ;
     per:Lens :WhataboutistLens_1 ;
     per:Cut :lynch_1 ;
-    per:Background :Blended;
+    per:Background :blended_r_respect;
     per:Eventuality :person_2 .
 
 :person_2 a whata:Blamable.
 
 # Define the blended blame background
-:Blended a whata:BlendedBlameBackground ;
-    whata:isParticipantIn :person_1 ;
-    whata:isParticipantIn :person_2 ;
-    whata:isParticipantIn :lynch_1 .
+:blended_r_respect a whata:BlendedBlameBackground  .
 
 # Define the oughts (norms or duties being infringed)
 :Ought_1 a whata:Ought ;
     whata:isParticipantIn :person_2 ;
-    whata:isParticipantIn :Blended .
+    whata:isParticipantIn :blended_r_respect.
 
 :Ought_2 a whata:Ought ;
     whata:isParticipantIn :lynch_1 ;
-    whata:isParticipantIn :Blended .
+    whata:isParticipantIn :blended_r_respect .
 
 # Define additional entities and relationships
 :average_1 a pbdata:average-04 ;

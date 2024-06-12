@@ -31,8 +31,7 @@
 whata:c_bias_1 a whata:ConfirmationBiasLens;
 whata:relatedToLens fred:doubt_1.
 
-whata:perspectivisation_3 a whata:WhataboutistPerspectivisation;
-    
+whata:perspectivisation_3 a whata:WhataboutistPerspectivisation;    
 whata:relatedIdentifyingPattern 'other countries';
 per:Lens  fred:doubt_1;
 per:Eventuality fred:emit_1;

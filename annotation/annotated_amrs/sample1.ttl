@@ -24,13 +24,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix per: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
 
-@base <https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> .
-
-<https://raw.githubusercontent.com/Salvadana/whata_ontology/main/ontology_development/whata_ontology.owl> rdf:type owl:Ontology ;
-                                                                                                           owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
-
-
 whata:perspectivisation_1 a whata:WhataboutistPerspectivisation;
+    whata:relatedIdentifyingPattern 'no right to criticize';
     whata:relatedIdentifyingPattern 'look at';
     per:Lens fred:look_1;
     per:Cut fred:conjunct_1;

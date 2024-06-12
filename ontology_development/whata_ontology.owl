@@ -31,9 +31,7 @@ Declaration(NamedIndividual(:BlendedBlameBackground))
 Declaration(NamedIndividual(:ConfirmationBias))
 Declaration(NamedIndividual(:CounterBlamable))
 Declaration(NamedIndividual(:Ought))
-Declaration(NamedIndividual(:ResponsibilityOwner1))
-Declaration(NamedIndividual(:ResponsibilityOwner2))
-Declaration(NamedIndividual(:TuQuoqueFallacy))
+Declaration(NamedIndividual(:ResponsibilityOwner))
 Declaration(NamedIndividual(:WhataboutistLens))
 Declaration(NamedIndividual(:WhataboutistPerspectivisation))
 Declaration(AnnotationProperty(rdfs:subClassOf))
@@ -156,59 +154,47 @@ SubClassOf(:WhataboutistPerspectivisation <http://www.ontologydesignpatterns.org
 
 # Individual: :Blamable (:Blamable)
 
-ClassAssertion(:Blamable :Blamable)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :Blamable)
 
-# Individual: :BlendedBlameBackground (:BlendedBlameBackground)
+# Individual: :BlameSituation (:BlameSituation)
 
-ClassAssertion(:BlendedBlameBackground :BlendedBlameBackground)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :BlameSituation)
 
 # Individual: :ConfirmationBias (:ConfirmationBias)
 
-ClassAssertion(:ConfirmationBiasLens :ConfirmationBias)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :ConfirmationBias)
 ObjectPropertyAssertion(:relatedToLens :ConfirmationBias :WhataboutistLens)
 
 # Individual: :CounterBlamable (:CounterBlamable)
 
-ClassAssertion(:CounterBlamable :CounterBlamable)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :CounterBlamable)
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> :CounterBlamable :WhataboutistLens)
 
 # Individual: :Ought (:Ought)
 
-ClassAssertion(:Ought :Ought)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :Ought)
 ObjectPropertyAssertion(:isParticipantIn :Ought :Blamable)
 ObjectPropertyAssertion(:isParticipantIn :Ought :BlendedBlameBackground)
 ObjectPropertyAssertion(:isParticipantIn :Ought :CounterBlamable)
 
-# Individual: :ResponsibilityOwner1 (:ResponsibilityOwner1)
+# Individual: :ResponsibilityOwner (:ResponsibilityOwner)
 
-ClassAssertion(:ResponsibilityOwner :ResponsibilityOwner1)
-ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner1 :Blamable)
-ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner1 :BlendedBlameBackground)
-
-# Individual: :ResponsibilityOwner2 (:ResponsibilityOwner2)
-
-ClassAssertion(:ResponsibilityOwner :ResponsibilityOwner2)
-ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner2 :BlendedBlameBackground)
-ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner2 :CounterBlamable)
-
-# Individual: :TuQuoqueFallacy (:TuQuoqueFallacy)
-
-ClassAssertion(:RelevanceFallacyLens :TuQuoqueFallacy)
-ObjectPropertyAssertion(:relatedToLens :TuQuoqueFallacy :WhataboutistLens)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :ResponsibilityOwner)
+ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner :Blamable)
+ObjectPropertyAssertion(:isParticipantIn :ResponsibilityOwner :BlendedBlameBackground)
 
 # Individual: :WhataboutistLens (:WhataboutistLens)
 
-ClassAssertion(:WhataboutistLens :WhataboutistLens)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :WhataboutistLens)
 ObjectPropertyAssertion(:shiftsFocusFrom :WhataboutistLens :Blamable)
 
 # Individual: :WhataboutistPerspectivisation (:WhataboutistPerspectivisation)
 
-ClassAssertion(:WhataboutistPerspectivisation :WhataboutistPerspectivisation)
+ClassAssertion(<https://w3id.org/framester/schema/ConceptualFrame> :WhataboutistPerspectivisation)
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :WhataboutistPerspectivisation :BlendedBlameBackground)
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :WhataboutistPerspectivisation :CounterBlamable)
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> :WhataboutistPerspectivisation :Blamable)
 ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> :WhataboutistPerspectivisation :WhataboutistLens)
-DataPropertyAssertion(:relatedIdentifyingPattern :WhataboutistPerspectivisation "what about")
 
 
 )

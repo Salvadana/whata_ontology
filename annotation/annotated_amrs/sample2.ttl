@@ -25,8 +25,7 @@
 
 
 
-whata:perspectivisation_2 a whata:WhataboutistPerspectivisation;
-     
+whata:perspectivisation_2 a whata:WhataboutistPerspectivisation;     
     whata:relatedIdentifyingPattern 'the root of the climate change problem';
     per:Eventuality fred:produce_1;
     per:Cut fred:consume_1;
@@ -38,7 +37,6 @@ whata:perspectivisation_2 a whata:WhataboutistPerspectivisation;
 fred:contrast_1 a pbdata:contrast-01 ;
    a whata:WhataboutistLens;
     whata:shiftsFocusFrom fred:produce_1;
-
     pblr:first_item_in_comparison fred:consume_1 ;
     pblr:second_item_in_comparison fred:produce_1 ;
     fschema:subsumedUnder va:0627f .
